@@ -36,14 +36,7 @@ class Navbar extends Component {
                       <NavLink activeClassName="menu_active" className="nav-link" to="/service">Solutions</NavLink>
                     </li>                  
                     <li className="nav-item">
-                      <Dropdown>
-                        <Dropdown.Toggle variant="success" id="dropdown-basic"  className='background-white'>News</Dropdown.Toggle>
-
-                        <Dropdown.Menu>
-                          <Dropdown.Item className="nav-link" href="/pressRelease">Press Releases</Dropdown.Item>
-                          <Dropdown.Item className="nav-link" href="/event">Events</Dropdown.Item>
-                        </Dropdown.Menu>
-                      </Dropdown>
+                      <NavLink activeClassName="menu_active" className="nav-link" to="/event">News</NavLink>
                     </li>
                     <li className="nav-item">
                       <Dropdown>

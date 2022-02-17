@@ -13,7 +13,7 @@ class Event extends Component {
         return (
             <>
                 <div className="my-5">
-                    <h1 className="text-center">Events</h1>
+                    <h1 className="text-center">News</h1>
                 </div>
 
                 <div className="container-fluid mb-5">
