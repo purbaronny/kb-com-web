@@ -33,10 +33,10 @@ class Navbar extends Component {
                       </Dropdown>
                     </li>
                     <li className="nav-item">
-                      <NavLink activeClassName="menu_active" className="nav-link" to="/service">Solutions</NavLink>
+                      <NavLink className="nav-link" to="/service">Solutions</NavLink>
                     </li>                  
                     <li className="nav-item">
-                      <NavLink activeClassName="menu_active" className="nav-link" to="/event">News</NavLink>
+                      <NavLink className="nav-link" to="/event">News</NavLink>
                     </li>
                     <li className="nav-item">
                       <Dropdown>

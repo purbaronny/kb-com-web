@@ -22,8 +22,7 @@ class Common extends Component {
                   </h1>
 
                   <h2 className="my-3">
-                    We're a team of talented developers that can help your
-                    business grow!
+                    {this.props.contentText}
                   </h2>
 
                   <div className="mt-3">

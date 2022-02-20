@@ -1,0 +1,83 @@
+[{
+    "languageCode": "en-US",
+    "title": "News",
+    "cards": [{
+        "code": "ae",
+        "title": "Android Development",
+        "text1": "Some quick example text to build on the card title and make up the bulk of the card's content.",
+        "imgsrc": "Pictures/img1.png",
+        "linkSourceText": "Get Quote"
+    }, {
+        "code": "wd",
+        "title": "Web Development",
+        "text1": "Some quick example text to build on the card title and make up the bulk of the card's content.",
+        "imgsrc": "Pictures/img2.png",
+        "linkSourceText": "Get Quote"
+    }, {
+        "code": "dm",
+        "title": "Database Management",
+        "text1": "Some quick example text to build on the card title and make up the bulk of the card's content.",
+        "imgsrc": "Pictures/img3.png",
+        "linkSourceText": "Get Quote"
+    }, {
+        "code": "ba",
+        "title": "Business Analytics",
+        "text1": "Some quick example text to build on the card title and make up the bulk of the card's content.",
+        "imgsrc": "Pictures/img4.png",
+        "linkSourceText": "Get Quote"
+    }, {
+        "code": "dmar",
+        "title": "Digital Marketing",
+        "text1": "Some quick example text to build on the card title and make up the bulk of the card's content.",
+        "imgsrc": "Pictures/img5.png",
+        "linkSourceText": "Get Quote"
+    }, {
+        "code": "va",
+        "title": "Video Creation",
+        "text1": "Some quick example text to build on the card title and make up the bulk of the card's content.",
+        "imgsrc": "Pictures/img6.png",
+        "linkSourceText": "Get Quote"
+    }]        
+  },
+  {
+    "languageCode": "id-ID",
+    "title": "Berita",
+    "cards": [{
+        "code": "ae",
+        "title": "Pengembangan Android",
+        "text1": "Beberapa contoh teks cepat untuk membangun judul kartu dan membuat sebagian besar konten kartu.",
+        "imgsrc": "Pictures/img1.png",
+        "linkSourceText": "Ayo Mulai"
+    }, {
+        "code": "wd",
+        "title": "Pengembangan Web",
+        "text1": "Beberapa contoh teks cepat untuk membangun judul kartu dan membuat sebagian besar konten kartu.",
+        "imgsrc": "Pictures/img2.png",
+        "linkSourceText": "Ayo Mulai"
+    }, {
+        "code": "dm",
+        "title": "Manajemen Database",
+        "text1": "Beberapa contoh teks cepat untuk membangun judul kartu dan membuat sebagian besar konten kartu.",
+        "imgsrc": "Pictures/img3.png",
+        "linkSourceText": "Ayo Mulai"
+    }, {
+        "code": "ba",
+        "title": "Anailisa Bisnis",
+        "text1": "Beberapa contoh teks cepat untuk membangun judul kartu dan membuat sebagian besar konten kartu.",
+        "imgsrc": "Pictures/img4.png",
+        "linkSourceText": "Ayo Mulai"
+    }, {
+        "code": "dmar",
+        "title": "Pemasaran Digital",
+        "text1": "Beberapa contoh teks cepat untuk membangun judul kartu dan membuat sebagian besar konten kartu.",
+        "imgsrc": "Pictures/img5.png",
+        "linkSourceText": "Ayo Mulai"
+    }, {
+        "code": "va",
+        "title": "Penciptaan Video",
+        "text1": "Beberapa contoh teks cepat untuk membangun judul kartu dan membuat sebagian besar konten kartu.",
+        "imgsrc": "Pictures/img6.png",
+        "linkSourceText": "Ayo Mulai"
+    }]        
+  }
+]

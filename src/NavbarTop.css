@@ -1,0 +1,13 @@
+.button-no-background {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+    color:#0d6efd;
+    padding:.5rem 0.4rem;
+    transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+    text-decoration:none;
+    display:block;
+}

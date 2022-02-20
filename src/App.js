@@ -16,22 +16,34 @@ import NavbarTop from "./NavbarTop";
 import Career from "./Career";
 
 class App extends Component {
+
+  state = {
+    name : "en-US"
+
+  }
+
+  onChangeLanguage = (value) => {
+   this.setState({
+     name: value
+   });
+  }
+
   render() {
     return (
       <>
         <BrowserRouter>
-          <NavbarTop />  
+          <NavbarTop changeLanguage={(value) => this.onChangeLanguage(value)}></NavbarTop>
           <Navbar />      
           <Routes>
-            <Route exact path="/" element={<Home />} />
-            <Route exact path="/visionAndMission" element={<VisionAndMission />} />
-            <Route exact path="/award" element={<Award />} />
-            <Route exact path="/history" element={<History />} />
+            <Route exact path="/" element={<Home languageCode={this.state.name}/> } />
+            <Route exact path="/visionAndMission" element={<VisionAndMission languageCode={this.state.name}/>} />
+            <Route exact path="/award" element={<Award languageCode={this.state.name}/>} />
+            <Route exact path="/history" element={<History languageCode={this.state.name}/>} />
             <Route exact path="/pressRelease" element={<PressRelease />} />
-            <Route exact path="/event" element={<Event />} />
+            <Route exact path="/event" element={<Event languageCode={this.state.name}/>} />
             <Route exact path="/career" element={<Career />} />
             <Route exact path="/about" element={<About />} />
-            <Route exact path="/service" element={<Service />} />
+            <Route exact path="/service" element={<Service languageCode={this.state.name}/>} />
             <Route exact path="/contact" element={<Contact />} />
           </Routes>
         </BrowserRouter>
