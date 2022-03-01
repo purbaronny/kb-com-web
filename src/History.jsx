@@ -30,7 +30,7 @@ class History extends Component {
           .then(result => {        
             for (var i = 0; i < result.length; i++) {
               var obj = result[i];
-              if(obj.languageCode == this.props.languageCode) {
+              if(obj.languageCode === this.props.languageCode) {
                 this.setState({
                   languageCode: obj.languageCode,
                   title: obj.title,

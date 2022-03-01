@@ -18,7 +18,7 @@ class Common extends Component {
                 <div className="col-md-6 pt-5 pt-lg-0 order-2 order-lg-1 d-flex justify-content-center flex-column">
                   <h1>
                     {this.props.name}
-                    <strong className="brand-name"> PT KB Data Systems Indonesia </strong>
+                    <strong className="brand-name"> KB Data Systems Indonesia </strong>
                   </h1>
 
                   <h2 className="my-3">

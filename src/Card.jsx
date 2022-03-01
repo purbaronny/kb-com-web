@@ -11,8 +11,7 @@ class Card extends Component {
   
   render() {
     return (
-      <>
-      
+      <>      
         <div className="col-md-4 col-10 mx-auto">
           <div className="card">
             <img src={this.props.imgsrc} className="card-img-top" alt="..." />

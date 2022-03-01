@@ -1,6 +1,29 @@
 .background-white {
     background-color: white;
+    border-color: white;
     color: blue;
     border: none;
     margin-top: 2px;
+}
+
+#dropdown-basicAbout:hover {
+    color: rgb(255, 188, 0);
+    background-color: white;
+}
+
+#dropdown-basicAbout.dropdown-toggle{
+    background-color: white;
+    border-color: blue;
+    color:blue;
+}
+
+#dropdown-basicSolution:hover {
+    color: rgb(255, 188, 0);
+    background-color: white;
+}
+
+#dropdown-basicSolution.dropdown-toggle{
+    background-color: white;
+    border-color: blue;
+    color:blue;
 }

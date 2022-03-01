@@ -1,83 +1,38 @@
 [{
-    "languageCode": "en-US",
-    "title": "Our Solutions",
-    "cards": [{
-        "code": "ae",
-        "title": "Android Development",
-        "text1": "Some quick example text to build on the card title and make up the bulk of the card's content.",
-        "imgsrc": "Pictures/img1.png",
-        "linkSourceText": "Get Quote"
-    }, {
-        "code": "wd",
-        "title": "Web Development",
-        "text1": "Some quick example text to build on the card title and make up the bulk of the card's content.",
-        "imgsrc": "Pictures/img2.png",
-        "linkSourceText": "Get Quote"
-    }, {
-        "code": "dm",
-        "title": "Database Management",
-        "text1": "Some quick example text to build on the card title and make up the bulk of the card's content.",
-        "imgsrc": "Pictures/img3.png",
-        "linkSourceText": "Get Quote"
-    }, {
-        "code": "ba",
-        "title": "Business Analytics",
-        "text1": "Some quick example text to build on the card title and make up the bulk of the card's content.",
-        "imgsrc": "Pictures/img4.png",
-        "linkSourceText": "Get Quote"
-    }, {
-        "code": "dmar",
-        "title": "Digital Marketing",
-        "text1": "Some quick example text to build on the card title and make up the bulk of the card's content.",
-        "imgsrc": "Pictures/img5.png",
-        "linkSourceText": "Get Quote"
-    }, {
-        "code": "va",
-        "title": "Video Creation",
-        "text1": "Some quick example text to build on the card title and make up the bulk of the card's content.",
-        "imgsrc": "Pictures/img6.png",
-        "linkSourceText": "Get Quote"
-    }]        
+    "languageCode": "en-US",    
+    "titleCompanyMaintenance": "Group Join Systems Operation / Maintenance",
+    "subTitlecompanyMaintenanceitle": "Integrated security control",
+    "textCompanyMaintenance1": "To provide stable IT services to KB Financial Group affiliates, various security solutions such as web firewall (WAF), intrusion prevention system (IPS), and DDoS blocking are used to monitor, analyze, respond, and prevent various security threats in real-time 24x365. (24 hours a day, 365 days a year) to protect the information assets of KB Financial Group. In addition, before providing the homepage and mobile app services of KB Financial Group affiliates, we conduct regular preventive activities by inspecting vulnerable areas exposed to external intrusion.",
+    "titleCompanyService": "Bank IT Systems Operation Service",
+    "subTitleCompanyService": "Global financial business operation",
+    "textCompanyService1": "There is in charge of development and operation from the core business of the overseas branch and corporate IT system operated for KB Kookmin Bank's global expansion to non-face-to-face business in the digital sector. Local IT was established in Indonesia in line with KB Financial Group's global expansion strategy As an IT strategic asset that promotes KB Financial Group's global strategy, the corporation is advancing into the global ICT market and discovering digital financial business models.",
+    "titleCompanyOperation": "Group Company / External Organization IT Systems Operation",
+    "subTitleCompanyOperation": "KB Financial Group affiliates",
+    "textCompanyOperation1": "We provide 24*365 reliable IT services ranging from kb financial holdings, securities, damage insurance, national card, capital, life insurance, etc. to system operation and management of KB Financial Group affiliates, core system to channel services such as call center, homepage, and various mobile apps."   
   },
   {
-    "languageCode": "id-ID",
-    "title": "Solusi Kami",
-    "cards": [{
-        "code": "ae",
-        "title": "Pengembangan Android",
-        "text1": "Beberapa contoh teks cepat untuk membangun judul kartu dan membuat sebagian besar konten kartu.",
-        "imgsrc": "Pictures/img1.png",
-        "linkSourceText": "Ayo Mulai"
-    }, {
-        "code": "wd",
-        "title": "Pengembangan Web",
-        "text1": "Beberapa contoh teks cepat untuk membangun judul kartu dan membuat sebagian besar konten kartu.",
-        "imgsrc": "Pictures/img2.png",
-        "linkSourceText": "Ayo Mulai"
-    }, {
-        "code": "dm",
-        "title": "Manajemen Database",
-        "text1": "Beberapa contoh teks cepat untuk membangun judul kartu dan membuat sebagian besar konten kartu.",
-        "imgsrc": "Pictures/img3.png",
-        "linkSourceText": "Ayo Mulai"
-    }, {
-        "code": "ba",
-        "title": "Anailisa Bisnis",
-        "text1": "Beberapa contoh teks cepat untuk membangun judul kartu dan membuat sebagian besar konten kartu.",
-        "imgsrc": "Pictures/img4.png",
-        "linkSourceText": "Ayo Mulai"
-    }, {
-        "code": "dmar",
-        "title": "Pemasaran Digital",
-        "text1": "Beberapa contoh teks cepat untuk membangun judul kartu dan membuat sebagian besar konten kartu.",
-        "imgsrc": "Pictures/img5.png",
-        "linkSourceText": "Ayo Mulai"
-    }, {
-        "code": "va",
-        "title": "Penciptaan Video",
-        "text1": "Beberapa contoh teks cepat untuk membangun judul kartu dan membuat sebagian besar konten kartu.",
-        "imgsrc": "Pictures/img6.png",
-        "linkSourceText": "Ayo Mulai"
-    }]        
+    "languageCode": "id-ID",    
+    "titleCompanyMaintenance": "Operasi / Pemeliharaan Sistem Gabung Grup",
+    "subTitlecompanyMaintenanceitle": "Kontrol keamanan terintegrasi",
+    "textCompanyMaintenance1": "Untuk menyediakan layanan TI yang stabil kepada afiliasi KB Financial Group, berbagai solusi keamanan seperti firewall web (WAF), sistem pencegahan intrusi (IPS), dan pemblokiran DDoS digunakan untuk memantau, menganalisis, merespons, dan mencegah berbagai ancaman keamanan secara real-time. 24x365. (24 jam sehari, 365 hari setahun) untuk melindungi aset informasi KB Financial Group. Selain itu, sebelum menyediakan layanan beranda dan aplikasi seluler dari afiliasi KB Financial Group, kami melakukan kegiatan pencegahan rutin dengan memeriksa area rentan yang terpapar gangguan eksternal.",
+    "titleCompanyService": "Layanan Operasi Sistem TI Bank",
+    "subTitleCompanyService": "Operasi bisnis keuangan global",
+    "textCompanyService1": "Ada yang bertanggung jawab atas pengembangan dan operasi dari bisnis inti cabang luar negeri dan sistem IT perusahaan yang dioperasikan untuk ekspansi global KB Kookmin Bank ke bisnis non-tatap muka di sektor digital. TI lokal didirikan di Indonesia sejalan dengan strategi ekspansi global KB Financial Group Sebagai aset strategis TI yang mempromosikan strategi global KB Financial Group, perusahaan ini maju ke pasar ICT global dan menemukan model bisnis keuangan digital.",
+    "titleCompanyOperation": "Grup Perusahaan / Organisasi Eksternal Operasi Sistem TI",
+    "subTitleCompanyOperation": "Afiliasi KB Financial Group",
+    "textCompanyOperation1": "Kami menyediakan layanan TI 24*365 yang andal mulai dari kepemilikan keuangan kb, sekuritas, asuransi kerusakan, kartu nasional, modal, asuransi jiwa, dll. hingga sistem operasi dan manajemen afiliasi KB Financial Group, sistem inti hingga layanan saluran seperti call center, beranda, dan berbagai aplikasi seluler."    
+  }
+  ,
+  {
+    "languageCode": "ko-KR",    
+    "titleCompanyMaintenance": "그룹조인시스템 운영/유지보수",
+    "subTitlecompanyMaintenanceitle": "통합보안관제",
+    "textCompanyMaintenance1": "KB금융그룹 계열사에 안정적인 IT서비스를 제공하기 위해 웹방화벽(WAF), 침입방지시스템(IPS), DDoS 차단 등 다양한 보안 솔루션을 활용하여 각종 보안 위협을 실시간으로 모니터링, 분석, 대응 및 차단합니다. 24x365. 365일 24시간 KB금융그룹의 정보자산을 보호합니다. 또한 KB금융그룹 계열사의 홈페이지 및 모바일 앱 서비스 제공에 앞서 외부 침입에 노출된 취약영역을 점검하여 정기적인 예방활동을 실시하고 있습니다.",
+    "titleCompanyService": "은행 IT 시스템 운영 서비스",
+    "subTitleCompanyService": "글로벌 금융사업 운영",
+    "textCompanyService1": "KB국민은행의 글로벌 진출을 위해 운영되는 해외지점의 핵심사업과 기업의 IT시스템에서 디지털 부문의 비대면 사업으로의 개발 및 운영을 담당하고 있습니다. KB금융그룹의 글로벌 진출 전략에 맞춰 인도네시아 현지 IT 설립 KB금융그룹의 글로벌 전략을 추진하는 IT 전략 자산으로 글로벌 ICT 시장 진출 및 디지털 금융 비즈니스 모델 발굴에 박차를 가하고 있습니다.",
+    "titleCompanyOperation": "그룹사 / 외부조직 IT시스템 운영",
+    "subTitleCompanyOperation": "KB금융그룹 계열사",
+    "textCompanyOperation1": "KB금융지주, 증권, 손해보험, 국민카드, 캐피탈, 생명보험 등 KB금융그룹 계열사의 시스템 운영 및 관리, 핵심시스템, 콜센터, 홈페이지, 다양한 모바일 앱"
   }
 ]

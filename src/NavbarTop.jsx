@@ -1,23 +1,25 @@
 import React, { Component } from "react";
-import { NavLink } from "react-router-dom";
 import "./NavbarTop.css";
 
 class NavbarTop extends Component {
 
-  state = {
-    languageCode: "en"
+  constructor(props) {
+    super(props);
+    this.state = {
+      languageCode: "en-US"
+    }
   }
-
+  
   changeLanguage = (val) => {
-      this.props.changeLanguage(val);
+    this.props.changeLanguage(val);
   }
 
   onLanguageClick = (value) => {
-      this.setState({
-          languageCode: value
-      }, () => {
-          this.changeLanguage(this.state.languageCode);
-      });
+    this.setState({
+      languageCode: value
+    }, () => {
+      this.changeLanguage(this.state.languageCode);
+    });
   }
 
   render() {
@@ -36,6 +38,9 @@ class NavbarTop extends Component {
                       <button className="button-no-background" onClick={() => this.onLanguageClick("id-ID")}>ID</button>
                     </li>
                     <li className="nav-item">
+                      <button className="button-no-background" onClick={() => this.onLanguageClick("ko-KR")}>KO</button>
+                    </li>
+                    <li className="nav-item">
                       <button className="button-no-background">Login</button>
                     </li>
                   </ul>
@@ -43,7 +48,7 @@ class NavbarTop extends Component {
              </nav>
            </div>
           </div>
-        </div>
+        </div>        
       </>
     );
   }

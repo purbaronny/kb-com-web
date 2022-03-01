@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Common from "./Common";
-import web from "../src/Pictures/img2.png";
+import web from "../src/Pictures/pic1.jpeg";
 
 class Home extends Component {
   state = {
@@ -23,7 +23,28 @@ class Home extends Component {
   }
 
   componentDidMount() {
-    
+    fetch("./homeData.json")
+      .then(response => response.json())
+      .then(result => {        
+        for (var i = 0; i < result.length; i++) {
+          var obj = result[i];
+          if(obj.languageCode === this.props.languageCode) {
+            this.setState({
+              languageCode: obj.languageCode,
+              text1: obj.text1,
+              text2: obj.text2,
+              text3: obj.text3
+             });
+             break;  
+          }
+        }
+        // console.log(result);
+        // console.log(this.state.text1);
+    });
+  }
+
+  static getDerivedStateFromProps(props, state) {
+    return {languageCode: props.languageCode };
   }
 
   componentDidUpdate(prevProps) {
@@ -32,7 +53,7 @@ class Home extends Component {
       .then(result => {        
         for (var i = 0; i < result.length; i++) {
           var obj = result[i];
-          if(obj.languageCode == this.props.languageCode) {
+          if(obj.languageCode === this.props.languageCode) {
             this.setState({
               languageCode: obj.languageCode,
               text1: obj.text1,
@@ -50,7 +71,7 @@ class Home extends Component {
   render() {
     return (
       <>
-        <Common name={this.state.text1} contentText={this.state.text2} imgsrc={web} visit="/service" btname={this.state.text3} />
+        <Common name={this.state.text1} contentText={this.state.text2} imgsrc={web} visit="/visionAndMission" btname={this.state.text3} />
       </>
     );
   }

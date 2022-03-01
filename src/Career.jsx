@@ -9,11 +9,54 @@ import img6 from "../src/Pictures/img6.png";
 
 class Career extends Component {
 
+    constructor(props) {
+        super(props);
+        this.state = {
+            languageCode: "en-US",
+            title: "Career"
+        }
+    }
+
+    changeLanguage = (val) => {
+        this.props.changeLanguage(val);
+    }
+    
+    onLanguageClick = (value) => {
+        this.setState({
+            languageCode: value
+        }, () => {
+            this.changeLanguage(this.state.languageCode);
+        });
+    }
+    
+    static getDerivedStateFromProps(props, state) {
+        return {languageCode: props.languageCode };
+    }
+    
+    componentDidUpdate(prevProps) {
+        fetch("./careerData.json")
+          .then(response => response.json())
+          .then(result => {        
+            for (var i = 0; i < result.length; i++) {
+              var obj = result[i];
+              if(obj.languageCode === this.props.languageCode) {
+                this.setState({
+                    languageCode: obj.languageCode,
+                    title: obj.title
+                 });
+                 break;  
+              }
+            }
+            // console.log(result);
+            // console.log(this.state.text1);
+        });
+    }
+
     render() {
         return (
             <>
                 <div className="my-5">
-                    <h1 className="text-center">Career</h1>
+                    <h1 className="text-center">{this.state.title}</h1>
                 </div>
 
                 <div className="container-fluid mb-5">
