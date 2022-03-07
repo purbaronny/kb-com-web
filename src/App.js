@@ -15,6 +15,7 @@ import Navbar from "./Navbar";
 import NavbarTop from "./NavbarTop";
 import Career from "./Career";
 import ContactUs from "./ContactUs";
+import DetailCareer from "./DetailCareer";
 
 class App extends Component {
 
@@ -111,6 +112,7 @@ class App extends Component {
             <Route exact path="/about" element={<About />} />
             <Route exact path="/service" element={<Service languageCode={this.state.name}/>} />
             <Route exact path="/contact" element={<Contact />} />
+            <Route exact path="/detail" element={<DetailCareer/>}/>
           </Routes>
         </BrowserRouter>
       </>

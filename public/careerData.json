@@ -1,12 +1,183 @@
 [
     {
         "languageCode": "en-US",
-        "title": "Career"
+        "title": "Career",
+        "cards": [{
+            "code": "ae",
+            "title": "Android Development",
+            "text1": "Some quick example text to build on the card title and make up the bulk of the card's content.",
+            "imgsrc": "Pictures/img1.png",
+            "linkSourceText": "Get Quote",
+            "createdAt":"2022-02-02T10:23:59.000Z",
+            "expiredAt":"2022-04-03T12:59:59.000Z",
+            "enabled":true
+        }, {
+            "code": "wd",
+            "title": "Web Development",
+            "text1": "Some quick example text to build on the card title and make up the bulk of the card's content.",
+            "imgsrc": "Pictures/img2.png",
+            "linkSourceText": "Get Quote",
+            "createdAt":"2021-11-08T10:22:43.819Z",
+            "expiredAt":"2022-03-09T10:22:43.819Z",
+            "enabled":true
+        }, {
+            "code": "dm",
+            "title": "Database Management",
+            "text1": "Some quick example text to build on the card title and make up the bulk of the card's content.",
+            "imgsrc": "Pictures/img3.png",
+            "linkSourceText": "Get Quote",
+            "createdAt":"2022-03-29T10:22:43.819Z",
+            "expiredAt":"2022-10-03T10:22:43.819Z",
+            "enabled":true
+        }, {
+            "code": "ba",
+            "title": "Business Analytics",
+            "text1": "Some quick example text to build on the card title and make up the bulk of the card's content.",
+            "imgsrc": "Pictures/img4.png",
+            "linkSourceText": "Get Quote",
+            "createdAt":"2020-10-10T10:22:43.819Z",
+            "expiredAt":"2022-09-15T10:22:43.819Z",
+            "enabled":true
+        }, {
+            "code": "dmar",
+            "title": "Digital Marketing",
+            "text1": "Some quick example text to build on the card title and make up the bulk of the card's content.",
+            "imgsrc": "Pictures/img5.png",
+            "linkSourceText": "Get Quote",
+            "createdAt":"2020-09-03T10:22:43.819Z",
+            "expiredAt":"2022-09-10T10:22:43.819Z",
+            "enabled":true
+        }, {
+            "code": "va",
+            "title": "Video Creation",
+            "text1": "Some quick example text to build on the card title and make up the bulk of the card's content.",
+            "imgsrc": "Pictures/img6.png",
+            "linkSourceText": "Get Quote",
+            "createdAt":"2021-11-30T10:22:43.819Z",
+            "expiredAt":"2022-03-05T10:22:43.819Z",
+            "enabled":false
+            
+        }]
     }, {
         "languageCode": "id-ID",
-        "title": "Karir"
+        "title": "Karir",
+        "cards": [{
+            "code": "ae",
+            "title": "Pengembangan Android",
+            "text1": "Beberapa contoh teks cepat untuk membangun judul kartu dan membuat sebagian besar konten kartu.",
+            "imgsrc": "Pictures/img1.png",
+            "linkSourceText": "Ayo Mulai",
+            "createdAt":"2022-02-02T10:23:59.000Z",
+            "expiredAt":"2022-04-03T12:59:59.000Z",
+            "enabled":true
+        
+        }, {
+            "code": "wd",
+            "title": "Pengembangan Web",
+            "text1": "Beberapa contoh teks cepat untuk membangun judul kartu dan membuat sebagian besar konten kartu.",
+            "imgsrc": "Pictures/img2.png",
+            "linkSourceText": "Ayo Mulai",
+            "createdAt":"2021-11-08T10:22:43.819Z",
+            "expiredAt":"2022-03-09T10:22:43.819Z",
+            "enabled":true
+            
+        }, {
+            "code": "dm",
+            "title": "Manajemen Database",
+            "text1": "Beberapa contoh teks cepat untuk membangun judul kartu dan membuat sebagian besar konten kartu.",
+            "imgsrc": "Pictures/img3.png",
+            "linkSourceText": "Ayo Mulai",
+            "createdAt":"2022-03-29T10:22:43.819Z",
+            "expiredAt":"2022-10-03T10:22:43.819Z",
+            "enabled":true
+        }, {
+            "code": "ba",
+            "title": "Anailisa Bisnis",
+            "text1": "Beberapa contoh teks cepat untuk membangun judul kartu dan membuat sebagian besar konten kartu.",
+            "imgsrc": "Pictures/img4.png",
+            "linkSourceText": "Ayo Mulai",
+            "createdAt":"2020-10-10T10:22:43.819Z",
+            "expiredAt":"2022-09-15T10:22:43.819Z",
+            "enabled":true
+        }, {
+            "code": "dmar",
+            "title": "Pemasaran Digital",
+            "text1": "Beberapa contoh teks cepat untuk membangun judul kartu dan membuat sebagian besar konten kartu.",
+            "imgsrc": "Pictures/img5.png",
+            "linkSourceText": "Ayo Mulai",
+            "createdAt":"2020-09-03T10:22:43.819Z",
+            "expiredAt":"2022-09-10T10:22:43.819Z",
+            "enabled":true
+        }, {
+            "code": "va",
+            "title": "Penciptaan Video",
+            "text1": "Beberapa contoh teks cepat untuk membangun judul kartu dan membuat sebagian besar konten kartu.",
+            "imgsrc": "Pictures/img6.png",
+            "linkSourceText": "Ayo Mulai",
+            "createdAt":"2021-11-30T10:22:43.819Z",
+            "expiredAt":"2022-03-05T10:22:43.819Z",
+            "enabled":false
+        }]            
+
     }, {
         "languageCode": "ko-KR",
-        "title": "직업"
+        "title": "직업",
+        "cards": [{
+            "code": "ae",
+            "title": "Android Development",
+            "text1": "Some quick example text to build on the card title and make up the bulk of the card's content.",
+            "imgsrc": "Pictures/img1.png",
+            "linkSourceText": "Get Quote",
+            "createdAt":"2022-02-02T10:23:59.000Z",
+            "expiredAt":"2022-04-03T12:59:59.000Z",
+            "enabled":true
+        }, {
+            "code": "wd",
+            "title": "Web Development",
+            "text1": "Some quick example text to build on the card title and make up the bulk of the card's content.",
+            "imgsrc": "Pictures/img2.png",
+            "linkSourceText": "Get Quote",
+            "createdAt":"2021-11-08T10:22:43.819Z",
+            "expiredAt":"2022-03-09T10:22:43.819Z",
+            "enabled":true
+            
+        }, {
+            "code": "dm",
+            "title": "Database Management",
+            "text1": "Some quick example text to build on the card title and make up the bulk of the card's content.",
+            "imgsrc": "Pictures/img3.png",
+            "linkSourceText": "Get Quote",
+            "createdAt":"2022-03-29T10:22:43.819Z",
+            "expiredAt":"2022-10-03T10:22:43.819Z",
+            "enabled":true
+        }, {
+            "code": "ba",
+            "title": "Business Analytics",
+            "text1": "Some quick example text to build on the card title and make up the bulk of the card's content.",
+            "imgsrc": "Pictures/img4.png",
+            "linkSourceText": "Get Quote",
+            "createdAt":"2020-10-10T10:22:43.819Z",
+            "expiredAt":"2022-09-15T10:22:43.819Z",
+            "enabled":true
+        }, {
+            "code": "dmar",
+            "title": "Digital Marketing",
+            "text1": "Some quick example text to build on the card title and make up the bulk of the card's content.",
+            "imgsrc": "Pictures/img5.png",
+            "linkSourceText": "Get Quote",
+            "createdAt":"2020-09-03T10:22:43.819Z",
+            "expiredAt":"2022-09-10T10:22:43.819Z",
+            "enabled":true
+        }, {
+            "code": "va",
+            "title": "Video Creation",
+            "text1": "Some quick example text to build on the card title and make up the bulk of the card's content.",
+            "imgsrc": "Pictures/img6.png",
+            "linkSourceText": "Get Quote",
+            "createdAt":"2021-11-30T10:22:43.819Z",
+            "expiredAt":"2022-03-05T10:22:43.819Z",
+            "enabled":false
+        }]
     }
+
 ]
