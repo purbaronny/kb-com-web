@@ -1,15 +1,16 @@
-import React, { Component } from "react";
-import "./CardNoPicture.css";
+import React, { Component } from 'react';
 
-class CardNoPicture extends Component {
+import "./DetailCareer.css";
 
-  constructor(props) {
-    super(props);
-  }
-  
-  render() {
-    return (
-        <div className="col-md-4 col-10 mx-auto">
+class DetailCareer extends Component{
+
+    constructor(props) {
+        super(props);
+    }
+
+    render(){
+        return (
+            <div className="col-md-4 col-10 mx-auto">
           <div className="card">
             <div className="card-header">
                 <h5 className="card-title">{this.props.title}</h5>
@@ -21,8 +22,7 @@ class CardNoPicture extends Component {
             </div>
           </div>
         </div>
-    );    
-  }
+        );
+    }
 }
-
-export default CardNoPicture;
+export default DetailCareer;
