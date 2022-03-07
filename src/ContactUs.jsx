@@ -44,7 +44,7 @@ class ContactUs extends Component {
               var obj = result[i];
               if(obj.languageCode === this.props.languageCode) {
                 this.setState({
-                    languageCode: obj.languageCode,
+            languageCode: obj.languageCode,
                     titleContactUs: obj.titleContactUs,
                     labelEnterYourName: obj.labelEnterYourName,
                     textEnterYourName: obj.textEnterYourName,
@@ -56,10 +56,12 @@ class ContactUs extends Component {
                     textTypeYourMessageHere: obj.textTypeYourMessageHere,
                     labelSubmitform: obj.labelSubmitform
                  });
+                 //console.log(result);
                  break;  
               }
+
             }
-            // console.log(result);
+        
             // console.log(this.state.text1);
         });
     }
