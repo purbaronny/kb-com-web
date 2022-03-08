@@ -1,11 +1,5 @@
 import { Component } from "react";
 import Card from "./Card";
-import img1 from "../src/Pictures/img1.png";
-import img2 from "../src/Pictures/img2.png";
-import img3 from "../src/Pictures/img3.png";
-import img4 from "../src/Pictures/img4.png";
-import img5 from "../src/Pictures/img5.png";
-import img6 from "../src/Pictures/img6.png";
 
 //const { Performance } = require("w3c-hr-time");
 //const performance=new Performance(); 
@@ -18,62 +12,87 @@ class Career extends Component {
             languageCode: "en-US",
             title: "Career",
             cards: [{
-                code: "ae",
-                title: "Android Development",
+                code: "IES",
+                title: "IT Engineer Senior",
                 text1: "Some quick example text to build on the card title and make up the bulk of the card's content.",
-                imgsrc: "Pictures/img1.png",
-                linkSourceText: "Get Quote",
+                imgsrc: "Pictures/IT-Engineer-Senior.jpeg",
+                linkSourceText: "Detail",
                 createdAt:"2022-02-02T10:23:59.000Z",
                 expiredAt:"2022-04-03T12:59:59.000Z",
-                enabled:true
+                enabled:true,
+                vacancy:25,
+                requirements:[
+                    "Experience in using at least one of these JAVA, C, Spring Framework, JPA, Oracle, MySQL",
+                    "Experience developing Package Solution such as Temenos Transact, Oracle Flexcube, Finastra Fusion, etc)",
+                    "Experience in customer requirements analysis and project implementation",
+                    "Experience in core banking and finance SI",
+                    "Application Architecture and MSA design/develop" 
+                ],
+                job_description:[
+                    "Package Customizing Corebanking, Payment Gateway, Integrate Digital Sector, Banking Terminal",
+                    "Work Specialization Customizing General Management (Purchase Management Only), IT Operation Management (ITSM Service), Credit Card System, Digital Contact Management (AML/FDS)",
+                    "In-house (Information System, Credit Synthesis System, General Management, Core Banking (Swamitra))"
+                ]
             }, {
-                code: "wd",
-                title: "Web Development",
+                code: "IIS",
+                title: "IT Infrastructure Senior",
                 text1: "Some quick example text to build on the card title and make up the bulk of the card's content.",
-                imgsrc: "Pictures/img2.png",
-                linkSourceText: "Get Quote",
+                imgsrc: "Pictures/IT-Infrastructure-Senior.jpeg",
+                linkSourceText: "Detail",
                 createdAt:"2021-11-08T10:22:43.819Z",
                 expiredAt:"2022-03-09T10:22:43.819Z",
-                enabled:true
+                enabled:true,
+                vacancy:10,
+                requirements:[
+                    "New Server Configuration (I/O and file system design, environment configuration)",
+                    "Storage allocation, network configuration, DB link, Security vulnerability",
+                    "System AS-IS analaysis, construction plan, implementation plan, establishing test plan"
+                ],
+                job_description:[
+                    "Infrastructure (Transportation, IT Operation Management (Security Control S/W), Banking Terminal, Infrastructure S/W, Integrated Authentification/Authority Management"
+                ]
+    
             }, {
-                code: "dm",
-                title: "Database Management",
+                code: "IEJ",
+                title: "IT Engineer Junior",
                 text1: "Some quick example text to build on the card title and make up the bulk of the card's content.",
-                imgsrc: "Pictures/img3.png",
-                linkSourceText: "Get Quote",
+                imgsrc: "Pictures/IT-Engineer-Junior.jpeg",
+                linkSourceText: "Detail",
                 createdAt:"2022-03-29T10:22:43.819Z",
                 expiredAt:"2022-10-03T10:22:43.819Z",
-                enabled:true
+                enabled:true,
+                vacancy:20,
+                requirements:[
+                    "Experience in using at least one of these JAVA, C, Spring Framework, JPA, Oracle, MySQL",
+                    "Experience developing Package Solution such as (Temenos Transact, Oracle Flexcube, Finastra Fusion, etc)",
+                    "Experience in customer requirements analysis and project implementation",
+                    "Experience in core banking and finance SI",
+                    "Application Architecture and MSA design/develop"
+                ],
+                job_description:[
+                    "Package Customizing Corebanking, Payment Gateway, Integrate Digital Sector, Banking Terminal",   
+                    "Work Specialization Customizing General Management (Purchase Management Only), IT Operation Management (ITSM Service), Credit Card System, Digital Contact Management (AML/FDS)",
+                    "In-house (Information System, Credit Synthesis System, General Management, Core Banking (Swamitra))"
+                ]
             }, {
-                code: "ba",
-                title: "Business Analytics",
+                code: "IIJ",
+                title: "IT Infrastructure Junior",
                 text1: "Some quick example text to build on the card title and make up the bulk of the card's content.",
-                imgsrc: "Pictures/img4.png",
-                linkSourceText: "Get Quote",
+                imgsrc: "Pictures/IT-Infrastructure-Junior.jpeg",
+                linkSourceText: "Detail",
                 createdAt:"2020-10-10T10:22:43.819Z",
                 expiredAt:"2022-09-15T10:22:43.819Z",
-                enabled:true
-            }, {
-                code: "dmar",
-                title: "Digital Marketing",
-                text1: "Some quick example text to build on the card title and make up the bulk of the card's content.",
-                imgsrc: "Pictures/img5.png",
-                linkSourceText: "Get Quote",
-                createdAt:"2020-09-03T10:22:43.819Z",
-                expiredAt:"2022-09-10T10:22:43.819Z",
-                enabled:true
-            }, {
-                code: "va",
-                title: "Video Creation",
-                text1: "Some quick example text to build on the card title and make up the bulk of the card's content.",
-                imgsrc: "Pictures/img6.png",
-                linkSourceText: "Get Quote",
-                createdAt:"2021-11-30T10:22:43.819Z",
-                expiredAt:"2022-03-01T10:22:43.819Z",
-                enabled:false
-                
+                enabled:true,
+                vacancy:15,
+                requirements:[
+                    "New Server Configuration (I/O and file system design, environment configuration)",
+                    "Storage allocation, network configuration, DB link, Security vulnerability",
+                    "System AS-IS analaysis, construction plan, implementation plan, establishing test plan"
+                ],
+                job_description:[
+                    "Infrastructure (Transportation, IT Operation Management (Security Control S/W), Banking Terminal, Infrastructure S/W, Integrated Authentification/Authority Management "
+                ]
             }]
-        
         }
     }
 
@@ -144,7 +163,7 @@ class Career extends Component {
                     <div className="col-10 mx-auto">
                         <div className="row gy-4">
                             {this.state.cards.map((card => 
-                                <Card key={card.code} title={ card.title} imgsrc={card.imgsrc} text1="25 applicant" linkSourceText="Detail"/>
+                                <Card code={card.code} key={card.code} title={ card.title} imgsrc={card.imgsrc} text1={`${card.vacancy} vacancies`} linkSourceText={card.linkSourceText}/>
                             ))}
                         </div>
                     </div>
