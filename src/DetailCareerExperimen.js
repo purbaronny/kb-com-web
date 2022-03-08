@@ -32,9 +32,8 @@ export default function DetailCareerExperimen() {
                 <h5 className="card-title">{id}</h5>
             </div>
             <div className="card-body">
-              <h5 className="card-title">{id}</h5>
-              <p className="card-text">{id}</p>
-              <p>{data && data.length>0 && data.map((item)=><p>{item.about}</p>)}</p>
+              {data && data.length>0 && data.map((item)=><p className="card-text">{item.languageCode}</p>)}
+                <p>{data && data.length>0 && data.map((item)=><p>{item.about}</p>)}</p>
             </div>
           </div>
         </div>
