@@ -1,5 +1,8 @@
+import React, { useState } from "react";
 import { Component } from "react";
 import { NavLink } from "react-router-dom";
+import emailjs from "emailjs-com";
+import Contact from "./Contact";
 
 class ContactUs extends Component {
 
@@ -8,7 +11,7 @@ class ContactUs extends Component {
         this.state = {
             languageCode: "en-US",
             titleContactUs: "Contact Us",
-            labelEnterYourName: "Enter Full Name",
+            labelEnterYourName: "Enter your Full Name",
             textEnterYourName: "Enter Full Name",
             labelContactNumber: "Contact Number",
             textContactNumber: "+62-",
@@ -59,16 +62,40 @@ class ContactUs extends Component {
                  break;  
               }
             }
-            // console.log(result);
-            // console.log(this.state.text1);
+             console.log(result);
+             console.log(this.state.text1);
         });
     }
 
     onClickButton(event) {
-        event.preventDefault();
+        //event.preventDefault();
     }
 
     render() {
+
+        const Result =()=>{
+            return(
+        
+              <div className="text-center">
+                <p>Your message has successfully sent</p>
+              </div>
+                
+            );
+        };
+        
+    //const[result,showResult]=useState(false);
+    function sendEmail(e){
+        e.preventDefault();
+
+    emailjs.sendForm('service_smbfjbr','template_hogphgu',e.target,'Fa5m0dy7CLzOz9yud')
+        .then((result)=>{
+            console.log(result.text);
+        },(error)=>{
+            console.log(error.text);
+        });
+        e.target.reset() 
+        //showResult(true);    
+    } 
         return (
             <>
                 <section id="header" className="d-flex align-items-center">
@@ -81,22 +108,22 @@ class ContactUs extends Component {
 
                                 <div className="row">
                                     <div className="col-md-6 pt-5 pt-lg-0 order-2 order-lg-1 d-flex justify-content-center flex-column">
-                                        <form>
+                                        <form onSubmit={sendEmail}>
                                             <div className="form-group">
                                                 <label for="exampleFormControlInput1">{this.state.labelEnterYourName}</label>
-                                                <input type="text" className="form-control" id="exampleFormControlInput1" placeholder={this.state.textEnterYourName} />
+                                                <input type="text" className="form-control" id="exampleFormControlInput1" placeholder={this.state.textEnterYourName} name="name"/>
                                             </div>
                                             <div className="form-group pt-3">
                                                 <label for="exampleFormControlInput1">{this.state.labelContactNumber}</label>
-                                                <input type="text" className="form-control" id="exampleFormControlInput1" placeholder={this.state.textContactNumber} />
+                                                <input type="text" className="form-control" id="exampleFormControlInput1" placeholder={this.state.textContactNumber} name="no_telp" />
                                             </div>
                                             <div className="form-group pt-3">
                                                 <label for="exampleFormControlInput1">{this.state.labelEmailAddress}</label>
-                                                <input type="email" className="form-control" id="exampleFormControlInput1" placeholder={this.state.textEmailAddress} />
+                                                <input type="email" className="form-control" id="exampleFormControlInput1" placeholder={this.state.textEmailAddress} name="email" />
                                             </div>
                                             <div className="form-group pt-3">
                                                 <label for="exampleFormControlTextarea1">{this.state.labelTypeYourMessageHere}</label>
-                                                <textarea className="form-control" id="exampleFormControlTextarea1" rows="3" placeholder={this.state.textTypeYourMessageHere} />
+                                                <textarea className="form-control" id="exampleFormControlTextarea1" rows="3" placeholder={this.state.textTypeYourMessageHere} name="message" />
                                             </div>
                                             <div className="col-12 pt-3">
                                                 <button onClick={this.onClickButton} className="btn btn-outline-primary" type="submit">{this.state.labelSubmitform}</button>
