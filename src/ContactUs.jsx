@@ -47,7 +47,7 @@ class ContactUs extends Component {
               var obj = result[i];
               if(obj.languageCode === this.props.languageCode) {
                 this.setState({
-                    languageCode: obj.languageCode,
+            languageCode: obj.languageCode,
                     titleContactUs: obj.titleContactUs,
                     labelEnterYourName: obj.labelEnterYourName,
                     textEnterYourName: obj.textEnterYourName,
@@ -59,11 +59,15 @@ class ContactUs extends Component {
                     textTypeYourMessageHere: obj.textTypeYourMessageHere,
                     labelSubmitform: obj.labelSubmitform
                  });
+                 //console.log(result);
                  break;  
               }
+
             }
              console.log(result);
              console.log(this.state.text1);
+        
+            // console.log(this.state.text1);
         });
     }
 
@@ -87,14 +91,14 @@ class ContactUs extends Component {
     function sendEmail(e){
         e.preventDefault();
 
-    emailjs.sendForm('service_smbfjbr','template_hogphgu',e.target,'Fa5m0dy7CLzOz9yud')
-        .then((result)=>{
-            console.log(result.text);
-        },(error)=>{
-            console.log(error.text);
-        });
-        e.target.reset() 
-        //showResult(true);    
+        emailjs.sendForm('service_smbfjbr','template_hogphgu',e.target,'Fa5m0dy7CLzOz9yud')
+            .then((result)=>{
+                console.log(result.text);
+            },(error)=>{
+                console.log(error.text);
+            });
+            e.target.reset() 
+            //showResult(true);    
     } 
         return (
             <>

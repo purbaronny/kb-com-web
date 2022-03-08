@@ -11,7 +11,6 @@ class Card extends Component {
   
   render() {
     return (
-      <>      
         <div className="col-md-4 col-10 mx-auto">
           <div className="card">
             <img src={this.props.imgsrc} className="card-img-top" alt="..." />
@@ -19,13 +18,12 @@ class Card extends Component {
               <h5 className="card-title">{this.props.title}</h5>
               <p className="card-text">{this.props.text1}
               </p>
-              <NavLink to="/contact" className="btn btn-primary">
+              <NavLink to="/detail" className="btn btn-primary">
                 {this.props.linkSourceText}
               </NavLink>
             </div>
           </div>
         </div>
-      </>
     );    
   }
 }
