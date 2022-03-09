@@ -163,7 +163,9 @@ class Career extends Component {
                     <div className="col-10 mx-auto">
                         <div className="row gy-4">
                             {this.state.cards.map((card => 
-                                <Card code={card.code} key={card.code} title={ card.title} imgsrc={card.imgsrc} text1={`${card.vacancy} vacancies`} linkSourceText={card.linkSourceText}/>
+                                <Card code={card.code} key={card.code} title={ card.title} 
+                                imgsrc={card.imgsrc} text1={`${card.vacancy} applicant`} linkSourceText={card.linkSourceText}
+                                languageCode={this.state.languageCode}/>
                             ))}
                         </div>
                     </div>

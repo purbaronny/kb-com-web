@@ -113,7 +113,7 @@ class App extends Component {
             <Route exact path="/about" element={<About />} />
             <Route exact path="/service" element={<Service languageCode={this.state.name}/>} />
             <Route exact path="/contact" element={<Contact />} />
-            <Route path="/career/:id" element={<DetailCareerExperimen/>}/>
+            <Route path="/career/:id/:languageCode" element={<DetailCareerExperimen/>}/>
           </Routes>
         </BrowserRouter>
       </>

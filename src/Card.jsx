@@ -20,7 +20,7 @@ class Card extends Component {
               <h5 className="card-title">{this.props.title}</h5>
               <p className="card-text">{this.props.text1}
               </p>
-              <Link to={`/career/${this.props.code}`} className="btn btn-primary" key={this.props.code}> 
+              <Link to={`/career/${this.props.code}/${this.props.languageCode}`} className="btn btn-primary" key={this.props.code}> 
                 {this.props.linkSourceText}
               </Link>
             </div>
