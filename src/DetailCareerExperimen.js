@@ -6,19 +6,18 @@ export default function DetailCareerExperimen() {
     //const [name,setName] = useState('default name');
     const {id}=useParams();
     console.log(id);
-    const [data,setData]=useState(null);
     
-    async function fetchData(){
+    const fetchData = () =>{
         fetch('/careerData.json')
-        .then(function(response){
-            console.log(response.body);
-            return response.json();
-        });
+        .then(response=>response.json())
+        .then(data=>console.log(data));
     }
 
     useEffect(()=>{
         fetchData()
     },[]);
+    
+    const [data,setData]=useState([]);
     
     return (
         <div className="col-md-4 col-10 mx-auto">
@@ -29,6 +28,7 @@ export default function DetailCareerExperimen() {
             <div className="card-body">
               <h5 className="card-title">{data}</h5>
               <p className="card-text">{id}</p>
+
             </div>
           </div>
         </div>
