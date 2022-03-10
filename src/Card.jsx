@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import { NavLink } from "react-router-dom";
+import {Link} from "react-router-dom";
+import DetailCareer from "./DetailCareer";
 
 
 class Card extends Component {
@@ -18,9 +20,9 @@ class Card extends Component {
               <h5 className="card-title">{this.props.title}</h5>
               <p className="card-text">{this.props.text1}
               </p>
-              <NavLink to="/detail" className="btn btn-primary">
+              <Link to={`/career/${this.props.code}/${this.props.languageCode}`} className="btn btn-primary" key={this.props.code}> 
                 {this.props.linkSourceText}
-              </NavLink>
+              </Link>
             </div>
           </div>
         </div>
