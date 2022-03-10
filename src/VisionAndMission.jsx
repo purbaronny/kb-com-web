@@ -129,7 +129,7 @@ class VisionAndMission extends Component {
         return (
             <>
                 <div className="target">
-                    <div id="companyOverview">
+                    <div className="companyOverview">
                         <div className="my-5">
                             <h1 className="text-center">{this.state.titleCompanyOverview}</h1>
                         </div>
@@ -152,7 +152,7 @@ class VisionAndMission extends Component {
                             </div>
                         </div>
                     </div>
-                    <div id="visionMision">
+                    <div id="visionMision" className="Header">
                         <div className="my-5">
                             <h1 className="text-center">{this.state.visionTitle}</h1>
                         </div>
