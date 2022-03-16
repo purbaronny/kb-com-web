@@ -3,6 +3,7 @@ import { Component } from "react";
 import { NavLink } from "react-router-dom";
 import emailjs from "emailjs-com";
 import Contact from "./Contact";
+import Footer from "./Footer";
 
 class ContactUs extends Component {
 
@@ -26,7 +27,7 @@ class ContactUs extends Component {
     changeLanguage = (val) => {
         this.props.changeLanguage(val);
     }
-    
+
     onLanguageClick = (value) => {
         this.setState({
             languageCode: value
@@ -34,41 +35,41 @@ class ContactUs extends Component {
             this.changeLanguage(this.state.languageCode);
         });
     }
-    
+
     static getDerivedStateFromProps(props, state) {
-        return {languageCode: props.languageCode };
+        return { languageCode: props.languageCode };
     }
-    
+
     componentDidUpdate(prevProps) {
         fetch("./contactUs.json")
-          .then(response => response.json())
-          .then(result => {        
-            for (var i = 0; i < result.length; i++) {
-              var obj = result[i];
-              if(obj.languageCode === this.props.languageCode) {
-                this.setState({
-                    languageCode: obj.languageCode,
-                    titleContactUs: obj.titleContactUs,
-                    labelEnterYourName: obj.labelEnterYourName,
-                    textEnterYourName: obj.textEnterYourName,
-                    labelContactNumber: obj.labelContactNumber,
-                    textContactNumber: obj.textContactNumber,
-                    labelEmailAddress: obj.labelEmailAddress,
-                    textEmailAddress: obj.textEmailAddress,
-                    labelTypeYourMessageHere: obj.labelTypeYourMessageHere,
-                    textTypeYourMessageHere: obj.textTypeYourMessageHere,
-                    labelSubmitform: obj.labelSubmitform
-                 });
-                 //console.log(result);
-                 break;  
-              }
+            .then(response => response.json())
+            .then(result => {
+                for (var i = 0; i < result.length; i++) {
+                    var obj = result[i];
+                    if (obj.languageCode === this.props.languageCode) {
+                        this.setState({
+                            languageCode: obj.languageCode,
+                            titleContactUs: obj.titleContactUs,
+                            labelEnterYourName: obj.labelEnterYourName,
+                            textEnterYourName: obj.textEnterYourName,
+                            labelContactNumber: obj.labelContactNumber,
+                            textContactNumber: obj.textContactNumber,
+                            labelEmailAddress: obj.labelEmailAddress,
+                            textEmailAddress: obj.textEmailAddress,
+                            labelTypeYourMessageHere: obj.labelTypeYourMessageHere,
+                            textTypeYourMessageHere: obj.textTypeYourMessageHere,
+                            labelSubmitform: obj.labelSubmitform
+                        });
+                        //console.log(result);
+                        break;
+                    }
 
-            }
-             console.log(result);
-             console.log(this.state.text1);
-        
-            // console.log(this.state.text1);
-        });
+                }
+                console.log(result);
+                console.log(this.state.text1);
+
+                // console.log(this.state.text1);
+            });
     }
 
     onClickButton(event) {
@@ -77,29 +78,29 @@ class ContactUs extends Component {
 
     render() {
 
-        const Result =()=>{
-            return(
-        
-              <div className="text-center">
-                <p>Your message has successfully sent</p>
-              </div>
-                
+        const Result = () => {
+            return (
+
+                <div className="text-center">
+                    <p>Your message has successfully sent</p>
+                </div>
+
             );
         };
-        
-    //const[result,showResult]=useState(false);
-    function sendEmail(e){
-        e.preventDefault();
 
-        emailjs.sendForm('service_smbfjbr','template_hogphgu',e.target,'Fa5m0dy7CLzOz9yud')
-            .then((result)=>{
-                console.log(result.text);
-            },(error)=>{
-                console.log(error.text);
-            });
-            e.target.reset() 
+        //const[result,showResult]=useState(false);
+        function sendEmail(e) {
+            e.preventDefault();
+
+            emailjs.sendForm('service_smbfjbr', 'template_hogphgu', e.target, 'Fa5m0dy7CLzOz9yud')
+                .then((result) => {
+                    console.log(result.text);
+                }, (error) => {
+                    console.log(error.text);
+                });
+            e.target.reset()
             //showResult(true);    
-    } 
+        }
         return (
             <>
                 <section id="header" className="d-flex align-items-center">
@@ -107,7 +108,7 @@ class ContactUs extends Component {
                         <div className="row">
                             <div className="col-10 mx-auto">
                                 <div className="my-5">
-                                    <h1 className="text-center">{this.state.titleContactUs}</h1>
+                                    <h1 className="text-center" style={{ color: "rgb(255, 188, 0)   " }}>{this.state.titleContactUs}</h1>
                                 </div>
 
                                 <div className="row">
@@ -115,7 +116,7 @@ class ContactUs extends Component {
                                         <form onSubmit={sendEmail}>
                                             <div className="form-group">
                                                 <label for="exampleFormControlInput1">{this.state.labelEnterYourName}</label>
-                                                <input type="text" className="form-control" id="exampleFormControlInput1" placeholder={this.state.textEnterYourName} name="name"/>
+                                                <input type="text" className="form-control" id="exampleFormControlInput1" placeholder={this.state.textEnterYourName} name="name" />
                                             </div>
                                             <div className="form-group pt-3">
                                                 <label for="exampleFormControlInput1">{this.state.labelContactNumber}</label>
@@ -135,7 +136,7 @@ class ContactUs extends Component {
                                         </form>
                                     </div>
 
-                                    <div className="col-lg-6 order-1 order-lg-2 header-img" style = {{display: "block"}}>
+                                    <div className="col-lg-6 order-1 order-lg-2 header-img" style={{ display: "block" }}>
                                         <p align="right">
                                             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.115363048713!2d106.84188341426903!3d-6.248525962920591!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f7fbe2991fbf%3A0xe46e220a647b07!2sL%E2%80%99Avenue%20Office%20%26%20Residence%20Jakarta!5e0!3m2!1sen!2sid!4v1646029842534!5m2!1sen!2sid" width="460" height="360" style={{ border: 0 }} loading="lazy"></iframe>
                                         </p>
@@ -144,7 +145,9 @@ class ContactUs extends Component {
                             </div>
                         </div>
                     </div>
+
                 </section>
+                <Footer />
             </>
         );
     }

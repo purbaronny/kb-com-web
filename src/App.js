@@ -24,69 +24,69 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      name : "en-US",
+      name: "en-US",
       languageCode: "en-US",
       text1: "Grow your business with",
       text2: "We're a team of talented developers that can help your business grow!",
       text3: "Get started"
     };
   }
-  
+
 
   onChangeLanguage = (value) => {
-   this.setState({
-     name: value,
-     languageCode: value
-   });
+    this.setState({
+      name: value,
+      languageCode: value
+    });
 
-   fetch("./homeData.json")
+    fetch("./homeData.json")
       .then(response => response.json())
-      .then(result => {        
+      .then(result => {
         for (var i = 0; i < result.length; i++) {
           var obj = result[i];
-          if(obj.languageCode === value) {
+          if (obj.languageCode === value) {
             this.setState({
-              name : value,
+              name: value,
               languageCode: obj.languageCode,
               text1: obj.text1,
               text2: obj.text2,
               text3: obj.text3
-             });
-             break;  
+            });
+            break;
           }
         }
         // console.log(result);
         // console.log(this.state.text1);
-    });
+      });
   }
 
   componentDidUpdate(prevProps) {
     // alert("siapa");
     fetch("./homeData.json")
       .then(response => response.json())
-      .then(result => {        
+      .then(result => {
         for (var i = 0; i < result.length; i++) {
           var obj = result[i];
-          if(obj.languageCode === this.props.languageCode) {
+          if (obj.languageCode === this.props.languageCode) {
             this.setState({
               name: obj.languageCode,
               languageCode: obj.languageCode,
               text1: obj.text1,
               text2: obj.text2,
               text3: obj.text3
-             });
-             break;  
+            });
+            break;
           }
         }
         // console.log(result);
         // console.log(this.state.text1);
-    }, () => {
-      // alert(this.state.name);
-    });
+      }, () => {
+        // alert(this.state.name);
+      });
     // alert(this.state.name);
   }
   componentDidMount() {
-  
+
     // alert("ahll");
   }
 
@@ -94,29 +94,33 @@ class App extends Component {
     // window.open("/visionAndMission", "_parent");
     // this.props.history.push(`/visionAndMission`);
   }
-  
+
   render() {
     return (
       <>
         <BrowserRouter>
           <NavbarTop changeLanguage={(value) => this.onChangeLanguage(value)}></NavbarTop>
-          <Navbar languageCode={this.state.name}/>   
-                    
+          <Navbar languageCode={this.state.name} />
+
           <Routes>
-            <Route exact path="/" element={<Home languageCode={this.state.name}/> } />
-            <Route exact path="/visionAndMission" element={<VisionAndMission languageCode={this.state.name}/>} />
-            <Route exact path="/award" element={<Award languageCode={this.state.name}/>} />
-            <Route exact path="/history" element={<History languageCode={this.state.name}/>} />
+            <Route exact path="/" element={<Home languageCode={this.state.name} />} />
+            <Route exact path="/visionAndMission" element={<VisionAndMission languageCode={this.state.name} />} />
+            <Route exact path="/award" element={<Award languageCode={this.state.name} />} />
+            <Route exact path="/history" element={<History languageCode={this.state.name} />} />
             <Route exact path="/pressRelease" element={<PressRelease />} />
-            <Route exact path="/event" element={<Event languageCode={this.state.name}/>} />
-            <Route exact path="/career" element={<Career languageCode={this.state.name}/>} />
-            <Route exact path="/contactUs" element={<ContactUs languageCode={this.state.name}/>} />
+            <Route exact path="/event" element={<Event languageCode={this.state.name} />} />
+            <Route exact path="/career" element={<Career languageCode={this.state.name} />} />
+            <Route exact path="/contactUs" element={<ContactUs languageCode={this.state.name} />} />
             <Route exact path="/about" element={<About />} />
-            <Route exact path="/service" element={<Service languageCode={this.state.name}/>} />
+            <Route exact path="/service" element={<Service languageCode={this.state.name} />} />
             <Route exact path="/contact" element={<Contact />} />
-            <Route path="/career/:id/:languageCode" element={<DetailCareerExperimen/>}/>
+            <Route path="/career/:id/:languageCode" element={<DetailCareerExperimen />} />
+
           </Routes>
+
         </BrowserRouter>
+
+
       </>
     );
   }

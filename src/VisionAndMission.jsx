@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import web from "../src/Pictures/Picture1.png";
 import CardNoPicture from "./CardNoPicture";
 import "./VisionAndMission.css";
-
+import Footer from "./Footer";
 class VisionAndMission extends Component {
 
     constructor(props) {
@@ -33,22 +33,22 @@ class VisionAndMission extends Component {
                 code: "il",
                 title: "Innovation-led",
                 text1: "Leading change and innovation through creative thinking and bold challenges as the 'First Mover' of future finance"
-            },{
+            }, {
                 code: "th",
                 title: "Trust Honesty",
                 text1: "Honesty and ethics are based on always maintain an attitude of good faith"
-            },{
+            }, {
                 code: "sg",
                 title: "Shared Growth",
                 text1: "Beyond the development of individuals and organizations, growing together and contributing to social development"
-            }]        
-          };
+            }]
+        };
     }
-       
+
     changeLanguage = (val) => {
         this.props.changeLanguage(val);
     }
-    
+
     onLanguageClick = (value) => {
         this.setState({
             languageCode: value
@@ -56,74 +56,74 @@ class VisionAndMission extends Component {
             this.changeLanguage(this.state.languageCode);
         });
     }
-    
+
     componentDidMount() {
         fetch("./visionAndMissionData.json")
             .then(response => response.json())
-            .then(result => {        
-            for (var i = 0; i < result.length; i++) {
-                var obj = result[i];
-                if(obj.languageCode === this.props.languageCode) {
-                this.setState({
-                    languageCode: obj.languageCode,
-                    titleCompanyOverview: obj.titleCompanyOverview,
-                    textCompanyOverview1: obj.textCompanyOverview1,
-                    textCompanyOverview2: obj.textCompanyOverview2,
-                    textCompanyOverview3: obj.textCompanyOverview3,
-                    visionTitle: obj.visionTitle,
-                    visionText1: obj.visionText1,
-                    missionTitle: obj.missionTitle,
-                    missionText1: obj.missionText1,
-                    titleBusinessDomain: obj.titleBusinessDomain,
-                    textBusinessDomain1: obj.textBusinessDomain1,
-                    titleAchievements: obj.titleAchievements,
-                    titleCoreValues: obj.titleCoreValues,
-                    cards: obj.cards   
-                });
-                break;  
+            .then(result => {
+                for (var i = 0; i < result.length; i++) {
+                    var obj = result[i];
+                    if (obj.languageCode === this.props.languageCode) {
+                        this.setState({
+                            languageCode: obj.languageCode,
+                            titleCompanyOverview: obj.titleCompanyOverview,
+                            textCompanyOverview1: obj.textCompanyOverview1,
+                            textCompanyOverview2: obj.textCompanyOverview2,
+                            textCompanyOverview3: obj.textCompanyOverview3,
+                            visionTitle: obj.visionTitle,
+                            visionText1: obj.visionText1,
+                            missionTitle: obj.missionTitle,
+                            missionText1: obj.missionText1,
+                            titleBusinessDomain: obj.titleBusinessDomain,
+                            textBusinessDomain1: obj.textBusinessDomain1,
+                            titleAchievements: obj.titleAchievements,
+                            titleCoreValues: obj.titleCoreValues,
+                            cards: obj.cards
+                        });
+                        break;
+                    }
                 }
-            }
-            // console.log(result);
-            // console.log(this.state.text1);
-        });
+                // console.log(result);
+                // console.log(this.state.text1);
+            });
     }
-    
+
     static getDerivedStateFromProps(props, state) {
-        return {languageCode: props.languageCode };
+        return { languageCode: props.languageCode };
     }
 
     componentDidUpdate(prevProps) {
         fetch("./visionAndMissionData.json")
             .then(response => response.json())
-            .then(result => {        
+            .then(result => {
                 // console.log(result);
                 for (var i = 0; i < result.length; i++) {
                     var obj = result[i];
-                    if(obj.languageCode === this.props.languageCode) {
-                    this.setState({
-                        languageCode: obj.languageCode,
-                        titleCompanyOverview: obj.titleCompanyOverview,
-                        textCompanyOverview1: obj.textCompanyOverview1,
-                        textCompanyOverview2: obj.textCompanyOverview2,
-                        textCompanyOverview3: obj.textCompanyOverview3,
-                        visionTitle: obj.visionTitle,
-                        visionText1: obj.visionText1,
-                        missionTitle: obj.missionTitle,
-                        missionText1: obj.missionText1,
-                        titleBusinessDomain: obj.titleBusinessDomain,
-                        textBusinessDomain1: obj.textBusinessDomain1,
-                        titleAchievements: obj.titleAchievements,
-                        titleCoreValues: obj.titleCoreValues,
-                        cards: obj.cards   
-                    });
-                    break;  
+                    if (obj.languageCode === this.props.languageCode) {
+                        this.setState({
+                            languageCode: obj.languageCode,
+                            titleCompanyOverview: obj.titleCompanyOverview,
+                            textCompanyOverview1: obj.textCompanyOverview1,
+                            textCompanyOverview2: obj.textCompanyOverview2,
+                            textCompanyOverview3: obj.textCompanyOverview3,
+                            visionTitle: obj.visionTitle,
+                            visionText1: obj.visionText1,
+                            missionTitle: obj.missionTitle,
+                            missionText1: obj.missionText1,
+                            titleBusinessDomain: obj.titleBusinessDomain,
+                            textBusinessDomain1: obj.textBusinessDomain1,
+                            titleAchievements: obj.titleAchievements,
+                            titleCoreValues: obj.titleCoreValues,
+                            cards: obj.cards
+                        });
+                        break;
                     }
                 }
                 // console.log(result);
                 // console.log(this.state.text1);
-        });
+            });
     }
-        
+
 
     render() {
         return (
@@ -160,28 +160,28 @@ class VisionAndMission extends Component {
                         <div className="container-fluid mb-5">
                             <div className="row">
                                 <div className="col-10 mx-auto">
-                                <div className="row gy-4">
-                                {this.state.visionText1}                 
-                                </div>
+                                    <div className="row gy-4">
+                                        {this.state.visionText1}
+                                    </div>
                                 </div>
                             </div>
                         </div>
 
                         <div className="my-5">
-                        <h1 className="text-center">{this.state.missionTitle}</h1>
+                            <h1 className="text-center">{this.state.missionTitle}</h1>
                         </div>
 
                         <div className="container-fluid mb-5">
                             <div className="row">
                                 <div className="col-10 mx-auto">
-                                <div className="row gy-4">
-                                {this.state.missionText1}     
-                                </div>
+                                    <div className="row gy-4">
+                                        {this.state.missionText1}
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div id="businessDomain">
+                    <div id="businessDomain" className="Header">
                         <div className="my-5">
                             <h1 className="text-center">{this.state.titleBusinessDomain}</h1>
                         </div>
@@ -190,13 +190,13 @@ class VisionAndMission extends Component {
                             <div className="row">
                                 <div className="col-10 mx-auto">
                                     <div className="row gy-4">
-                                        {this.state.textBusinessDomain1}    
+                                        {this.state.textBusinessDomain1}
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div id="achievements">
+                    <div id="achievements" className="Header">
                         <div className="my-5">
                             <h1 className="text-center">{this.state.titleAchievements}</h1>
                         </div>
@@ -215,24 +215,32 @@ class VisionAndMission extends Component {
                             </div>
                         </div>
                     </div>
-                    <div id="coreValues">
+                    <div id="coreValues" className="Header">
                         <div className="my-5">
                             <h1 className="text-center">{this.state.titleCoreValues}</h1>
-                        </div>                       
+                        </div>
 
                         <div className="container-fluid mb-5">
                             <div className="row">
-                            <div className="col-10 mx-auto">
-                                <div className="row gy-4">
-                                {this.state.cards.map((card =>
-                                    <CardNoPicture key={this.code} title={card.title} text1={card.text1} />
-                                ))}                       
+                                <div className="col-10 mx-auto">
+                                    <div className="row gy-4">
+                                        {this.state.cards.map((card =>
+                                            <CardNoPicture key={this.code} title={card.title} text1={card.text1} />
+                                        ))}
+
+                                    </div>
+
                                 </div>
                             </div>
-                            </div>
+
+
                         </div>
                     </div>
+                    <Footer />
                 </div>
+
+
+
             </>
         );
     }

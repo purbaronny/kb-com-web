@@ -10,3 +10,13 @@
 .target > div:target{
     display:flexbox;
 }
+
+.Header .my-5 h1{
+    font-family: "KBFG Display";
+    font-style: normal;
+    font-weight: 600;
+    /*font-size: 24px; */
+    line-height: 36px;
+    color: rgb(255, 188, 0); 
+}
+

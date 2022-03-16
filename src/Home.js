@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import Common from "./Common";
 import web from "../src/Pictures/pic1.jpeg";
+import Carousel from "./Carousel";
+import Footer from "./Footer";
 
 class Home extends Component {
   state = {
@@ -11,67 +13,69 @@ class Home extends Component {
   }
 
   changeLanguage = (val) => {
-      this.props.changeLanguage(val);
+    this.props.changeLanguage(val);
   }
 
   onLanguageClick = (value) => {
-      this.setState({
-          languageCode: value
-      }, () => {
-          this.changeLanguage(this.state.languageCode);
-      });
+    this.setState({
+      languageCode: value
+    }, () => {
+      this.changeLanguage(this.state.languageCode);
+    });
   }
 
   componentDidMount() {
     fetch("./homeData.json")
       .then(response => response.json())
-      .then(result => {        
+      .then(result => {
         for (var i = 0; i < result.length; i++) {
           var obj = result[i];
-          if(obj.languageCode === this.props.languageCode) {
+          if (obj.languageCode === this.props.languageCode) {
             this.setState({
               languageCode: obj.languageCode,
               text1: obj.text1,
               text2: obj.text2,
               text3: obj.text3
-             });
-             break;  
+            });
+            break;
           }
         }
         // console.log(result);
         // console.log(this.state.text1);
-    });
+      });
   }
 
   static getDerivedStateFromProps(props, state) {
-    return {languageCode: props.languageCode };
+    return { languageCode: props.languageCode };
   }
 
   componentDidUpdate(prevProps) {
     fetch("./homeData.json")
       .then(response => response.json())
-      .then(result => {        
+      .then(result => {
         for (var i = 0; i < result.length; i++) {
           var obj = result[i];
-          if(obj.languageCode === this.props.languageCode) {
+          if (obj.languageCode === this.props.languageCode) {
             this.setState({
               languageCode: obj.languageCode,
               text1: obj.text1,
               text2: obj.text2,
               text3: obj.text3
-             });
-             break;  
+            });
+            break;
           }
         }
         // console.log(result);
         // console.log(this.state.text1);
-    });
+      });
   }
 
   render() {
     return (
       <>
+        <Carousel />
         <Common name={this.state.text1} contentText={this.state.text2} imgsrc={web} visit="/visionAndMission" btname={this.state.text3} />
+        <Footer />
       </>
     );
   }
