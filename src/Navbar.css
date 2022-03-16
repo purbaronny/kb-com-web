@@ -27,3 +27,14 @@
     border-color: blue;
     color:blue;
 }
+
+.logo-left{
+    float:left;
+    width:180px;
+    height:auto;
+}
+
+.nav-right{
+    flex-direction: row-reverse;
+    margin: 5px 0px;
+}
