@@ -1,13 +1,13 @@
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import "../node_modules/bootstrap/dist/js/bootstrap.bundle";
-//import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-//import { faCoffee, faWarning } from "@fortawesome/free-solid-svg-icons"
-//import { faInstagram, faYoutube, faTwitter, faLinkedin } from "@fortawesome/free-brands-svg-icons"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faCoffee, faWarning } from "@fortawesome/free-solid-svg-icons"
+import { faInstagram, faYoutube, faTwitter, faLinkedin } from "@fortawesome/free-brands-svg-icons"
 import 'bootstrap-icons/font/bootstrap-icons.css';
 const Footer = () => {
     return (
 
-
+        /*
         <footer class="footer-basic" style={{ fontSize: 25, textAlign: "center", backgroundColor: "#f8f9fa", height: 200, marginTop: 150 }}>
 
             <div class="row mb-2 pt-5">
@@ -35,10 +35,11 @@ const Footer = () => {
 
         </footer >
 
+        */
 
 
 
-        /*
+        
         <div className="container-fluid" style={{ backgroundColor: "#f8f9fa", height: 200, marginTop: 150 }}>
             <footer class="footer-basic" style={{ fontSize: 25, textAlign: "center", marginTop: 100 }}>
 
@@ -57,7 +58,7 @@ const Footer = () => {
 
 
             </footer>
-        </div>*/
+        </div>
     )
 }
 
