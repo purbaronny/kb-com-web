@@ -1,14 +1,8 @@
-import Dropdown from 'react-bootstrap/Dropdown';
+import Dropdown from "react-bootstrap/Dropdown";
 import React, { Component } from "react";
 import { NavLink } from "react-router-dom";
 import "./Navbar.css";
-
-
-
-
-
 class Navbar extends Component {
-
   constructor(props) {
     super(props);
     this.state = {
@@ -20,9 +14,11 @@ class Navbar extends Component {
       titleAboutAchievements: "Achievements",
       titleAboutCoreValues: "Core Values",
       titleSolution: "Solution",
-      titleSolutionGroupJoin: "Group Join Systems Operation / Maintenance Overview",
+      titleSolutionGroupJoin:
+        "Group Join Systems Operation / Maintenance Overview",
       titleSolutionBankIT: "Bank IT Systems Operation Service",
-      titleSolutionGroupCompany: "Group Company / External Organization IT Systems Operation",
+      titleSolutionGroupCompany:
+        "Group Company / External Organization IT Systems Operation",
       titleCareerWithUs: "Career With Us",
       titleContactUs: "Contact Us",
       menus: [{
@@ -88,7 +84,7 @@ class Navbar extends Component {
 
   changeLanguage = (val) => {
     this.props.changeLanguage(val);
-  }
+  };
 
   onLanguageClick = (value) => {
     this.setState({
@@ -180,12 +176,8 @@ class Navbar extends Component {
             </div>
           </div>
         </nav>
-
-
-
       </>
-    );
+    )
   }
 }
-
 export default Navbar;

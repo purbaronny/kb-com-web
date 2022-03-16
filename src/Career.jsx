@@ -41,7 +41,7 @@ class Career extends Component {
                 imgsrc: "Pictures/IT-Infrastructure-Senior.jpeg",
                 linkSourceText: "Detail",
                 createdAt: "2021-11-08T10:22:43.819Z",
-                expiredAt: "2022-03-09T10:22:43.819Z",
+                expiredAt: "2022-05-13T10:22:43.819Z",
                 enabled: true,
                 vacancy: 10,
                 requirements: [
@@ -100,6 +100,9 @@ class Career extends Component {
     changeLanguage = (val) => {
         this.props.changeLanguage(val);
     }
+    componentWillUnmount() {
+
+    }
 
     onLanguageClick = (value) => {
         this.setState({
@@ -120,14 +123,13 @@ class Career extends Component {
 
                 for (var i = 0; i < result.length; i++) {
                     var obj = result[i];
-                    //var date=new Date();
 
                     if (obj.languageCode === this.props.languageCode) {
 
                         var cardsFinal = [];
-                        for (var j = 0; j < this.state.cards.length; j++) {
+                        for (var j = 0; j < obj.cards.length; j++) {
 
-                            var cardObserved = this.state.cards[j];
+                            var cardObserved = obj.cards[j];
 
                             var dateCards = new Date(cardObserved.expiredAt);
                             var dateNow = Date.now();
@@ -136,6 +138,14 @@ class Career extends Component {
                                 cardsFinal.push(cardObserved);
                                 console.log(cardsFinal);
                             }
+
+                            this.setState({
+                                languageCode: obj.languageCode,
+                                title: obj.title,
+                                cards: cardsFinal
+                            });
+                            //console.log(performance.timeOrigin);
+                            break;
                         }
 
                         this.setState({
