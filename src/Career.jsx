@@ -111,10 +111,6 @@ class Career extends Component {
         });
     }
     
-    static getDerivedStateFromProps(props, state) {
-        return {languageCode: props.languageCode };
-    }
-    
     componentDidUpdate(prevProps) {
         fetch("./careerData.json")
           .then(response => response.json())
@@ -132,6 +128,7 @@ class Career extends Component {
                         
                         var dateCards=new Date(cardObserved.expiredAt);
                         var dateNow=Date.now();
+                        
                         
                         if(dateCards[Symbol.toPrimitive]('number') > dateNow){
                             cardsFinal.push(cardObserved);
@@ -156,21 +153,20 @@ class Career extends Component {
     render() {
         return (
             <>
-                <div className="my-5">
-                    <h1 className="text-center">{this.state.title}</h1>
-                </div>
-
-                <div className="container-fluid mb-5">
+                <div className="container mb-5" style={{marginTop:100}}>
+                    <div className="my-5" style={{color:"rgb(255, 188, 0)"}} >
+                        <h1 className="text-center">{this.state.title}</h1>
+                    </div>    
                     <div className="row">
-                    <div className="col-10 mx-auto">
-                        <div className="row gy-4">
-                            {this.state.cards.map((card => 
-                                <Card code={card.code} key={card.code} title={ card.title} 
-                                imgsrc={card.imgsrc} text1={`${card.vacancy} applicant`} linkSourceText={card.linkSourceText}
-                                languageCode={this.state.languageCode}/>
-                            ))}
+                        <div className="col-10 mx-auto">
+                            <div className="row gy-4">
+                                {this.state.cards.map((card => 
+                                    <Card code={card.code} key={card.code} title={ card.title} 
+                                    imgsrc={card.imgsrc} text1={card.expiredAt} linkSourceText={card.linkSourceText}
+                                    languageCode={this.state.languageCode}/>
+                                ))}
+                            </div>
                         </div>
-                    </div>
                     </div>
                 </div>
                 <Footer/>
