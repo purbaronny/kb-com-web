@@ -2,7 +2,7 @@ import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import "../node_modules/bootstrap/dist/js/bootstrap.bundle";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faCoffee, faWarning } from "@fortawesome/free-solid-svg-icons"
-import { faInstagram, faYoutube, faTwitter, faLinkedin } from "@fortawesome/free-brands-svg-icons"
+import { faInstagram, faYoutube, faTwitter, faLinkedin, faFacebook } from "@fortawesome/free-brands-svg-icons"
 import 'bootstrap-icons/font/bootstrap-icons.css';
 const Footer = () => {
     return (
@@ -39,7 +39,7 @@ const Footer = () => {
 
 
 
-        
+
         <div className="container-fluid" style={{ backgroundColor: "#f8f9fa", height: 200, marginTop: 150 }}>
             <footer class="footer-basic" style={{ fontSize: 25, textAlign: "center", marginTop: 100 }}>
 
@@ -47,7 +47,7 @@ const Footer = () => {
                     <p style={{ fontSize: 14, fontFamily: "KGBF Display,sans-serif" }}>Follow Us on</p>
                     <li class="list-inline-item"><a href="https://www.instagram.com/kbds_id/" target={"_blank"}><FontAwesomeIcon icon={faInstagram} style={{ color: "#d62976" }}></FontAwesomeIcon></a></li>
                     <li class="list-inline-item"><a href="https://www.linkedin.com/in/pt-kb-data-systems-indonesia-6b873b223/" target={"_blank"}><FontAwesomeIcon icon={faLinkedin} style={{ color: "#1DA1F2" }}></FontAwesomeIcon></a></li>
-                    <li class="list-inline-item"><a href="#"><FontAwesomeIcon icon={faYoutube} style={{ color: "red" }}></FontAwesomeIcon></a></li>
+                    <li class="list-inline-item"><a href="https://www.facebook.com/KB-Data-Systems-Indonesia-106688835304194" target={"_blank"}><FontAwesomeIcon icon={faFacebook} style={{ color: "blue" }}></FontAwesomeIcon></a></li>
 
                 </ul>
 
