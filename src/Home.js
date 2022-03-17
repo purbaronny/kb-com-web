@@ -5,6 +5,7 @@ import Carousel from "./Carousel";
 import Footer from "./Footer";
 
 class Home extends Component {
+
   state = {
     languageCode: "en-US",
     text1: "Grow your business with",

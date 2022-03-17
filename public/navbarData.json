@@ -10,8 +10,8 @@
     "titleSolutionGroupJoin": "Group Join Systems Operation / Maintenance Overview",
     "titleSolutionBankIT": "Bank IT Systems Operation Service",
     "titleSolutionGroupCompany": "Group Company / External Organization IT Systems Operation",
-    "titleCareerWithUs": "Career With Us",
-    "titleContactUs": "Contact Us"
+    "titleCareerWithUs": "Career",
+    "titleContactUs": "Contact"
 }, 
 {
     "languageCode": "id-ID",
@@ -25,7 +25,7 @@
     "titleSolutionGroupJoin": "Tinjauan Operasi / Pemeliharaan Sistem Gabung Grup",
     "titleSolutionBankIT": "Layanan Operasi Sistem TI Bank",
     "titleSolutionGroupCompany": "Grup Perusahaan / Organisasi Eksternal Operasi Sistem TI",
-    "titleCareerWithUs": "Karir Bersama Kami",
+    "titleCareerWithUs": "Karir",
     "titleContactUs": "Hubungi kami"
 }, 
 {
@@ -40,7 +40,7 @@
     "titleSolutionGroupJoin": "그룹 가입 시스템 운영/유지보수 개요",
     "titleSolutionBankIT": "은행 IT 시스템 운영 서비스",
     "titleSolutionGroupCompany": "그룹사 / 외부조직 IT시스템 운영",
-    "titleCareerWithUs": "우리와 함께 경력",
+    "titleCareerWithUs": "경력",
     "titleContactUs": "문의하기"
 }
 ]

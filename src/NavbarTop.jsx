@@ -27,7 +27,7 @@ class NavbarTop extends Component {
       <>
         <div className="container nav_bg" style={{ display: "flex", width: "80%", justifyContent: 'flex-end' }}>
           <div className="row">
-            <div className="col-10 mx-auto">
+            <div className="col-auto mx-auto">
               <nav className="navbar navbar-expand-lg fixed">
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                   <ul className="navbar-nav ml-auto mb-2 mb-lg-0">

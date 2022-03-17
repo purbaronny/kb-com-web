@@ -20,7 +20,6 @@ import DetailCareerExperimen from "./DetailCareerExperimen";
 
 
 class App extends Component {
-
   constructor(props) {
     super(props);
     this.state = {
@@ -81,7 +80,7 @@ class App extends Component {
         // console.log(result);
         // console.log(this.state.text1);
       }, () => {
-        // alert(this.state.name);
+        //alert(this.state.name);
       });
     // alert(this.state.name);
   }
@@ -99,8 +98,8 @@ class App extends Component {
     return (
       <>
         <BrowserRouter>
-          <NavbarTop changeLanguage={(value) => this.onChangeLanguage(value)}></NavbarTop>
-          <Navbar languageCode={this.state.name} />
+          
+          <Navbar languageCode={this.state.name} changeLanguage={(value) => this.onChangeLanguage(value)}/>
 
           <Routes>
             <Route exact path="/" element={<Home languageCode={this.state.name} />} />
