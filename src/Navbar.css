@@ -39,8 +39,8 @@
 .logo-kbds {
   width: 512px;
   height: auto;
-  max-width:50%;
-  margin-left:2em;
+  max-width: 65%;
+  margin-left: 2em;
 }
 
 .background-white {
@@ -50,5 +50,3 @@
 .nav-link {
   color: rgb(255, 188, 0);
 }
-
-
