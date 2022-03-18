@@ -10,10 +10,6 @@ class CardNoPicture extends Component {
 
   render() {
     return (
-
-
-
-
       <div className="col-md-4 col-10 mx-auto">
         <div id="border" className="card" >
           <div className="card-header bg-warning">
