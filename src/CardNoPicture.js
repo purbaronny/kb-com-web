@@ -1,6 +1,11 @@
 import React, { Component } from "react";
 import "./CardNoPicture.css";
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+// ..
+AOS.init();
 
+// digunakan di Services
 
 class CardNoPicture extends Component {
 
@@ -14,8 +19,8 @@ class CardNoPicture extends Component {
 
 
 
-      <div className="col-md-4 col-10 mx-auto">
-        <div id="border" className="card" >
+      <div className="col-md-4 col-10 mx-auto" data-aos="flip-right">
+        <div className="card" >
           <div className="card-header bg-warning">
             <h5 className="card-title text-center">{this.props.title}</h5>
           </div>

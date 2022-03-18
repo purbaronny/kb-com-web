@@ -94,7 +94,7 @@ class Service extends Component {
   render() {
     return (
       <>
-        <div className="target">
+        <div className="target" style={{ marginTop: 150 }}>
           <div id="companyMaintenance" className="Header">
             <div className="my-5">
               <h1 className="text-center">{this.state.titleCompanyMaintenance}</h1>
@@ -134,8 +134,9 @@ class Service extends Component {
                   <CardNoPicture title={this.state.subTitleCompanyOperation} text1={this.state.textCompanyOperation1} />
 
                 </div>
-                <Footer />
+
               </div>
+              <Footer />
             </div>
           </div>
         </div>

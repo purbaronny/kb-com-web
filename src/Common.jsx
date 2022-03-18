@@ -30,7 +30,7 @@ class Common extends Component {
                     </h2>
 
                     <div className="mt-3" data-aos="zoom-in-right">
-                      <NavLink to={this.props.visit} className="btn btn-primary">
+                      <NavLink to={this.props.visit} className="btn orange-color">
                         {this.props.btname}
                       </NavLink>
                     </div>

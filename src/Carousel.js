@@ -9,15 +9,15 @@ const Carousel = () => {
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active" data-bs-interval="2000">
-                    <img src="./Pictures/meeting1.jpg" class="d-block w-100 rounded-3" alt="..." />
+                    <img src="./Pictures/Picture18.jpg" class="d-block w-100 rounded-3 " alt="..." />
 
                 </div>
-                <div class="carousel-item" data-bs-interval="10000">
-                    <img src="./Pictures/meeting2.jpg" class="d-block w-100 rounded-3" alt="..." />
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="./Pictures/Picture19.jpg" class="d-block w-100 rounded-3" alt="..." />
 
                 </div>
-                <div class="carousel-item">
-                    <img src="./Pictures/meeting3.jpg" class="d-block w-100 rounded-3" alt="..." />
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="./Pictures/Picture20.jpg" class="d-block w-100 rounded-3" alt="..." />
 
                 </div>
             </div>

@@ -5,6 +5,7 @@ import "./VisionAndMission.css";
 import Footer from "./Footer";
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
+import CardNoPicture2 from "./cardNoPicture2";
 // ..
 AOS.init();
 
@@ -231,10 +232,10 @@ class VisionAndMission extends Component {
                                 data-aos-duration="2000"
                                 data-aos-offset="300"
                             >
-                                <div className="col-10 mx-auto">
+                                <div className="col-10 mx-auto" style={{ paddingBottom: 300 }}>
                                     <div className="row gy-4">
                                         {this.state.cards.map((card =>
-                                            <CardNoPicture key={this.code} title={card.title} text1={card.text1} />
+                                            <CardNoPicture2 key={this.code} title={card.title} text1={card.text1} />
                                         ))}
 
                                     </div>

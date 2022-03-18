@@ -1,6 +1,7 @@
 .height-custom {
   height: 50px;
 }
-.card {
-  height: 30 rem;
+
+#border {
+  height: 12rem;
 }

@@ -2,7 +2,6 @@ import Dropdown from "react-bootstrap/Dropdown";
 import React, { Component } from "react";
 import { NavLink } from "react-router-dom";
 import "./Navbar.css";
-
 class Navbar extends Component {
   constructor(props) {
     super(props);
@@ -131,7 +130,7 @@ class Navbar extends Component {
       <>
         <nav className="navbar navbar-expand-lg bg-white fixed-top opacity-75">
           <div className="container-fluid ">
-            <NavLink to="/"><img className="logo-kbds" src="./Pictures/logokbds-remove.png"></img></NavLink>
+            <NavLink className="logo-kbds" to="/"><img className="logo-kbds" src="./Pictures/logokbds-remove.png"></img></NavLink>
             <button className="navbar-toggler" type="button">
               <span className="navbar-toggler-icon"></span>
             </button>
@@ -139,13 +138,13 @@ class Navbar extends Component {
               <div className="collapse navbar-collapse" >
                 <ul className="navbar-nav ms-auto mb-2 me-5">
                   <li className="nav-item">
-                    <button className="button-no-background" style={{ color: "rgb(255, 188, 0)" }} onClick={() => this.onLanguageClick("en-US")}><img src="https://flagicons.lipis.dev/flags/4x3/gb.svg" className="rounded-circle shadow" style={{ width: 25, height: 25 }} /></button>
+                    <button className="button-no-background" style={{ color: "rgb(255, 188, 0)" }} onClick={() => this.onLanguageClick("en-US")}><img src="https://flagicons.lipis.dev/flags/4x3/gb.svg" className="rounded-circle shadow" alt="ENG" style={{ width: 25, height: 25 }} /></button>
                   </li>
                   <li className="nav-item">
-                    <button className="button-no-background" style={{ color: "rgb(255, 188, 0)" }} onClick={() => this.onLanguageClick("id-ID")}><img src="https://flagicons.lipis.dev/flags/4x3/id.svg" className="rounded-circle shadow" style={{ width: 25, height: 25 }} /></button>
+                    <button className="button-no-background" style={{ color: "rgb(255, 188, 0)" }} onClick={() => this.onLanguageClick("id-ID")}><img src="https://flagicons.lipis.dev/flags/4x3/id.svg" className="rounded-circle shadow" alt="ID" style={{ width: 25, height: 25 }} /></button>
                   </li>
                   <li className="nav-item">
-                    <button className="button-no-background" style={{ color: "rgb(255, 188, 0)" }} onClick={() => this.onLanguageClick("ko-KR")}><img src="https://flagicons.lipis.dev/flags/4x3/kr.svg" className="rounded-circle shadow" style={{ width: 25, height: 25 }} /></button>
+                    <button className="button-no-background" style={{ color: "rgb(255, 188, 0)" }} onClick={() => this.onLanguageClick("ko-KR")}><img src="https://flagicons.lipis.dev/flags/4x3/kr.svg" className="rounded-circle shadow" alt="KR" style={{ width: 25, height: 25 }} /></button>
                   </li>
                 </ul>
               </div>
