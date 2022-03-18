@@ -213,7 +213,7 @@ class VisionAndMission extends Component {
                                     <div className="row gy-4">
                                         <img
                                             src={web}
-                                            className="img-fluid animated"
+                                            className="img-fluid animated img-achievements"
                                             alt="HomeImg"
                                         />
                                     </div>

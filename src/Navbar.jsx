@@ -124,15 +124,15 @@ class Navbar extends Component {
         // console.log(this.state.text1);
       });
   }
-
+  //navbar-expand-lg>navbar-nav mengakibatkan min-width>992 position:absolute
   render() {
     return (
       <>
-        <nav className="navbar navbar-expand-lg bg-white fixed-top opacity-75">
-          <div className="container-fluid ">
-            <NavLink className="logo-kbds" to="/"><img className="logo-kbds" src="./Pictures/logokbds-remove.png"></img></NavLink>
-            <button className="navbar-toggler" type="button">
-              <span className="navbar-toggler-icon"></span>
+        <nav className="navbar navbar-expand-md fixed-top opacity-75">
+          <div className="container-fluid navbar-collapse">
+            <NavLink to="/"><img className="logo-kbds" src="./Pictures/logokbds-remove.png"></img></NavLink>
+            <button className="navbar-light navbar-toggler " type="button" >
+              <span className="navbar-toggler-icon navbar-collapse"></span>
             </button>
             <div className="flex-column">
               <div className="collapse navbar-collapse" >
@@ -165,7 +165,6 @@ class Navbar extends Component {
                   <li className="nav-item">
                     <Dropdown>
                       <Dropdown.Toggle variant="successSolution" id="dropdown-basicSolution" className='background-white' style={{ color: "rgb(255, 188, 0)   " }}>{this.state.titleSolution}</Dropdown.Toggle>
-
                       <Dropdown.Menu>
                         <NavLink className="nav-link" to="/service#companyMaintenance">{this.state.titleSolutionGroupJoin}</NavLink>
                         <NavLink className="nav-link" to="/service#companyService">{this.state.titleSolutionBankIT}</NavLink>
