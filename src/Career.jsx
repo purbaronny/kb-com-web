@@ -153,19 +153,17 @@ class Career extends Component {
     render() {
         return (
             <>
-                <div className="container mb-5" style={{marginTop:100}}>
+                <div className="container" style={{marginTop:100}}>
                     <div className="my-5" style={{color:"rgb(255, 188, 0)"}} >
                         <h1 className="text-center">{this.state.title}</h1>
                     </div>    
-                    <div className="row">
-                        <div className="col-10 mx-auto">
-                            <div className="row gy-4">
-                                {this.state.cards.map((card => 
-                                    <Card code={card.code} key={card.code} title={ card.title} 
-                                    imgsrc={card.imgsrc} text1={card.expiredAt} linkSourceText={card.linkSourceText}
-                                    languageCode={this.state.languageCode}/>
-                                ))}
-                            </div>
+                    <div className="col-11 mx-auto">
+                        <div className="row gy-4">
+                            {this.state.cards.map((card => 
+                                <Card code={card.code} key={card.code} title={ card.title} 
+                                imgsrc={card.imgsrc} text1={card.expiredAt} linkSourceText={card.linkSourceText}
+                                languageCode={this.state.languageCode}/>
+                            ))}
                         </div>
                     </div>
                 </div>

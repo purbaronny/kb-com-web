@@ -2,6 +2,7 @@ import Dropdown from "react-bootstrap/Dropdown";
 import React, { Component } from "react";
 import { NavLink } from "react-router-dom";
 import "./Navbar.css";
+
 class Navbar extends Component {
   constructor(props) {
     super(props);
@@ -130,7 +131,7 @@ class Navbar extends Component {
       <>
         <nav className="navbar navbar-expand-lg bg-white fixed-top opacity-75">
           <div className="container-fluid ">
-            <NavLink className="logo-kbds" to="/"><img className="logo-kbds" src="./Pictures/logokbds-remove.png"></img></NavLink>
+            <NavLink to="/"><img className="logo-kbds" src="./Pictures/logokbds-remove.png"></img></NavLink>
             <button className="navbar-toggler" type="button">
               <span className="navbar-toggler-icon"></span>
             </button>
