@@ -3,6 +3,11 @@ import web from "../src/Pictures/Picture1.png";
 import CardNoPicture from "./CardNoPicture";
 import "./VisionAndMission.css";
 import Footer from "./Footer";
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+// ..
+AOS.init();
+
 class VisionAndMission extends Component {
 
     constructor(props) {
@@ -129,13 +134,13 @@ class VisionAndMission extends Component {
         return (
             <>
                 <div className="target">
-                    <div className="companyOverview">
+                    <div className="companyOverview" style={{ paddingTop: 100 }}>
                         <div className="my-5">
                             <h1 className="text-center">{this.state.titleCompanyOverview}</h1>
                         </div>
 
-                        <div className="container-fluid mb-5">
-                            <div className="row">
+                        <div className="container-fluid mb-5 ">
+                            <div className="row justify-content-center text-center">
                                 <div className="col-10 mx-auto">
                                     <div className="row gy-4">
                                         {this.state.textCompanyOverview1}
@@ -158,10 +163,10 @@ class VisionAndMission extends Component {
                         </div>
 
                         <div className="container-fluid mb-5">
-                            <div className="row">
+                            <div className="row ">
                                 <div className="col-10 mx-auto">
-                                    <div className="row gy-4">
-                                        {this.state.visionText1}
+                                    <div className="row text-center gy-4">
+                                        <p className="text-center">{this.state.visionText1}</p>
                                     </div>
                                 </div>
                             </div>
@@ -175,7 +180,7 @@ class VisionAndMission extends Component {
                             <div className="row">
                                 <div className="col-10 mx-auto">
                                     <div className="row gy-4">
-                                        {this.state.missionText1}
+                                        <p className="text-center">{this.state.missionText1}</p>
                                     </div>
                                 </div>
                             </div>
@@ -190,7 +195,7 @@ class VisionAndMission extends Component {
                             <div className="row">
                                 <div className="col-10 mx-auto">
                                     <div className="row gy-4">
-                                        {this.state.textBusinessDomain1}
+                                        <p className="text-center">{this.state.textBusinessDomain1}</p>
                                     </div>
                                 </div>
                             </div>
@@ -221,7 +226,11 @@ class VisionAndMission extends Component {
                         </div>
 
                         <div className="container-fluid mb-5">
-                            <div className="row">
+                            <div className="row" data-aos="flip-left"
+                                data-aos-easing="ease-out-cubic"
+                                data-aos-duration="2000"
+                                data-aos-offset="300"
+                            >
                                 <div className="col-10 mx-auto">
                                     <div className="row gy-4">
                                         {this.state.cards.map((card =>

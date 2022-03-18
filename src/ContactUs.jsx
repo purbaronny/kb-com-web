@@ -89,12 +89,17 @@ class ContactUs extends Component {
         };
 
         //const[result,showResult]=useState(false);
+
         function sendEmail(e) {
             e.preventDefault();
 
+
+
             emailjs.sendForm('service_smbfjbr', 'template_hogphgu', e.target, 'Fa5m0dy7CLzOz9yud')
                 .then((result) => {
+
                     console.log(result.text);
+
                 }, (error) => {
                     console.log(error.text);
                 });
@@ -131,7 +136,11 @@ class ContactUs extends Component {
                                                 <textarea className="form-control" id="exampleFormControlTextarea1" rows="3" placeholder={this.state.textTypeYourMessageHere} name="message" />
                                             </div>
                                             <div className="col-12 pt-3">
-                                                <button onClick={this.onClickButton} className="btn btn-outline-primary" type="submit">{this.state.labelSubmitform}</button>
+                                                <button onClick={this.onClickButton} className="btn btn-primary btn-kirim" type="submit">{this.state.labelSubmitform}</button>
+                                                <button class="btn btn-primary btn-loading d-none" type="button" disabled>
+                                                    <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                                                    Loading...
+                                                </button>
                                             </div>
                                         </form>
                                     </div>

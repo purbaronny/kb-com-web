@@ -1,5 +1,9 @@
 import React, { Component } from "react";
 import { NavLink } from "react-router-dom";
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+// ..
+AOS.init();
 
 class Common extends Component {
 
@@ -10,7 +14,7 @@ class Common extends Component {
   render() {
     return (
       <>
-        <section id="header" className="d-flex align-items-center" style={{ marginTop: 50 }}>
+        <section id="header" className="d-flex align-items-center" data-aos="zoom-in-right" style={{ marginTop: 50 }}>
           <div className="container-fluid nav_bg">
             <div className="row">
               <div className="col-10 mx-auto">
@@ -25,7 +29,7 @@ class Common extends Component {
                       {this.props.contentText}
                     </h2>
 
-                    <div className="mt-3">
+                    <div className="mt-3" data-aos="zoom-in-right">
                       <NavLink to={this.props.visit} className="btn btn-primary">
                         {this.props.btname}
                       </NavLink>
@@ -34,6 +38,7 @@ class Common extends Component {
 
                   <div className="col-lg-6 order-1 order-lg-2 header-img">
                     <img
+                      data-aos="zoom-in-left"
                       src={this.props.imgsrc}
                       className="img-fluid animated mb-20"
                       alt=""
