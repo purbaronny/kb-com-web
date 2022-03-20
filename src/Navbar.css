@@ -37,11 +37,11 @@
 }
 
 .logo-kbds {
-  width: 512px;
+  width: 256px;
   height: auto;
-  max-width:90%;
-  margin-right:auto;
-  margin-left:2em;
+  max-width: 90%;
+  margin-right: auto;
+  margin-left: 2em;
 }
 
 .background-white {
@@ -53,28 +53,42 @@
 }
 
 @media (min-width: 576px) {
-  .container-sm-detail, .container-detail {
+  .container-sm-detail,
+  .container-detail {
     max-width: 540px;
   }
 }
 @media (min-width: 768px) {
-  .container-md-detail, .container-sm-detail, .container-detail {
+  .container-md-detail,
+  .container-sm-detail,
+  .container-detail {
     max-width: 720px;
   }
 }
 @media (min-width: 992px) {
-  .container-lg-detail, .container-md-detail, .container-sm-detail, .container-detail {
+  .container-lg-detail,
+  .container-md-detail,
+  .container-sm-detail,
+  .container-detail {
     max-width: 960px;
   }
 }
 @media (min-width: 1200px) {
-  .container-xl-detail, .container-lg-detail, .container-md-detail, .container-sm-detail, .container-detail {
+  .container-xl-detail,
+  .container-lg-detail,
+  .container-md-detail,
+  .container-sm-detail,
+  .container-detail {
     max-width: 1140px;
   }
 }
 @media (min-width: 1400px) {
-  .container-xxl-detail, .container-xl-detail, .container-lg-detail, .container-md-detail, .container-sm-detail, .container-detail {
+  .container-xxl-detail,
+  .container-xl-detail,
+  .container-lg-detail,
+  .container-md-detail,
+  .container-sm-detail,
+  .container-detail {
     max-width: 1320px;
   }
 }
-

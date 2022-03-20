@@ -96,8 +96,8 @@ class App extends Component {
     return (
       <div>
         <BrowserRouter>
-          
-          <Navbar languageCode={this.state.name} changeLanguage={(value) => this.onChangeLanguage(value)}/>
+
+          <Navbar languageCode={this.state.name} changeLanguage={(value) => this.onChangeLanguage(value)} />
 
           <Routes>
             <Route exact path="/" element={<Home languageCode={this.state.name} />} />
@@ -111,6 +111,8 @@ class App extends Component {
             <Route exact path="/about" element={<About />} />
             <Route exact path="/service" element={<Service languageCode={this.state.name} />} />
             <Route exact path="/contact" element={<Contact />} />
+            <Route exact path="/event" element={<Event />}></Route>
+            <Route exact path="/PressRelease" element={<Event />}></Route>
             <Route path="/career/:id/:languageCode" element={<DetailCareerExperimen />} />
           </Routes>
         </BrowserRouter>

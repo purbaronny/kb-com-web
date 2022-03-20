@@ -108,8 +108,8 @@ class ContactUs extends Component {
         }
         return (
             <>
-                <section id="header" className="d-flex align-items-center" style={{marginTop:100}}>
-                    <div className="container-fluid ">
+                <section id="header" className="d-flex align-items-center" style={{ marginTop: 50 }}>
+                    <div className="container-fluid nav_bg">
                         <div className="row">
                             <div className="col-10 mx-auto">
                                 <div className="mb-lg-x">
@@ -136,9 +136,9 @@ class ContactUs extends Component {
                                                 <textarea className="form-control" id="exampleFormControlTextarea1" rows="3" placeholder={this.state.textTypeYourMessageHere} name="message" />
                                             </div>
                                             <div className="col-12 pt-3">
-                                                <button onClick={this.onClickButton} className="btn btn-primary btn-kirim" type="submit">{this.state.labelSubmitform}</button>
-                                                <button className="btn btn-primary btn-loading d-none" type="button" disabled>
-                                                    <span className="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                                                <button onClick={this.onClickButton} className="btn orange-color btn-kirim" type="submit">{this.state.labelSubmitform}</button>
+                                                <button class="btn btn-primary btn-loading d-none" type="button" disabled>
+                                                    <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
                                                     Loading...
                                                 </button>
                                             </div>
