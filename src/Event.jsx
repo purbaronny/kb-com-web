@@ -6,6 +6,7 @@ import img3 from "../src/Pictures/img3.png";
 import img4 from "../src/Pictures/img4.png";
 import img5 from "../src/Pictures/img5.png";
 import img6 from "../src/Pictures/img6.png";
+import Footer from "./Footer";
 
 class Event extends Component {
 
@@ -48,13 +49,13 @@ class Event extends Component {
             text1: "Some quick example text to build on the card title and make up the bulk of the card's content.",
             imgsrc: "Pictures/img6.png",
             linkSourceText: "Get Quote"
-        }]        
+        }]
     }
-    
+
     changeLanguage = (val) => {
         this.props.changeLanguage(val);
     }
-    
+
     onLanguageClick = (value) => {
         this.setState({
             languageCode: value
@@ -62,47 +63,47 @@ class Event extends Component {
             this.changeLanguage(this.state.languageCode);
         });
     }
-    
+
     componentDidMount() {
         fetch("./eventData.json")
             .then(response => response.json())
-            .then(result => {        
-            for (var i = 0; i < result.length; i++) {
-                var obj = result[i];
-                if(obj.languageCode === this.props.languageCode) {
-                this.setState({
-                    languageCode: obj.languageCode,
-                    title: obj.title,
-                    cards: obj.cards
-                    });
-                    break;  
+            .then(result => {
+                for (var i = 0; i < result.length; i++) {
+                    var obj = result[i];
+                    if (obj.languageCode === this.props.languageCode) {
+                        this.setState({
+                            languageCode: obj.languageCode,
+                            title: obj.title,
+                            cards: obj.cards
+                        });
+                        break;
+                    }
                 }
-            }
-            // console.log(result);
-            // console.log(this.state.text1);
-        });
+                // console.log(result);
+                // console.log(this.state.text1);
+            });
     }
-    
+
     componentDidUpdate(prevProps) {
         fetch("./eventData.json")
-          .then(response => response.json())
-          .then(result => {        
-            for (var i = 0; i < result.length; i++) {
-              var obj = result[i];
-              if(obj.languageCode === this.props.languageCode) {
-                this.setState({
-                  languageCode: obj.languageCode,
-                  title: obj.title,
-                  cards: obj.cards
-                 });
-                 break;  
-              }
-            }
-            // console.log(result);
-            // console.log(this.state.text1);
-        });
+            .then(response => response.json())
+            .then(result => {
+                for (var i = 0; i < result.length; i++) {
+                    var obj = result[i];
+                    if (obj.languageCode === this.props.languageCode) {
+                        this.setState({
+                            languageCode: obj.languageCode,
+                            title: obj.title,
+                            cards: obj.cards
+                        });
+                        break;
+                    }
+                }
+                // console.log(result);
+                // console.log(this.state.text1);
+            });
     }
-      
+
     render() {
         return (
             <>
@@ -112,15 +113,19 @@ class Event extends Component {
 
                 <div className="container-fluid mb-5">
                     <div className="row">
-                    <div className="col-10 mx-auto">
-                        <div className="row gy-4">
-                            {this.state.cards.map((card =>
-                                <Card key={this.code} title={card.title} text1={card.text1} imgsrc={card.imgsrc} linkSourceText={card.linkSourceText} />
-                            ))}                       
+                        <div className="col-10 mx-auto">
+                            <div className="row gy-4">
+                                {this.state.cards.map((card =>
+                                    <Card key={this.code} title={card.title} text1={card.text1} imgsrc={card.imgsrc} linkSourceText={card.linkSourceText} />
+                                ))}
+                            </div>
+
                         </div>
+
                     </div>
-                    </div>
+
                 </div>
+                <Footer />
             </>
         );
     }

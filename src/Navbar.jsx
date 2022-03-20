@@ -21,6 +21,9 @@ class Navbar extends Component {
         "Group Company / External Organization IT Systems Operation",
       titleCareerWithUs: "Career",
       titleContactUs: "Contact",
+      language: "Language",
+      press: "News",
+
       menus: [{
         menu: {
           code: "about",
@@ -128,6 +131,72 @@ class Navbar extends Component {
   render() {
     return (
       <>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top  opacity-75" >
+          <div class="container">
+            <NavLink to="/"><img className="logo-kbds md-4" src="./Pictures/logokbds-remove.png" data-tilt  ></img></NavLink>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul className="navbar-nav ms-auto me-5" >
+                <li className="nav-item">
+                  <Dropdown>
+                    <Dropdown.Toggle variant="success" id="dropdown-basicAbout" className='background-white' style={{ color: "rgb(255, 188, 0)   " }}>{this.state.titleAbout}</Dropdown.Toggle>
+                    <Dropdown.Menu>
+                      <NavLink className="nav-link" to={{ pathname: "/visionAndMission", hash: "#companyOverview", state: { fromDashboard: true } }}>{this.state.titleAboutCompanyOverview}</NavLink>
+                      <NavLink className="nav-link" to={{ pathname: "/visionAndMission", hash: "#visionMission", state: { fromDashboard: true } }}>{this.state.titleAboutVisionMission}</NavLink>
+                      <NavLink className="nav-link" to={{ pathname: "/visionAndMission", hash: "#businessDomain", state: { fromDashboard: true } }}>{this.state.titleAboutBusinessDomain}</NavLink>
+                      <NavLink className="nav-link" to={{ pathname: "/visionAndMission", hash: "#achievements", state: { fromDashboard: true } }}>{this.state.titleAboutAchievements}</NavLink>
+                      <NavLink className="nav-link" to={{ pathname: "/visionAndMission", hash: "#coreValues", state: { fromDashboard: true } }}>{this.state.titleAboutCoreValues}</NavLink>
+                    </Dropdown.Menu>
+                  </Dropdown>
+                </li>
+                <li className="nav-item">
+                  <Dropdown>
+                    <Dropdown.Toggle variant="successSolution" id="dropdown-basicSolution" className='background-white' style={{ color: "rgb(255, 188, 0)   " }}>{this.state.titleSolution}</Dropdown.Toggle>
+                    <Dropdown.Menu>
+                      <NavLink className="nav-link" to="/service#companyMaintenance">{this.state.titleSolutionGroupJoin}</NavLink>
+                      <NavLink className="nav-link" to="/service#companyService">{this.state.titleSolutionBankIT}</NavLink>
+                      <NavLink className="nav-link" to="/service#companyOperation">{this.state.titleSolutionGroupCompany}</NavLink>
+                    </Dropdown.Menu>
+                  </Dropdown>
+                </li>
+                <li className="nav-item">
+                  <NavLink className="nav-link" to="/career" style={{ color: "rgb(255, 188, 0)" }}>{this.state.titleCareerWithUs}</NavLink>
+                </li>
+                <li className="nav-item">
+                  <NavLink className="nav-link" to="/contactUs" style={{ color: "rgb(255, 188, 0)" }}>{this.state.titleContactUs}</NavLink>
+                </li>
+                <li className="nav-item">
+                  <NavLink className="nav-link" to="/event" style={{ color: "rgb(255, 188, 0)" }}>{this.state.press}</NavLink>
+                </li>
+                <li className="nav-item">
+                  <Dropdown>
+                    <Dropdown.Toggle variant="successSolution" id="dropdown-basicSolution" className='background-white' style={{ color: "rgb(255, 188, 0)   " }}>{this.state.language}</Dropdown.Toggle>
+                    <Dropdown.Menu>
+                      <li className="nav-item">
+                        <button className="button-no-background" style={{ color: "rgb(255, 188, 0)", fontSize: 12 }} onClick={() => this.onLanguageClick("en-US")}><img src="https://flagicons.lipis.dev/flags/4x3/gb.svg" className="rounded-circle shadow" alt="ENG" style={{ width: 25, height: 25 }} />ENG</button>
+                      </li>
+                      <li className="nav-item">
+                        <button className="button-no-background" style={{ color: "rgb(255, 188, 0)", fontSize: 12 }} onClick={() => this.onLanguageClick("id-ID")}><img src="https://flagicons.lipis.dev/flags/4x3/id.svg" className="rounded-circle shadow" alt="ENG" style={{ width: 25, height: 25 }} />ID</button>
+                      </li>
+                      <li className="nav-item">
+                        <button className="button-no-background" style={{ color: "rgb(255, 188, 0)", fontSize: 12 }} onClick={() => this.onLanguageClick("ko-KR")}><img src="https://flagicons.lipis.dev/flags/4x3/kr.svg" className="rounded-circle shadow" alt="ENG" style={{ width: 25, height: 25 }} />KR</button>
+                      </li>
+                    </Dropdown.Menu>
+                  </Dropdown>
+                </li>
+              </ul>
+
+
+            </div>
+
+
+
+          </div>
+        </nav>
+        {/*
         <nav className="navbar navbar-expand-md fixed-top opacity-75">
           <div className="container-fluid navbar-collapse">
             <NavLink to="/"><img className="logo-kbds" src="./Pictures/logokbds-remove.png"></img></NavLink>
@@ -184,6 +253,7 @@ class Navbar extends Component {
             </div>
           </div>
         </nav>
+    */}
       </>
     )
   }

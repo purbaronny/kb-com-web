@@ -135,7 +135,7 @@ class VisionAndMission extends Component {
         return (
             <>
                 <div className="target">
-                    <div className="companyOverview" style={{ paddingTop: 100 }}>
+                    <div className="companyOverview" style={{ paddingTop: 50 }}>
                         <div className="my-5">
                             <h1 className="text-center">{this.state.titleCompanyOverview}</h1>
                         </div>
