@@ -17,6 +17,21 @@ class Card extends Component {
     }
   }
 
+  changeLanguage = (val) => {
+    this.props.changeLanguage(val);
+  };
+  componentWillUnmount() {}
+
+  onLanguageClick = (value) => {
+    this.setState(
+      {
+        languageCode: value,
+      },
+      () => {
+        this.changeLanguage(this.state.languageCode);
+      }
+    );
+  };
   
   render() {
     return (

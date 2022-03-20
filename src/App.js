@@ -12,10 +12,8 @@ import Service from "./Service";
 import PressRelease from "./PressRelease";
 import Event from "./Event";
 import Navbar from "./Navbar";
-import NavbarTop from "./NavbarTop";
 import Career from "./Career";
 import ContactUs from "./ContactUs";
-import DetailCareer from "./DetailCareer";
 import DetailCareerExperimen from "./DetailCareerExperimen";
 
 
@@ -96,7 +94,7 @@ class App extends Component {
 
   render() {
     return (
-      <>
+      <div>
         <BrowserRouter>
           
           <Navbar languageCode={this.state.name} changeLanguage={(value) => this.onChangeLanguage(value)}/>
@@ -114,13 +112,9 @@ class App extends Component {
             <Route exact path="/service" element={<Service languageCode={this.state.name} />} />
             <Route exact path="/contact" element={<Contact />} />
             <Route path="/career/:id/:languageCode" element={<DetailCareerExperimen />} />
-
           </Routes>
-
         </BrowserRouter>
-
-
-      </>
+      </div>
     );
   }
 }
