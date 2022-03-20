@@ -313,14 +313,15 @@ class Career extends Component {
     );
   };
 
-  componentDidUpdate(prevProps) {
+  componentDidUpdate() {
     fetch("./careerData.json")
       .then((response) => response.json())
       .then((result) => {
         for (var i = 0; i < result.length; i++) {
           var obj = result[i];
 
-          if (obj.languageCode === this.state.languageCode) {
+          if (obj.languageCode === this.props.languageCode) {
+            //console.log(obj.languageCode);
             var cardsFinal = [];
             for (var j = 0; j < obj.cards.length; j++) {
               var cardObserved = obj.cards[j];
@@ -353,7 +354,7 @@ class Career extends Component {
     return (
       <>
         <div className="container">
-          <div style={{marginTop:100}}>
+          <div style={{marginTop:50}}>
             <div className="my-5" style={{ color: "rgb(255, 188, 0)" }}>
               <h1 className="text-center">{this.state.title}</h1>
             </div>

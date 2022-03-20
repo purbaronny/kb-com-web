@@ -178,68 +178,75 @@ class VisionAndMission extends Component {
                 </div>
               </div>
             </div>
-            <div id="visionMision" className="Header">
-              <div className="my-5">
-                <h1 className="text-center">{this.state.visionTitle}</h1>
+            <div className="content-mid">
+              <div className="logo-spinY">
+                <img src="./Pictures/kb-logo-crop.png" className="img-logo-left"/>
               </div>
+              <div id="visionMision" className="Header">
+                <div className="my-5">
+                  <h1 className="text-center">{this.state.visionTitle}</h1>
+                </div>
 
-              <div className="container-fluid mb-5">
-                <div className="row ">
-                  <div className="col-10 mx-auto">
-                    <div className="row text-center gy-4">
-                      <p className="text-center">{this.state.visionText1}</p>
+                <div className="container-fluid mb-5">
+                  <div className="row ">
+                    <div className="col-10 mx-auto">
+                      <div className="row text-center gy-4">
+                        <p className="text-center">{this.state.visionText1}</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="my-5">
+                  <h1 className="text-center">{this.state.missionTitle}</h1>
+                </div>
+
+                <div className="container-fluid mb-5">
+                  <div className="row">
+                    <div className="col-10 mx-auto">
+                      <div className="row gy-4">
+                        <p className="text-center">{this.state.missionText1}</p>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
+              <div id="businessDomain" className="Header">
+                <div className="my-5">
+                  <h1 className="text-center">
+                    {this.state.titleBusinessDomain}
+                  </h1>
+                </div>
 
-              <div className="my-5">
-                <h1 className="text-center">{this.state.missionTitle}</h1>
-              </div>
-
-              <div className="container-fluid mb-5">
-                <div className="row">
-                  <div className="col-10 mx-auto">
-                    <div className="row gy-4">
-                      <p className="text-center">{this.state.missionText1}</p>
+                <div className="container-fluid mb-5">
+                  <div className="row">
+                    <div className="col-10 mx-auto">
+                      <div className="row gy-4">
+                        <p className="text-center">
+                          {this.state.textBusinessDomain1}
+                        </p>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div id="businessDomain" className="Header">
-              <div className="my-5">
-                <h1 className="text-center">
-                  {this.state.titleBusinessDomain}
-                </h1>
-              </div>
-
-              <div className="container-fluid mb-5">
-                <div className="row">
-                  <div className="col-10 mx-auto">
-                    <div className="row gy-4">
-                      <p className="text-center">
-                        {this.state.textBusinessDomain1}
-                      </p>
-                    </div>
-                  </div>
+              <div id="achievements" className="Header">
+                <div className="my-5">
+                  <h1 className="text-center">
+                    {this.state.titleAchievements}
+                  </h1>
                 </div>
-              </div>
-            </div>
-            <div id="achievements" className="Header">
-              <div className="my-5">
-                <h1 className="text-center">{this.state.titleAchievements}</h1>
-              </div>
 
-              <div className="container-fluid mb-5">
-                <div className="row">
-                  <div className="col-10 mx-auto">
-                    <div className="row gy-4">
-                      <img
-                        src={web}
-                        className="img-fluid animated img-achievements"
-                        alt="HomeImg"
-                      />
+                <div className="container-fluid mb-5">
+                  <div className="row">
+                    <div className="col-10 mx-auto">
+                      <div className="row gy-4">
+                        <img
+                          src={web}
+                          className="img-fluid animated img-achievements"
+                          alt="HomeImg"
+                        />
+                      </div>
                     </div>
                   </div>
                 </div>
