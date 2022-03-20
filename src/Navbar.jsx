@@ -23,6 +23,8 @@ class Navbar extends Component {
       titleContactUs: "Contact",
       language: "Language",
       press: "News",
+      pressRelease: "Press Release",
+      event: "News",
 
       menus: [{
         menu: {
@@ -131,14 +133,14 @@ class Navbar extends Component {
   render() {
     return (
       <>
-        <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top  opacity-75" >
-          <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top opacity-75" >
+          <div className="container">
             <NavLink to="/"><img className="logo-kbds md-4" src="./Pictures/logokbds-remove.png" data-tilt  ></img></NavLink>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
+            <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span className="navbar-toggler-icon"></span>
             </button>
 
-            <div class="collapse navbar-collapse" id="navbarNav">
+            <div className="collapse navbar-collapse" id="navbarNav">
               <ul className="navbar-nav ms-auto me-5" >
                 <li className="nav-item">
                   <Dropdown>
@@ -169,8 +171,16 @@ class Navbar extends Component {
                   <NavLink className="nav-link" to="/contactUs" style={{ color: "rgb(255, 188, 0)" }}>{this.state.titleContactUs}</NavLink>
                 </li>
                 <li className="nav-item">
-                  <NavLink className="nav-link" to="/event" style={{ color: "rgb(255, 188, 0)" }}>{this.state.press}</NavLink>
+                  <Dropdown>
+                    <Dropdown.Toggle variant="successSolution" id="dropdown-basicSolution" className='background-white' style={{ color: "rgb(255, 188, 0)   " }}>{this.state.press}</Dropdown.Toggle>
+                    <Dropdown.Menu>
+                      <NavLink className="nav-link" to="/event">{this.state.event}</NavLink>
+                      <NavLink className="nav-link" to="/PressRelease">{this.state.pressRelease}</NavLink>
+
+                    </Dropdown.Menu>
+                  </Dropdown>
                 </li>
+
                 <li className="nav-item">
                   <Dropdown>
                     <Dropdown.Toggle variant="successSolution" id="dropdown-basicSolution" className='background-white' style={{ color: "rgb(255, 188, 0)   " }}>{this.state.language}</Dropdown.Toggle>
