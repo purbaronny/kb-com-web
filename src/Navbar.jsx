@@ -170,7 +170,7 @@ class Navbar extends Component {
                 <li className="nav-item">
                   <NavLink className="nav-link" to="/contactUs" style={{ color: "rgb(255, 188, 0)" }}>{this.state.titleContactUs}</NavLink>
                 </li>
-                <li className="nav-item">
+                {/* <li className="nav-item">
                   <Dropdown>
                     <Dropdown.Toggle variant="successSolution" id="dropdown-basicSolution" className='background-white' style={{ color: "rgb(255, 188, 0)   " }}>{this.state.press}</Dropdown.Toggle>
                     <Dropdown.Menu>
@@ -179,7 +179,7 @@ class Navbar extends Component {
 
                     </Dropdown.Menu>
                   </Dropdown>
-                </li>
+                </li> */}
 
                 <li className="nav-item">
                   <Dropdown>
