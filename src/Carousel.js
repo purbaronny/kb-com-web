@@ -1,15 +1,14 @@
 import "./Carousel.css"
-
 const Carousel = () => {
     return (
-        <div id="carouselExampleDark" className="carousel carousel-white slide p-4" data-bs-ride="carousel">
-            <div className="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
+        <div id="carouselExampleDark" class="carousel carousel-white slide p-4" style={{ marginTop: 50 }} data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                 <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
                 <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
-            <div className="carousel-inner">
-                <div className="carousel-item active" data-bs-interval="2000">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="2000">
                     <img src="./Pictures/Picture18.jpg" className="d-block w-100 rounded-3 " alt="..." />
 
                 </div>
@@ -20,12 +19,8 @@ const Carousel = () => {
                 <div className="carousel-item" data-bs-interval="2000">
                     <img src="./Pictures/Picture20.jpg" className="d-block w-100 rounded-3" alt="..." />
 
-                    </div>
-                    <div className="carousel-item">
-                        <img src="./Pictures/meeting3.jpg" className="d-block w-100 rounded-3" alt="..." />
-
-                    </div>
                 </div>
+            </div>
             <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
                 <span className="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span className="visually-hidden">Previous</span>
@@ -75,6 +70,10 @@ const Carousel = () => {
                     <span class="visually-hidden">Next</span>
                 </button>
             </div>
+            
+
+
+
         </div>
         */
     )
