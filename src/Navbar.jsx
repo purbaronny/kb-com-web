@@ -170,7 +170,7 @@ class Navbar extends Component {
                 <li className="nav-item">
                   <NavLink className="nav-link" to="/contactUs" style={{ color: "rgb(255, 188, 0)" }}>{this.state.titleContactUs}</NavLink>
                 </li>
-                <li className="nav-item">
+                {/* <li className="nav-item">
                   <Dropdown>
                     <Dropdown.Toggle variant="successSolution" id="dropdown-basicSolution" className='background-white' style={{ color: "rgb(255, 188, 0)   " }}>{this.state.press}</Dropdown.Toggle>
                     <Dropdown.Menu>
@@ -179,7 +179,7 @@ class Navbar extends Component {
 
                     </Dropdown.Menu>
                   </Dropdown>
-                </li>
+                </li> */}
 
                 <li className="nav-item">
                   <Dropdown>
@@ -210,7 +210,7 @@ class Navbar extends Component {
         <nav className="navbar navbar-expand-md fixed-top opacity-75">
           <div className="container-fluid navbar-collapse">
             <NavLink to="/"><img className="logo-kbds" src="./Pictures/logokbds-remove.png"></img></NavLink>
-            <button className="navbar-light navbar-toggler " type="button" >
+            <button className="navbar-light navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span className="navbar-toggler-icon navbar-collapse"></span>
             </button>
             <div className="flex-column">

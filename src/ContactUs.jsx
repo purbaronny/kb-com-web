@@ -112,7 +112,7 @@ class ContactUs extends Component {
                     <div className="container-fluid nav_bg">
                         <div className="row">
                             <div className="col-10 mx-auto">
-                                <div className="my-5">
+                                <div className="mb-lg-x">
                                     <h1 className="text-center" style={{ color: "rgb(255, 188, 0)   " }}>{this.state.titleContactUs}</h1>
                                 </div>
 
@@ -137,8 +137,8 @@ class ContactUs extends Component {
                                             </div>
                                             <div className="col-12 pt-3">
                                                 <button onClick={this.onClickButton} className="btn orange-color btn-kirim" type="submit">{this.state.labelSubmitform}</button>
-                                                <button class="btn btn-primary btn-loading d-none" type="button" disabled>
-                                                    <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                                                <button className="btn btn-primary btn-loading d-none" type="button" disabled>
+                                                    <span className="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
                                                     Loading...
                                                 </button>
                                             </div>

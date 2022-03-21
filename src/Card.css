@@ -1,7 +1,7 @@
 .img-card {
-  width: 512px;
-  height: auto;
-  max-width: 100%;
+  width: auto;
+  height: 250px;
+  max-height: 100%;
 }
 .orange-color {
   background-color: rgb(255, 188, 0);
@@ -31,6 +31,11 @@
   .card-topic-p {
     font-size: 14px;
   }
+  .img-card {
+    width: auto;
+    height: 175px;
+    max-height: 100%
+  }
 }
 @media (min-width: 992px) {
   .container-lg,
@@ -44,6 +49,11 @@
   }
   .card-topic-p {
     font-size: 14px;
+  }
+  .img-card {
+    width: auto;
+    height: 250px;
+    max-height: 100%;
   }
 }
 @media (min-width: 1200px) {

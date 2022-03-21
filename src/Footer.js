@@ -41,17 +41,17 @@ const Footer = () => {
 
 
         <div className="container-fluid" style={{ backgroundColor: "#f8f9fa", height: 200, marginTop: 150 }}>
-            <footer class="footer-basic" style={{ fontSize: 25, textAlign: "center", marginTop: 100 }}>
+            <footer className="footer-basic" style={{ fontSize: 25, textAlign: "center", marginTop: 100 }}>
 
-                <ul class="list-inline pt-3">
+                <ul className="list-inline pt-3">
                     <p style={{ fontSize: 14, fontFamily: "KGBF Display,sans-serif" }}>Follow Us on</p>
-                    <li class="list-inline-item"><a href="https://www.instagram.com/kbds_id/" target={"_blank"}><FontAwesomeIcon icon={faInstagram} style={{ color: "#d62976" }}></FontAwesomeIcon></a></li>
-                    <li class="list-inline-item"><a href="https://www.linkedin.com/in/pt-kb-data-systems-indonesia-6b873b223/" target={"_blank"}><FontAwesomeIcon icon={faLinkedin} style={{ color: "#1DA1F2" }}></FontAwesomeIcon></a></li>
-                    <li class="list-inline-item"><a href="https://www.facebook.com/KB-Data-Systems-Indonesia-106688835304194" target={"_blank"}><FontAwesomeIcon icon={faFacebook} style={{ color: "blue" }}></FontAwesomeIcon></a></li>
+                    <li className="list-inline-item"><a href="https://www.instagram.com/kbds_id/" target={"_blank"}><FontAwesomeIcon icon={faInstagram} style={{ color: "#d62976" }}></FontAwesomeIcon></a></li>
+                    <li className="list-inline-item"><a href="https://www.linkedin.com/in/pt-kb-data-systems-indonesia-6b873b223/" target={"_blank"}><FontAwesomeIcon icon={faLinkedin} style={{ color: "#1DA1F2" }}></FontAwesomeIcon></a></li>
+                    <li className="list-inline-item"><a href="https://www.facebook.com/KB-Data-Systems-Indonesia-106688835304194" target={"_blank"}><FontAwesomeIcon icon={faFacebook} style={{ color: "blue" }}></FontAwesomeIcon></a></li>
 
                 </ul>
 
-                <div class="text-center" style={{ fontSize: 14, color: "black", fontFamily: "KGBF Display,sans-serif" }}>
+                <div className="text-center" style={{ fontSize: 14, color: "black", fontFamily: "KGBF Display,sans-serif" }}>
                     <p>Copyright(c) 2022, KB Data Systems Indonesia</p>
                     <p>All Right Reserved.</p>
                 </div>
