@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import web from "../src/Pictures/Picture1.png";
-import CardNoPicture from "./CardNoPicture";
+import CardNoPicture2 from "./CardNoPicture2";
 import "./VisionAndMission.css";
 import Footer from "./Footer";
 import AOS from "aos";
@@ -180,7 +180,10 @@ class VisionAndMission extends Component {
             </div>
             <div className="content-mid">
               <div className="logo-spinY">
-                <img src="./Pictures/kb-logo-crop.png" className="img-logo-left"/>
+                <img
+                  src="./Pictures/kb-logo-crop.png"
+                  className="img-logo-left"
+                />
               </div>
               <div id="visionMision" className="Header">
                 <div className="my-5">
@@ -265,10 +268,14 @@ class VisionAndMission extends Component {
                   data-aos-duration="2000"
                   data-aos-offset="300"
                 >
-                  <div className="col-10 mx-auto">
-                    <div className="row gy-4">
+                  <div
+                    className="col-10 mx-auto"
+                    style={{ paddingBottom: 300 }}
+                  >
+                    <div className="row gy-4" style={{justifyContent:"center"}}>
                       {this.state.cards.map((card) => (
-                        <CardNoPicture
+
+                        <CardNoPicture2
                           key={this.code}
                           title={card.title}
                           text1={card.text1}
