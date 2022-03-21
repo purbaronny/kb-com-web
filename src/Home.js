@@ -73,7 +73,7 @@ class Home extends Component {
 
   render() {
     return (
-      <div style={{marginTop:100}}>
+      <div style={{marginTop:50}}>
         <Carousel />
         <Common name={this.state.text1} contentText={this.state.text2} imgsrc={web} visit="/visionAndMission" btname={this.state.text3} />
         <Footer />

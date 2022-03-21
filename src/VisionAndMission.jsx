@@ -272,7 +272,7 @@ class VisionAndMission extends Component {
                     className="col-10 mx-auto"
                     style={{ paddingBottom: 300 }}
                   >
-                    <div className="row gy-4" style={{justifyContent:"center"}}>
+                    <div className="row gy-4" style={{justifyContent:"flex-start"}}>
                       {this.state.cards.map((card) => (
 
                         <CardNoPicture2
