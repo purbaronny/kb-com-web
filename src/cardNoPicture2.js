@@ -20,7 +20,7 @@ class CardNoPicture2 extends Component {
 
 
             <div className="col-md-4 col-10 mx-auto" data-aos="flip-right">
-                <div id="border" className="card" >
+                <div id="border" className="card">
                     <div className="card-header bg-warning">
                         <h5 className="card-title text-center">{this.props.title}</h5>
                     </div>
@@ -30,7 +30,7 @@ class CardNoPicture2 extends Component {
                         </p>
                     </div>
                 </div>
-            </div>
+            </div >
 
         );
     }
