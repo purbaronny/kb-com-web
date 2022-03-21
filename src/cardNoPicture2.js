@@ -15,16 +15,12 @@ class CardNoPicture2 extends Component {
 
     render() {
         return (
-
-
-
-
-            <div className="col-md-4 col-10 mx-auto" data-aos="flip-right">
-                <div id="border" className="card">
+            <div className="col-md-4 col-10" data-aos="flip-right">
+                <div id="border" className="card" >
                     <div className="card-header bg-warning">
                         <h5 className="card-title text-center">{this.props.title}</h5>
                     </div>
-                    <div className="card-body justify-content-center">
+                    <div className="card-body">
                         <h5 className="card-title text-center">{this.props.title1}</h5>
                         <p className="card-text">{this.props.text1}
                         </p>
