@@ -153,7 +153,7 @@ class Career extends Component {
     render() {
         return (
             <>
-                <div className="container" style={{ marginTop: 100 }}>
+                <div className="container" style={{ marginTop: 50 }}>
                     <div className="my-5" style={{ color: "rgb(255, 188, 0)" }} >
                         <h1 className="text-center">{this.state.title}</h1>
                     </div>

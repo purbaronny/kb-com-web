@@ -14,7 +14,7 @@ class PressRelease extends Component {
         return (
             <>
                 <div className="my-5">
-                    <h1 className="text-center">Press Release</h1>
+                    <h1 className="text-center" style={{ color: "rgb(255, 188, 0)" }}>Press Release</h1>
                 </div>
 
                 <div className="container-fluid mb-5">

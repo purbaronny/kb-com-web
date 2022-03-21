@@ -1,22 +1,26 @@
 .target {
-    width:100%;
-    height:200px;
-    /* border:solid black 1px;  */
+  width: 100%;
+  height: 200px;
+  /* border:solid black 1px;  */
 }
 .target > div {
-    display:flexbox;
+  display: flexbox;
 }
 
-.target > div:target{
-    display:flexbox;
+.target > div:target {
+  display: flexbox;
 }
 
-.Header .my-5 h1{
-    font-family: "KBFG Display";
-    font-style: normal;
-    font-weight: 600;
-    /*font-size: 24px; */
-    line-height: 36px;
-    color: rgb(255, 188, 0); 
+.Header .my-5 h1 {
+  font-family: "KBFG Display";
+  font-style: normal;
+  font-weight: 600;
+  /*font-size: 24px; */
+  line-height: 36px;
+  color: rgb(255, 188, 0);
 }
 
+#text {
+  /* /*color: rgb(119, 119, 119); */
+  font-family: "KGBF Text";
+}

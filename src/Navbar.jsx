@@ -133,9 +133,9 @@ class Navbar extends Component {
   render() {
     return (
       <>
-        <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top opacity-75" >
+        <nav className="navbar navbar-expand-lg navbar-light bg-white fixed-top opacity-75">
           <div className="container">
-            <NavLink to="/"><img className="logo-kbds md-4" src="./Pictures/logokbds-remove.png" data-tilt  ></img></NavLink>
+            <NavLink to="/"><img className="logo-kbds img-fluid md-4" src="./Pictures/logokbds-remove.png" data-tilt  ></img></NavLink>
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span className="navbar-toggler-icon"></span>
             </button>
@@ -146,10 +146,10 @@ class Navbar extends Component {
                   <Dropdown>
                     <Dropdown.Toggle variant="success" id="dropdown-basicAbout" className='background-white' style={{ color: "rgb(255, 188, 0)   " }}>{this.state.titleAbout}</Dropdown.Toggle>
                     <Dropdown.Menu>
-                      <NavLink className="nav-link" to={{ pathname: "/visionAndMission", hash: "#companyOverview", state: { fromDashboard: true } }}>{this.state.titleAboutCompanyOverview}</NavLink>
-                      <NavLink className="nav-link" to={{ pathname: "/visionAndMission", hash: "#visionMission", state: { fromDashboard: true } }}>{this.state.titleAboutVisionMission}</NavLink>
-                      <NavLink className="nav-link" to={{ pathname: "/visionAndMission", hash: "#businessDomain", state: { fromDashboard: true } }}>{this.state.titleAboutBusinessDomain}</NavLink>
-                      <NavLink className="nav-link" to={{ pathname: "/visionAndMission", hash: "#achievements", state: { fromDashboard: true } }}>{this.state.titleAboutAchievements}</NavLink>
+                      <NavLink className="nav-link" style={{ color: "rgb(255, 188, 0)   " }} to={{ pathname: "/visionAndMission", hash: "#companyOverview", state: { fromDashboard: true } }}>{this.state.titleAboutCompanyOverview}</NavLink>
+                      <NavLink className="nav-link" style={{ color: "rgb(255, 188, 0)   " }} to={{ pathname: "/visionAndMission", hash: "#visionMission", state: { fromDashboard: true } }}>{this.state.titleAboutVisionMission}</NavLink>
+                      <NavLink className="nav-link" style={{ color: "rgb(255, 188, 0)   " }} to={{ pathname: "/visionAndMission", hash: "#businessDomain", state: { fromDashboard: true } }}>{this.state.titleAboutBusinessDomain}</NavLink>
+                      <NavLink className="nav-link" style={{ color: "rgb(255, 188, 0)   " }} to={{ pathname: "/visionAndMission", hash: "#achievements", state: { fromDashboard: true } }}>{this.state.titleAboutAchievements}</NavLink>
                       <NavLink className="nav-link" to={{ pathname: "/visionAndMission", hash: "#coreValues", state: { fromDashboard: true } }}>{this.state.titleAboutCoreValues}</NavLink>
                     </Dropdown.Menu>
                   </Dropdown>
@@ -158,9 +158,9 @@ class Navbar extends Component {
                   <Dropdown>
                     <Dropdown.Toggle variant="successSolution" id="dropdown-basicSolution" className='background-white' style={{ color: "rgb(255, 188, 0)   " }}>{this.state.titleSolution}</Dropdown.Toggle>
                     <Dropdown.Menu>
-                      <NavLink className="nav-link" to="/service#companyMaintenance">{this.state.titleSolutionGroupJoin}</NavLink>
-                      <NavLink className="nav-link" to="/service#companyService">{this.state.titleSolutionBankIT}</NavLink>
-                      <NavLink className="nav-link" to="/service#companyOperation">{this.state.titleSolutionGroupCompany}</NavLink>
+                      <NavLink className="nav-link" to="/service#companyMaintenance" style={{ color: "rgb(255, 188, 0)   " }} >{this.state.titleSolutionGroupJoin}</NavLink>
+                      <NavLink className="nav-link" to="/service#companyService" style={{ color: "rgb(255, 188, 0)   " }}>{this.state.titleSolutionBankIT}</NavLink>
+                      <NavLink className="nav-link" to="/service#companyOperation" style={{ color: "rgb(255, 188, 0)   " }}>{this.state.titleSolutionGroupCompany}</NavLink>
                     </Dropdown.Menu>
                   </Dropdown>
                 </li>
@@ -174,8 +174,8 @@ class Navbar extends Component {
                   <Dropdown>
                     <Dropdown.Toggle variant="successSolution" id="dropdown-basicSolution" className='background-white' style={{ color: "rgb(255, 188, 0)   " }}>{this.state.press}</Dropdown.Toggle>
                     <Dropdown.Menu>
-                      <NavLink className="nav-link" to="/event">{this.state.event}</NavLink>
-                      <NavLink className="nav-link" to="/PressRelease">{this.state.pressRelease}</NavLink>
+                      <NavLink className="nav-link" to="/event" style={{ color: "rgb(255, 188, 0)   " }}>{this.state.event}</NavLink>
+                      <NavLink className="nav-link" to="/PressRelease" style={{ color: "rgb(255, 188, 0)   " }}>{this.state.pressRelease}</NavLink>
 
                     </Dropdown.Menu>
                   </Dropdown>

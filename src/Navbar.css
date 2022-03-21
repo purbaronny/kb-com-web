@@ -37,7 +37,7 @@
 }
 
 .logo-kbds {
-  width: 256px;
+  width: 250px;
   height: auto;
   max-width: 90%;
   margin-right: auto;
@@ -91,4 +91,8 @@
   .container-detail {
     max-width: 1320px;
   }
+}
+
+.nav-item .nav-link :hover {
+  color: black;
 }

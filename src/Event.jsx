@@ -107,8 +107,8 @@ class Event extends Component {
     render() {
         return (
             <>
-                <div className="my-5">
-                    <h1 className="text-center">{this.state.title}</h1>
+                <div className="my-5" style={{ marginTop: 100 }}>
+                    <h1 className="text-center" style={{ color: "rgb(255, 188, 0)" }}>{this.state.title}</h1>
                 </div>
 
                 <div className="container-fluid mb-5">
