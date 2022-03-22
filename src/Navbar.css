@@ -1,7 +1,7 @@
 .background-white {
   background-color: white;
   border-color: white;
-  color: blue;
+  color: black;
   border: none;
   margin-top: 2px;
 }
@@ -11,44 +11,20 @@
   background-color: white;
 }
 
-#dropdown-basicAbout.dropdown-toggle {
-  background-color: white;
-  border-color: blue;
-  color: blue;
-}
-
-#dropdown-basicSolution:hover {
+.item-nav{
   color: rgb(255, 188, 0);
   background-color: white;
-}
-
-#dropdown-basicSolution.dropdown-toggle {
-  background-color: white;
-  border-color: blue;
-  color: blue;
-}
-/**/
-.container-fluid .row .col-10 .navbar-brand {
-  color: rgb(255, 188, 0);
-}
-
-.container-fluid .collapse .navbar-nav {
-  color: rgb(255, 188, 0);
 }
 
 .logo-kbds {
-  width: 250px;
+  width: 350px;
   height: auto;
-  max-width: 90%;
-  margin-right: auto;
+  max-width: 100%;
   margin-left: 2em;
+  margin-right: auto;
 }
 
 .background-white {
-  color: rgb(255, 188, 0);
-}
-
-.nav-link {
   color: rgb(255, 188, 0);
 }
 
@@ -92,7 +68,34 @@
     max-width: 1320px;
   }
 }
-
-.nav-item .nav-link :hover {
-  color: black;
+.item-nav{
+  color: rgb(255, 188, 0);
+  background-color: white;
+}
+.nav-no-dropdown{
+  display: block;
+  padding: 0.5rem 1rem;
+  color: rgb(255, 188, 0);
+  text-decoration: none;
+  border-width: 0px;
+  border-style: solid;
+  border-radius: 5px;
+  max-height: 2.3rem;
+  box-sizing: border-box;
+}
+.item-nav:hover{
+  color:white;
+  background-color: rgb(96,88,76);
+}
+.nav-no-dropdown:hover{
+  display: block;
+  padding: 0.5rem 1rem;
+  color:white;
+  background-color: rgb(96,88,76);
+  text-decoration: none;
+  border-width: 0px;
+  border-style: solid;
+  border-radius: 5px;
+  max-height: 2.4rem;
+  box-sizing: border-box;
 }

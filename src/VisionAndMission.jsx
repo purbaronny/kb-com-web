@@ -5,6 +5,7 @@ import "./VisionAndMission.css";
 import Footer from "./Footer";
 import AOS from "aos";
 import "aos/dist/aos.css"; // You can also use <link> for styles
+import { Tab } from "bootstrap";
 
 // ..
 AOS.init();
@@ -23,10 +24,10 @@ class VisionAndMission extends Component {
         "In Indonesia, the pinnacle of the financial group’s “2nd Mother Market strategy,” KB Data System, which has accumulated Korea’s Latest financial IT technology, and overseas subsidiaries that will play a pivotal role in the advancement of Indonesia's financial IT system by contributing to the promotion and dissemination of advanced financial technology capabilities.",
       visionTitle: "Vision",
       visionText1:
-        "Finance that changes the world customer happiness and We make a better world",
+        "Driven by world-class talents and bold innovation, to become your trusted financial partner for a life time.",
       missionTitle: "Mission",
       missionText1:
-        "With the best talent and bold innovation, trusted Financial IT Partner",
+      "Financial services delivering changes for happier life and better world.",
       titleBusinessDomain: "Business Domain",
       textBusinessDomain1:
         "We are carrying out various projects for financial IT Innovation",
@@ -117,7 +118,7 @@ class VisionAndMission extends Component {
     return { languageCode: props.languageCode };
   }
 
-  componentDidUpdate(prevProps) {
+  componentDidUpdate() {
     fetch("./visionAndMissionData.json")
       .then((response) => response.json())
       .then((result) => {
@@ -152,28 +153,28 @@ class VisionAndMission extends Component {
   render() {
     return (
       <>
-        <div className="target">
-          <div style={{ marginTop: 100 }}>
+        <div className="container-fluid target">
+          <div style={{ marginTop:60 }}>
             <div className="companyOverview">
-              <div className="my-5">
+              <div className="my-5" >
                 <h1 className="text-center">
                   {this.state.titleCompanyOverview}
                 </h1>
               </div>
 
               <div className="container-fluid mb-5 ">
-                <div className="row justify-content-center text-center">
+                <div style={{textAlign: "justify",marginLeft:"5vw",marginRight:"5vw"}} className="row justify-content-center">
                   <div className="col-10 mx-auto">
-                    <div className="row gy-4">
-                      {this.state.textCompanyOverview1}
+                    <div className="row gy-5">
+                      <p>{this.state.textCompanyOverview1}</p>
                     </div>
-                    <br />
-                    <div className="row gy-4">
-                      {this.state.textCompanyOverview2}
+                  
+                    <div className="row gy-5">
+                      <p>{this.state.textCompanyOverview2}</p>
                     </div>
-                    <br />
-                    <div className="row gy-4">
-                      {this.state.textCompanyOverview3}
+    
+                    <div className="row gy-5">
+                      <p>{this.state.textCompanyOverview3}</p>
                     </div>
                   </div>
                 </div>
@@ -271,9 +272,11 @@ class VisionAndMission extends Component {
                 >
                   <div
                     className="col-10 mx-auto"
-                    style={{ paddingBottom: 300 }}
                   >
-                    <div className="row gy-4" style={{ justifyContent: "flex-start" }}>
+                    <div
+                      className="row gy-4"
+                      style={{ justifyContent: "flex-start" }}
+                    >
                       {this.state.cards.map((card) => (
                         <CardNoPicture2
                           key={this.code}
