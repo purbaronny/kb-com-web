@@ -11,7 +11,9 @@
     "titleSolutionBankIT": "Bank IT Systems Operation Service",
     "titleSolutionGroupCompany": "Group Company / External Organization IT Systems Operation",
     "titleCareerWithUs": "Career",
-    "titleContactUs": "Contact"
+    "titleContactUs": "Contact",
+    "language": "Bahasa",
+    "latest": "Berita Terkini"
 }, 
 {
     "languageCode": "id-ID",
@@ -26,7 +28,9 @@
     "titleSolutionBankIT": "Layanan Operasi Sistem TI Bank",
     "titleSolutionGroupCompany": "Grup Perusahaan / Organisasi Eksternal Operasi Sistem TI",
     "titleCareerWithUs": "Karir",
-    "titleContactUs": "Hubungi kami"
+    "titleContactUs": "Hubungi kami",
+    "language": "Language",
+    "latest": "Latest Update"
 }, 
 {
     "languageCode": "ko-KR",
@@ -41,6 +45,8 @@
     "titleSolutionBankIT": "은행 IT 시스템 운영 서비스",
     "titleSolutionGroupCompany": "그룹사 / 외부조직 IT시스템 운영",
     "titleCareerWithUs": "경력",
-    "titleContactUs": "문의하기"
+    "titleContactUs": "문의하기",
+    "language": "Language",
+    "latest": "Latest Update"
 }
 ]

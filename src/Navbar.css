@@ -1,6 +1,5 @@
 .background-white {
-  background-color: white;
-  border-color: white;
+  background-color: rgba(255,255,255,0.75);
   color: black;
   border: none;
   margin-top: 2px;
@@ -80,8 +79,7 @@
   border-width: 0px;
   border-style: solid;
   border-radius: 5px;
-  max-height: 2.3rem;
-  box-sizing: border-box;
+
   margin-top:2px;
 }
 .item-nav:hover{
@@ -89,14 +87,26 @@
   background-color: rgb(96,88,76);
 }
 .nav-no-dropdown:hover{
-  display: block;
-  padding: 0.378rem 0.75rem;
   color:white;
   background-color: rgb(96,88,76);
   text-decoration: none;
+  border-color: #6c757d;
   border-width: 0px;
   border-style: solid;
   border-radius: 5px;
-  max-height: 2.3rem;
-  box-sizing: border-box;
+
+  margin-top:2px ;
+  padding: 0.378rem 0.75rem;
+}
+.nav-no-dropdown:active{
+  color:white;
+  background-color: rgb(96,88,76);
+  text-decoration: none;
+  border-color: #6c757d;
+  border-width: 3px;
+  border-style: solid;
+  border-radius: 5px;
+ 
+  margin-top:2px ;
+  padding: 0.2rem 0.57rem;
 }

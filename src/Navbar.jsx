@@ -22,7 +22,7 @@ class Navbar extends Component {
       titleCareerWithUs: "Career",
       titleContactUs: "Contact",
       language: "Language",
-      press: "News",
+      latest: "Latest Update",
       pressRelease: "Press Release",
       event: "News",
 
@@ -120,7 +120,9 @@ class Navbar extends Component {
               titleSolutionBankIT: obj.titleSolutionBankIT,
               titleSolutionGroupCompany: obj.titleSolutionGroupCompany,
               titleCareerWithUs: obj.titleCareerWithUs,
-              titleContactUs: obj.titleContactUs
+              titleContactUs: obj.titleContactUs,
+              latest: obj.latest,
+              language: obj.language
             });
             break;
           }
@@ -164,22 +166,20 @@ class Navbar extends Component {
                     </Dropdown.Menu>
                   </Dropdown>
                 </li>
-                <li className="nav-item me-1">
-                  <NavLink className="item-nav nav-no-dropdown" to="/career" >{this.state.titleCareerWithUs}</NavLink>
-                </li>
-                <li className="nav-item me-1">
-                  <NavLink className="item-nav nav-no-dropdown" to="/contactUs">{this.state.titleContactUs}</NavLink>
-                </li>
+                
                 <li className="nav-item me-1">
                   <Dropdown>
-                    <Dropdown.Toggle variant="outline-secondary"  className='background-white item-nav'>{this.state.press}</Dropdown.Toggle>
+                    <Dropdown.Toggle variant="outline-secondary"  className='background-white item-nav'>{this.state.latest}</Dropdown.Toggle>
                     <Dropdown.Menu>
+                      <NavLink className="nav-link" to="/career" style={{color:"rgb(255,188,0)"}} >{this.state.titleCareerWithUs}</NavLink>
                       <NavLink className="nav-link" to="/event" style={{ color: "rgb(255, 188, 0)"}}>{this.state.event}</NavLink>
                       <NavLink className="nav-link" to="/PressRelease" style={{ color: "rgb(255, 188, 0)   " }}>{this.state.pressRelease}</NavLink>
                     </Dropdown.Menu>
                   </Dropdown>
                 </li>
-
+                <li className="nav-item me-1">
+                  <NavLink className="item-nav nav-no-dropdown" to="/contactUs">{this.state.titleContactUs}</NavLink>
+                </li>
                 <li className="nav-item me-1">
                   <Dropdown>
                     <Dropdown.Toggle variant="outline-secondary" className='background-white item-nav'>{this.state.language}</Dropdown.Toggle>
