@@ -1,14 +1,9 @@
 import { Component } from "react";
 import Card from "./Card";
-import img1 from "../src/Pictures/img1.png";
-import img2 from "../src/Pictures/img2.png";
-import img3 from "../src/Pictures/img3.png";
-import img4 from "../src/Pictures/img4.png";
-import img5 from "../src/Pictures/img5.png";
-import img6 from "../src/Pictures/img6.png";
+import ListItem from "./ListItem";
 import Footer from "./Footer";
 
-class Event extends Component {
+class News extends Component {
 
     state = {
         languageCode: "en-US",
@@ -110,7 +105,6 @@ class Event extends Component {
                 <div className="my-5" style={{ marginTop: 100 }}>
                     <h1 className="text-center" style={{ color: "rgb(255, 188, 0)" }}>{this.state.title}</h1>
                 </div>
-
                 <div className="container-fluid mb-5">
                     <div className="row">
                         <div className="col-10 mx-auto">
@@ -131,4 +125,4 @@ class Event extends Component {
     }
 }
 
-export default Event;
+export default News;

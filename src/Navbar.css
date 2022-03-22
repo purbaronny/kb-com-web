@@ -1,22 +1,23 @@
 .background-white {
-  background-color: rgba(255,255,255,0.75);
   color: black;
   border: none;
   margin-top: 2px;
+  background-color: rgba(255,255,255,0.75);
 }
-
+.bg-white-important{
+  background-color: rgba(255,255,255,0.75);
+}
 #dropdown-basicAbout:hover {
   color: rgb(255, 188, 0);
-  background-color: white;
 }
 
 .item-nav{
   color: rgb(255, 188, 0);
-  background-color: white;
+  border:none;
 }
 
 .logo-kbds {
-  width: 350px;
+  width: 345px;
   height: auto;
   max-width: 100%;
   margin-left: 2em;
@@ -69,7 +70,6 @@
 }
 .item-nav{
   color: rgb(255, 188, 0);
-  background-color: white;
 }
 .nav-no-dropdown{
   display: block;
@@ -79,7 +79,6 @@
   border-width: 0px;
   border-style: solid;
   border-radius: 5px;
-
   margin-top:2px;
 }
 .item-nav:hover{
@@ -95,7 +94,7 @@
   border-style: solid;
   border-radius: 5px;
 
-  margin-top:2px ;
+  margin-top:1px ;
   padding: 0.378rem 0.75rem;
 }
 .nav-no-dropdown:active{
@@ -106,7 +105,7 @@
   border-width: 3px;
   border-style: solid;
   border-radius: 5px;
- 
-  margin-top:2px ;
+  margin-top:1px ;
   padding: 0.2rem 0.57rem;
+  
 }

@@ -10,7 +10,7 @@ import History from "./History";
 import Contact from "./Contact";
 import Service from "./Service";
 import PressRelease from "./PressRelease";
-import Event from "./Event";
+import News from "./News";
 import Navbar from "./Navbar";
 import Career from "./Career";
 import ContactUs from "./ContactUs";
@@ -104,15 +104,13 @@ class App extends Component {
             <Route exact path="/visionAndMission" element={<VisionAndMission languageCode={this.state.name} />} />
             <Route exact path="/award" element={<Award languageCode={this.state.name} />} />
             <Route exact path="/history" element={<History languageCode={this.state.name} />} />
-            <Route exact path="/pressRelease" element={<PressRelease />} />
-            <Route exact path="/event" element={<Event languageCode={this.state.name} />} />
+            <Route exact path="/pressRelease" element={<PressRelease languageCode={this.state.name} />} />
+            <Route exact path="/news" element={<News languageCode={this.state.name} />} />
             <Route exact path="/career" element={<Career languageCode={this.state.name} />} />
             <Route exact path="/contactUs" element={<ContactUs languageCode={this.state.name} />} />
-            <Route exact path="/about" element={<About />} />
+            <Route exact path="/about" element={<About languageCode={this.state.name} />} />
             <Route exact path="/service" element={<Service languageCode={this.state.name} />} />
-            <Route exact path="/contact" element={<Contact />} />
-            <Route exact path="/event" element={<Event />}></Route>
-            <Route exact path="/PressRelease" element={<Event />}></Route>
+            <Route exact path="/contact" element={<Contact languageCode={this.state.name} />}/>
             <Route path="/career/:id/:languageCode" element={<DetailCareerExperimen />} />
           </Routes>
         </BrowserRouter>
