@@ -145,6 +145,10 @@ class ContactUs extends Component {
                                         </form>
                                     </div>
 
+
+
+
+
                                     <div className="col-lg-6 order-1 order-lg-2 header-img" style={{ display: "block" }}>
                                         <p align="right">
                                             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.115363048713!2d106.84188341426903!3d-6.248525962920591!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f7fbe2991fbf%3A0xe46e220a647b07!2sL%E2%80%99Avenue%20Office%20%26%20Residence%20Jakarta!5e0!3m2!1sen!2sid!4v1646029842534!5m2!1sen!2sid" width="460" height="360" style={{ border: 0 }} loading="lazy"></iframe>

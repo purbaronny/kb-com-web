@@ -1,19 +1,20 @@
-[{
+[
+  {
     "languageCode": "en-US",
     "text1": "Grow your business with",
     "text2": "We're a team of talented developers that can help your business grow!",
     "text3": "Get started"
-},
-{
+  },
+  {
     "languageCode": "id-ID",
     "text1": "Kembangkan bisnis Anda dengan",
     "text2": "Kami adalah tim pengembang berbakat yang dapat membantu bisnis Anda berkembang!",
     "text3": "Ayo Mulai"
-},
-{
+  },
+  {
     "languageCode": "ko-KR",
-    "text1": "Grow your business with",
-    "text2": "We're a team of talented developers that can help your business grow!",
-    "text3": "Get started"
-}
+    "text1": "비즈니스 성장",
+    "text2": "우리는 귀하의 비즈니스 성장을 도울 수 있는 재능 있는 개발자 팀입니다!",
+    "text3": "시작하다"
+  }
 ]

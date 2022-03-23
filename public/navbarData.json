@@ -1,11 +1,12 @@
-[{
+[
+  {
     "languageCode": "en-US",
     "titleAbout": "About",
     "titleAboutCompanyOverview": "Company Overview",
-    "titleAboutVisionMission": "Vision & Mission", 
-    "titleAboutBusinessDomain": "Business Domain", 
-    "titleAboutAchievements": "Achievements", 
-    "titleAboutCoreValues": "Core Values", 
+    "titleAboutVisionMission": "Vision & Mission",
+    "titleAboutBusinessDomain": "Business Domain",
+    "titleAboutAchievements": "Achievements",
+    "titleAboutCoreValues": "Core Values",
     "titleSolution": "Solution",
     "titleSolutionGroupJoin": "Group Join Systems Operation / Maintenance Overview",
     "titleSolutionBankIT": "Bank IT Systems Operation Service",
@@ -14,15 +15,15 @@
     "titleContactUs": "Contact",
     "language": "Language",
     "latest": "Latest Update"
-}, 
-{
+  },
+  {
     "languageCode": "id-ID",
     "titleAbout": "Tentang",
     "titleAboutCompanyOverview": "Tinjauan Perusahaan",
-    "titleAboutVisionMission": "Visi & Misi", 
-    "titleAboutBusinessDomain": "Domain Bisnis", 
-    "titleAboutAchievements": "Prestasi", 
-    "titleAboutCoreValues": "Nilai Inti", 
+    "titleAboutVisionMission": "Visi & Misi",
+    "titleAboutBusinessDomain": "Domain Bisnis",
+    "titleAboutAchievements": "Prestasi",
+    "titleAboutCoreValues": "Nilai Inti",
     "titleSolution": "Solusi",
     "titleSolutionGroupJoin": "Tinjauan Operasi / Pemeliharaan Sistem Gabung Grup",
     "titleSolutionBankIT": "Layanan Operasi Sistem TI Bank",
@@ -31,22 +32,22 @@
     "titleContactUs": "Hubungi kami",
     "language": "Bahasa",
     "latest": "Berita Terkini"
-}, 
-{
+  },
+  {
     "languageCode": "ko-KR",
     "titleAbout": "에 대한",
     "titleAboutCompanyOverview": "회사 개요",
-    "titleAboutVisionMission": "비전 & 사명", 
-    "titleAboutBusinessDomain": "비즈니스 도메인", 
-    "titleAboutAchievements": "성취", 
-    "titleAboutCoreValues": "닐라이 인티", 
+    "titleAboutVisionMission": "비전 & 사명",
+    "titleAboutBusinessDomain": "비즈니스 도메인",
+    "titleAboutAchievements": "성취",
+    "titleAboutCoreValues": "닐라이 인티",
     "titleSolution": "해결책",
     "titleSolutionGroupJoin": "그룹 가입 시스템 운영/유지보수 개요",
     "titleSolutionBankIT": "은행 IT 시스템 운영 서비스",
     "titleSolutionGroupCompany": "그룹사 / 외부조직 IT시스템 운영",
     "titleCareerWithUs": "경력",
     "titleContactUs": "문의하기",
-    "language": "Language",
-    "latest": "Latest Update"
-}
+    "language": "언어",
+    "latest": "최근 업데이트"
+  }
 ]
