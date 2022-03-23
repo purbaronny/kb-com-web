@@ -56,25 +56,25 @@
   font-family: "KGBF Text";
 }
 
-.img-achievements {
+.img-achievements{
   width: 459px;
   height: auto;
-  max-width: 100%;
-  margin: 0 auto;
+  max-width:100%;
+  margin:0 auto;
 }
 
-.img-achievements:hover {
+.img-achievements:hover{
   animation-name: imgScaleUp;
   animation-duration: 1s;
   animation-fill-mode: forwards;
 }
 
-@keyframes imgScaleUp {
-  0% {
-    transform: scale(1);
+@keyframes imgScaleUp{
+  0%{
+    transform:scale(1);
   }
-  100% {
-    transform: scale(1.1);
+  100%{
+    transform:scale(1.1);
   }
 }
 /*

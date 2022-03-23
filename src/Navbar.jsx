@@ -137,12 +137,12 @@ class Navbar extends Component {
       <>
         <nav className="navbar navbar-expand-lg navbar-light fixed-top bg-white-important" >
           <div className="container-fluid">
-            <NavLink to="/"><img className="logo-kbds img-fluid md-4" src="./Pictures/logokbds-remove.png" data-tilt  ></img></NavLink>
-            <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <NavLink to="/"><img className="logo-kbds" src="./Pictures/logokbds-remove.png" ></img></NavLink>
+            <button className="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span className="navbar-toggler-icon"></span>
             </button>
 
-            <div className="collapse navbar-collapse" id="navbarNav">
+            <div className="navbar-collapse collapse" id="navbarNav">
               <ul className="navbar-nav ms-auto me-5" style={{ opacity: 0.75, alignItems: "center" }} >
                 <li className="nav-item me-1 ">
                   <Dropdown>

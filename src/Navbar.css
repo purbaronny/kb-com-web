@@ -20,8 +20,6 @@
   width: 345px;
   height: auto;
   max-width: 100%;
-  margin-left: 2em;
-  margin-right: auto;
 }
 
 .background-white {
@@ -84,6 +82,9 @@
 .item-nav:hover {
   color: white;
   background-color: rgb(96, 88, 76);
+}
+.collapsing #navbarNav {
+  overflow: hidden;
 }
 .nav-no-dropdown:hover {
   color: white;
