@@ -1,5 +1,4 @@
 import { Component } from "react";
-import Card from "./Card";
 import ListItem from "./ListItem";
 import Footer from "./Footer";
 
@@ -80,7 +79,7 @@ class News extends Component {
     }
 
     componentDidUpdate(prevProps) {
-        fetch("./eventData.json")
+        fetch("./newsData.json")
             .then(response => response.json())
             .then(result => {
                 for (var i = 0; i < result.length; i++) {
@@ -107,10 +106,10 @@ class News extends Component {
                 </div>
                 <div className="container-fluid mb-5">
                     <div className="row">
-                        <div className="col-10 mx-auto">
+                        <div className="col-11 mx-auto">
                             <div className="row gy-4">
                                 {this.state.cards.map((card =>
-                                    <Card key={this.code} title={card.title} text1={card.text1} imgsrc={card.imgsrc} linkSourceText={card.linkSourceText} />
+                                    <ListItem key={this.code} title={card.title} text1={card.text1} imgsrc={card.imgsrc} linkSourceText={card.linkSourceText} />
                                 ))}
                             </div>
 
