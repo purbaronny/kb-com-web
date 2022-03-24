@@ -172,7 +172,7 @@ class Navbar extends Component {
                     <Dropdown.Menu>
                       <NavLink className="nav-link" to="/career" style={{ color: "rgb(255,188,0)" }} >{this.state.titleCareerWithUs}</NavLink>
                       <NavLink className="nav-link" to="/news" style={{ color: "rgb(255, 188, 0)" }}>{this.state.event}</NavLink>
-                      <NavLink className="nav-link" to="/PressRelease" style={{ color: "rgb(255, 188, 0)" }}>{this.state.pressRelease}</NavLink>
+                      {/* <NavLink className="nav-link" to="/PressRelease" style={{ color: "rgb(255, 188, 0)" }}>{this.state.pressRelease}</NavLink> */}
                     </Dropdown.Menu>
                   </Dropdown>
                 </li>

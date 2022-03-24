@@ -9,7 +9,7 @@ const Carousel = () => {
             </div>
             <div className="carousel-inner">
                 <div className="carousel-item active" data-bs-interval="2000">
-                    <img src="./Pictures/Picture18.jpg" className="d-block w-100 rounded-3 " alt="..." />
+                    <img src="./Pictures/negotiation.jpg" className="d-block w-100 rounded-3 " alt="..." />
 
                 </div>
                 <div className="carousel-item" data-bs-interval="2000">
@@ -17,7 +17,7 @@ const Carousel = () => {
 
                 </div>
                 <div className="carousel-item" data-bs-interval="2000">
-                    <img src="./Pictures/Picture20.jpg" className="d-block w-100 rounded-3" alt="..." />
+                    <img src="./Pictures/meeting_3.jpg" className="d-block w-100 rounded-3" alt="..." />
 
                 </div>
             </div>

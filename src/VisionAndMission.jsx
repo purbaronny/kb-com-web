@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import web from "../src/Pictures/Picture1.png";
-import CardNoPicture from "./CardNoPicture";
+import CardNoPicture2 from "./CardNoPicture2.js";
 import "./VisionAndMission.css";
 import Footer from "./Footer";
 import AOS from "aos";
@@ -161,7 +161,7 @@ class VisionAndMission extends Component {
               </div>
 
               <div className="container-fluid mb-5 ">
-                <div className="row justify-content-center text-center">
+                <div style={{ textAlign: "justify", marginLeft: "5vw", marginRight: "5vw" }} className="row justify-content-center">
                   <div className="col-10 mx-auto">
                     <div className="row gy-4">
                       {this.state.textCompanyOverview1}
@@ -180,7 +180,7 @@ class VisionAndMission extends Component {
             </div>
             <div className="content-mid">
               <div className="logo-spinY">
-                <img src="./Pictures/kb-logo-crop.png" className="img-logo-left"/>
+                <img src="./Pictures/kb-logo-crop.png" className="img-logo-left" />
               </div>
               <div id="visionMision" className="Header">
                 <div className="my-5">
@@ -260,15 +260,12 @@ class VisionAndMission extends Component {
               <div className="container-fluid mb-5">
                 <div
                   className="row"
-                  data-aos="flip-left"
-                  data-aos-easing="ease-out-cubic"
-                  data-aos-duration="2000"
-                  data-aos-offset="300"
+
                 >
                   <div className="col-10 mx-auto">
-                    <div className="row gy-4">
+                    <div className="row gy-4" data-aos="zoom-in-up" data-aos-duration="2000">
                       {this.state.cards.map((card) => (
-                        <CardNoPicture
+                        <CardNoPicture2
                           key={this.code}
                           title={card.title}
                           text1={card.text1}

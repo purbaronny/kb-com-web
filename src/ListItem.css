@@ -17,47 +17,47 @@
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 0.5rem;
 }
-.card-item-body{
+.card-item-body {
   display: flex;
-  width:100%;
+  width: 100%;
   height: auto;
   flex-direction: column;
-  padding:calc(1.5rem - 1px);
+  padding: calc(1.5rem - 1px);
   align-items: flex-start;
   justify-content: space-between;
 }
-.card-item-title{
+.card-item-title {
   font-size: 22px;
-  align-self:flex-start;
+  align-self: flex-start;
 }
-.card-item-text{
+.card-item-text {
   display: -webkit-box;
   -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
   align-self: flex-start;
-  font-size:18px;
+  font-size: 18px;
   text-align: justify;
   overflow: hidden;
 }
-.foot-of-card{
+.foot-of-card {
   width: inherit;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   justify-content: space-between;
 }
-.date-of-news{
-  font-size:16px;
+.date-of-news {
+  font-size: 16px;
   display: inline-block;
 }
-.card-more{
+.card-more {
   font-size: 16px;
 }
 @media (max-width: 576px) {
   .img-card-item {
-    width:auto;
+    width: auto;
     height: 250px;
-    max-height:100%;
+    max-height: 100%;
     border-top-right-radius: calc(0.5rem - 1px);
     border-bottom-right-radius: calc(0.5rem - 1px);
   }
@@ -76,26 +76,24 @@
 }
 
 @media (min-width: 577px) {
- 
-  .card-item-title{
+  .card-item-title {
     font-size: 18px;
     align-self: flex-start;
   }
-  .card-item-text{
+  .card-item-text {
     font-size: 14px;
   }
   .img-card-item {
     width: 250px;
     height: auto;
-    max-width:100%;
+    max-width: 100%;
   }
 }
 @media (min-width: 992px) {
-  
-  .card-item-title{
-    font-size:22px;
+  .card-item-title {
+    font-size: 22px;
   }
-  .card-item-text{
+  .card-item-text {
     font-size: 16px;
     text-align: justify;
   }
@@ -106,21 +104,19 @@
   }
 }
 @media (min-width: 1200px) {
- 
-  .card-item-title{
+  .card-item-title {
     font-size: 22px;
   }
-  .card-item-text{
+  .card-item-text {
     font-size: 16px;
     text-align: justify;
   }
 }
 @media (min-width: 1400px) {
-  
   .card-item-title {
     font-size: 22px;
   }
-  .card-item-text{
+  .card-item-text {
     font-size: 16px;
     text-align: justify;
   }
