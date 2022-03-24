@@ -143,7 +143,7 @@ class Navbar extends Component {
             </button>
 
             <div className="navbar-collapse collapse" id="navbarNav">
-              <ul className="navbar-nav ms-auto me-5" style={{opacity:0.75, alignItems:"center"}} >
+              <ul className="navbar-nav mx-auto me-5" style={{opacity:0.75, alignItems:"center"}} >
                 <li className="nav-item me-1 ">
                   <Dropdown>
                     <Dropdown.Toggle variant="outline-secondary" className=' item-nav' style={{opacity:0.75}}>{this.state.titleAbout}</Dropdown.Toggle>
