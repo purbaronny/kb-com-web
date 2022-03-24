@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
 // ..
-AOS.init();
+AOS.init({ once: false });
 
 class Common extends Component {
 
@@ -14,7 +14,7 @@ class Common extends Component {
   render() {
     return (
       <>
-        <section id="header" className="d-flex align-items-center" data-aos="zoom-in-right" style={{ marginTop: 50 }}>
+        <section id="header" className="d-flex align-items-center" data-aos="zoom-in-right" data-aos-duration="2000" style={{ marginTop: 50 }}>
           <div className="container-fluid nav_bg">
             <div className="row">
               <div className="col-10 mx-auto">

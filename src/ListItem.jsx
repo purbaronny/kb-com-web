@@ -3,6 +3,10 @@ import { NavLink } from "react-router-dom";
 import { Link } from "react-router-dom";
 import DetailCareer from "./DetailCareer";
 import "./ListItem.css";
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+// ..
+AOS.init({ once: true });
 
 class ListItem extends Component {
   //getting props for every update on news.jsx
@@ -12,14 +16,15 @@ class ListItem extends Component {
     let dateResult = new Date(dateString);
 
     this.state = {
-      date: dateResult.toString(),
+      date: props.date,
+      linkTo: props.linkTo
     };
   }
 
   changeLanguage = (val) => {
     this.props.changeLanguage(val);
   };
-  componentWillUnmount() {}
+  componentWillUnmount() { }
 
   onLanguageClick = (value) => {
     this.setState(
@@ -36,23 +41,27 @@ class ListItem extends Component {
     return (
       <div className="col-md-11 mx-auto">
         <div className="card-list-item">
-          <img src={this.props.imgsrc} className="img-card-item" alt="..." />
-          <div className="card-item-body">
-            <h5 className="card-item-title">{this.props.title}</h5>
+          <img src={this.props.imgsrc} className="img-card-item" alt="..." data-aos="fade-right" data-aos-duration="1500" />
+          <div className="card-item-body" data-aos="fade-left" data-aos-duration="2000">
+            <h5 className="card-item-title" >{this.props.title}</h5>
             <p className="card-item-text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium molestiae ratione maxime totam nam officia repudiandae ea dolor voluptas, possimus, explicabo accusantium quisquam sapiente a laborum laboriosam corporis cupiditate. Fugiat accusamus adipisci eveniet, quidem iusto nostrum itaque officiis ea ducimus sit impedit inventore ex aliquid ratione facilis quasi explicabo neque nisi distinctio hic quod. Omnis unde assumenda enim ducimus molestiae amet, iusto ut doloremque esse ex nesciunt nam nobis repudiandae natus optio in blanditiis suscipit! Delectus, eaque tenetur. Ratione sapiente distinctio iure architecto optio ipsum maiores, doloribus ab officiis magnam! Alias, ex! Illo asperiores, alias nam esse soluta fuga consectetur.
+              {this.props.text1}
             </p>
             <div className="foot-of-card">
               <p className="date-of-news">{this.state.date}</p>
-              <Link
-                to={`/career/${this.props.code}/${this.props.languageCode}`}
-                className="card-more"
-                key={this.props.code}>{this.props.linkSourceText}
-              </Link>
+
+
+              <a href={`${this.props.linkTo}`} className="btn orange-color" target={"_blank"} >{this.props.linkSourceText}</a>
+
+              {/* <Link
+              //   to={`${this.state.linkTo}`} target={"_blank"}
+              //   className="btn btn-warning"
+              //   key={this.props.code}>{this.props.linkSourceText}
+              // </Link> */}
             </div>
           </div>
         </div>
-      </div>
+      </div >
     );
   }
 }

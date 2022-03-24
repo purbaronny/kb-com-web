@@ -143,10 +143,10 @@ class Navbar extends Component {
             </button>
 
             <div className="navbar-collapse collapse" id="navbarNav">
-              <ul className="navbar-nav mx-auto me-5" style={{opacity:0.75, alignItems:"center"}} >
+              <ul className="navbar-nav ms-auto me-5" style={{ opacity: 0.75, alignItems: "center" }} >
                 <li className="nav-item me-1 ">
                   <Dropdown>
-                    <Dropdown.Toggle variant="outline-secondary" className=' item-nav' style={{opacity:0.75}}>{this.state.titleAbout}</Dropdown.Toggle>
+                    <Dropdown.Toggle variant="outline-secondary" className=' item-nav' style={{ opacity: 0.75 }}>{this.state.titleAbout}</Dropdown.Toggle>
                     <Dropdown.Menu>
                       <NavLink className="nav-link" style={{ color: "rgb(255, 188, 0)   " }} to={{ pathname: "/visionAndMission", hash: "#companyOverview", state: { fromDashboard: true } }}>{this.state.titleAboutCompanyOverview}</NavLink>
                       <NavLink className="nav-link" style={{ color: "rgb(255, 188, 0)   " }} to={{ pathname: "/visionAndMission", hash: "#visionMission", state: { fromDashboard: true } }}>{this.state.titleAboutVisionMission}</NavLink>
@@ -170,31 +170,31 @@ class Navbar extends Component {
                   <Dropdown>
                     <Dropdown.Toggle variant="outline-secondary" className=' item-nav'>{this.state.latest}</Dropdown.Toggle>
                     <Dropdown.Menu>
-                      <NavLink className="nav-link" to="/career" style={{color:"rgb(255,188,0)"}} >{this.state.titleCareerWithUs}</NavLink>
-                      <NavLink className="nav-link" to="/news" style={{ color: "rgb(255, 188, 0)"}}>{this.state.event}</NavLink>
-                      <NavLink className="nav-link" to="/PressRelease" style={{ color: "rgb(255, 188, 0)" }}>{this.state.pressRelease}</NavLink>
+                      <NavLink className="nav-link" to="/career" style={{ color: "rgb(255,188,0)" }} >{this.state.titleCareerWithUs}</NavLink>
+                      <NavLink className="nav-link" to="/news" style={{ color: "rgb(255, 188, 0)" }}>{this.state.event}</NavLink>
+                      {/* <NavLink className="nav-link" to="/PressRelease" style={{ color: "rgb(255, 188, 0)" }}>{this.state.pressRelease}</NavLink> */}
                     </Dropdown.Menu>
                   </Dropdown>
                 </li>
-      
+
                 <li className="nav-item me-1">
                   <Dropdown>
                     <Dropdown.Toggle variant="outline-secondary" className=' item-nav'>{this.state.language}</Dropdown.Toggle>
                     <Dropdown.Menu>
-                        <li className="nav-item">
-                          <button className="button-no-background" style={{width:"100%", color: "rgb(255, 188, 0)", fontSize: 12,border:0, backgroundColor:"white", textAlign:"left"}} onClick={() => this.onLanguageClick("en-US")}><img src="https://flagicons.lipis.dev/flags/4x3/gb.svg" className="rounded-circle shadow" alt="ENG" style={{ width: 25, height: 25 }} /> ENG</button>
-                        </li>
-                        <li className="nav-item">
-                          <button className="button-no-background" style={{width:"100%", color: "rgb(255, 188, 0)",  fontSize: 12,border:0, backgroundColor:"white", textAlign:"left"}} onClick={() => this.onLanguageClick("id-ID")}><img src="https://flagicons.lipis.dev/flags/4x3/id.svg" className="rounded-circle shadow" alt="ENG" style={{ width: 25, height: 25 }} /> ID</button>
-                        </li>
-                        <li className="nav-item">
-                          <button className="button-no-background" style={{width:"100%", color: "rgb(255, 188, 0)", fontSize: 12,border:0, textAlign:"left", backgroundColor:"white"}} onClick={() => this.onLanguageClick("ko-KR")}><img src="https://flagicons.lipis.dev/flags/4x3/kr.svg" className="rounded-circle shadow" alt="ENG" style={{ width: 25, height: 25 }} /> KR</button>
-                        </li>
+                      <li className="nav-item">
+                        <button className="button-no-background" style={{ width: "100%", color: "rgb(255, 188, 0)", fontSize: 12, border: 0, backgroundColor: "white", textAlign: "left" }} onClick={() => this.onLanguageClick("en-US")}><img src="https://flagicons.lipis.dev/flags/4x3/gb.svg" className="rounded-circle shadow" alt="ENG" style={{ width: 25, height: 25 }} /> ENG</button>
+                      </li>
+                      <li className="nav-item">
+                        <button className="button-no-background" style={{ width: "100%", color: "rgb(255, 188, 0)", fontSize: 12, border: 0, backgroundColor: "white", textAlign: "left" }} onClick={() => this.onLanguageClick("id-ID")}><img src="https://flagicons.lipis.dev/flags/4x3/id.svg" className="rounded-circle shadow" alt="ENG" style={{ width: 25, height: 25 }} /> ID</button>
+                      </li>
+                      <li className="nav-item">
+                        <button className="button-no-background" style={{ width: "100%", color: "rgb(255, 188, 0)", fontSize: 12, border: 0, textAlign: "left", backgroundColor: "white" }} onClick={() => this.onLanguageClick("ko-KR")}><img src="https://flagicons.lipis.dev/flags/4x3/kr.svg" className="rounded-circle shadow" alt="ENG" style={{ width: 25, height: 25 }} /> KR</button>
+                      </li>
                     </Dropdown.Menu>
                   </Dropdown>
                 </li>
                 <li className="nav-item me-1">
-                    <NavLink className="item-nav nav-no-dropdown" to="/contactUs">{this.state.titleContactUs}</NavLink>
+                  <NavLink className="item-nav nav-no-dropdown" to="/contactUs">{this.state.titleContactUs}</NavLink>
                 </li>
               </ul>
             </div>

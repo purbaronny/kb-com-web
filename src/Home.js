@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Common from "./Common";
-import web from "../src/Pictures/pic1.jpeg";
+import web from "../src/Pictures/team-work.jpg";
 import Carousel from "./Carousel";
 import Footer from "./Footer";
 
@@ -73,7 +73,7 @@ class Home extends Component {
 
   render() {
     return (
-      <div style={{marginTop:50}}>
+      <div style={{ marginTop: 50 }}>
         <Carousel />
         <Common name={this.state.text1} contentText={this.state.text2} imgsrc={web} visit="/visionAndMission" btname={this.state.text3} />
         <Footer />

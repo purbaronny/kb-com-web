@@ -17,7 +17,7 @@ class Career extends Component {
             code: "IES",
             title: "IT Engineer Senior",
             text1: "Some quick example text to build on the card title and make up the bulk of the card's content.",
-            imgsrc: "Pictures/Picture16.jpg",
+            imgsrc: "Pictures/Pictures19.jpg",
             linkSourceText: "Detail",
             createdAt: "2022-02-02T10:23:59.000Z",
             expiredAt: "2022-04-03T12:59:59.000Z",
@@ -61,7 +61,7 @@ class Career extends Component {
             title: "IT Engineer Junior",
             text1:
               "Some quick example text to build on the card title and make up the bulk of the card's content.",
-            imgsrc: "Pictures/Picture13.jpg",
+            imgsrc: "Pictures/Pictures11.jpg",
             linkSourceText: "Detail",
             createdAt: "2022-03-29T10:22:43.819Z",
             expiredAt: "2022-10-03T10:22:43.819Z",
@@ -113,7 +113,7 @@ class Career extends Component {
             title: "IT Engineer Senior",
             text1:
               "Some quick example text to build on the card title and make up the bulk of the card's content.",
-            imgsrc: "Pictures/Picture16.jpg",
+            imgsrc: "Pictures/Pictures19.jpg",
             linkSourceText: "Detail",
             createdAt: "2022-02-02T10:23:59.000Z",
             expiredAt: "2022-04-03T12:59:59.000Z",
@@ -157,7 +157,7 @@ class Career extends Component {
             title: "IT Engineer Junior",
             text1:
               "Some quick example text to build on the card title and make up the bulk of the card's content.",
-            imgsrc: "Pictures/Picture13.jpg",
+            imgsrc: "Pictures/Pictures11.jpg",
             linkSourceText: "Detail",
             createdAt: "2022-03-29T10:22:43.819Z",
             expiredAt: "2022-10-03T10:22:43.819Z",
@@ -209,7 +209,7 @@ class Career extends Component {
             title: "IT Engineer Senior",
             text1:
               "Some quick example text to build on the card title and make up the bulk of the card's content.",
-            imgsrc: "Pictures/Picture16.jpg",
+            imgsrc: "Pictures/Pictures19.jpg",
             linkSourceText: "Detail",
             createdAt: "2022-02-02T10:23:59.000Z",
             expiredAt: "2022-04-03T12:59:59.000Z",
@@ -253,7 +253,7 @@ class Career extends Component {
             title: "IT Engineer Junior",
             text1:
               "Some quick example text to build on the card title and make up the bulk of the card's content.",
-            imgsrc: "Pictures/Picture13.jpg",
+            imgsrc: "Pictures/Pictures11.jpg",
             linkSourceText: "Detail",
             createdAt: "2022-03-29T10:22:43.819Z",
             expiredAt: "2022-10-03T10:22:43.819Z",
