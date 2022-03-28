@@ -2,6 +2,51 @@
   height: 100%;
 }
 
-img {
+#carousel {
   height: 500px;
 }
+
+#icon-prev {
+  height: 40px;
+  width: 40px;
+  margin-left: 25px;
+  opacity: 80%;
+}
+
+#icon-next {
+  height: 40px;
+  width: 40px;
+  max-width: 100%;
+  margin-right: 25px;
+  opacity: 80%;
+}
+
+#icon-next:hover {
+  height: 50px;
+  width: 50px;
+  opacity: 100%;
+}
+
+#icon-prev:hover {
+  height: 50px;
+  width: 50px;
+  opacity: 100%;
+}
+/* .carousel-control-prev,
+.carousel-control-next {
+  width: 50px;
+  height: 50px;
+  background-color: #ffffff;
+  border-radius: 25%;
+  top: calc(50%-25px);
+  margin-top: 250px;
+  opacity: 30%;
+}
+
+.carousel-control-prev {
+  left: 5%;
+}
+
+.carousel-control-next {
+  right: 5%;
+} */

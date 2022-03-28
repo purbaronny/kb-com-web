@@ -1,4 +1,8 @@
 import "./Carousel.css"
+import AOS from "aos";
+import "aos/dist/aos.css"; // You can also use <link> for styles
+// ..
+AOS.init();
 const Carousel = () => {
     return (
         <div id="carouselExampleDark" className="carousel carousel-white slide p-4" style={{ marginTop: 50 }} data-bs-ride="carousel">
@@ -9,26 +13,32 @@ const Carousel = () => {
             </div>
             <div className="carousel-inner">
                 <div className="carousel-item active" data-bs-interval="2000">
-                    <img src="./Pictures/negotiation.jpg" className="d-block w-100 rounded-3 " alt="..." />
+                    <img id="carousel" src="./Pictures/negotiation.jpg" className="d-block w-100 rounded-3 " alt="..." />
 
                 </div>
                 <div className="carousel-item" data-bs-interval="2000">
-                    <img src="./Pictures/Picture19.jpg" className="d-block w-100 rounded-3" alt="..." />
+                    <img id="carousel" src="./Pictures/Picture19.jpg" className="d-block w-100 rounded-3" alt="..." />
 
                 </div>
                 <div className="carousel-item" data-bs-interval="2000">
-                    <img src="./Pictures/meeting_3.jpg" className="d-block w-100 rounded-3" alt="..." />
+                    <img id="carousel" src="./Pictures/meeting_3.jpg" className="d-block w-100 rounded-3" alt="..." />
 
                 </div>
             </div>
-            <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+            <button data-aos="fade-left" data-aos-duration="1500" className="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                <img id="icon-prev" src="Pictures/arrowkiri.png"></img>
+            </button>
+            <button data-aos="fade-right" data-aos-duration="1500" className="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                <img id="icon-next" src="Pictures/arrowkanan.png"></img>
+            </button>
+            {/* <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
                 <span className="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span className="visually-hidden">Previous</span>
             </button>
             <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
                 <span className="carousel-control-next-icon" aria-hidden="true"></span>
                 <span className="visually-hidden">Next</span>
-            </button>
+            </button> */}
         </div>
         /*
         <div class="container-fluid text-light pt-3">

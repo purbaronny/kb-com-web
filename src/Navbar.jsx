@@ -21,7 +21,7 @@ class Navbar extends Component {
         "Group Company / External Organization IT Systems Operation",
       titleCareerWithUs: "Career",
       titleContactUs: "Contact",
-      language: "Language",
+      language: "Languages",
       latest: "Latest Update",
       pressRelease: "Press Release",
       event: "News",
