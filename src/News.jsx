@@ -116,24 +116,26 @@ class News extends Component {
     render() {
         return (
             <>
-                <div className="my-5" style={{ marginTop: 100 }}>
-                    <h1 className="text-center" style={{ color: "rgb(255, 188, 0)" }}>{this.state.title}</h1>
-                </div>
-                <div className="container-fluid mb-5">
-                    <div className="row">
-                        <div className="col-11 mx-auto">
-                            <div className="row gy-4">
-                                {this.state.cards.map((card =>
-                                    <ListItem key={card.code} title={card.title} text1={card.text1} imgsrc={card.imgsrc} linkSourceText={card.linkSourceText} linkTo={card.linkTo} date={card.date} />
-                                ))}
+                <section>
+                    <div className="my-5" style={{ marginTop: 100 }}>
+                        <h1 className="text-center" style={{ color: "rgb(255, 188, 0)" }}>{this.state.title}</h1>
+                    </div>
+                    <div className="container-fluid mb-5">
+                        <div className="row">
+                            <div className="col-11 mx-auto">
+                                <div className="row gy-4">
+                                    {this.state.cards.map((card =>
+                                        <ListItem key={card.code} title={card.title} text1={card.text1} imgsrc={card.imgsrc} linkSourceText={card.linkSourceText} linkTo={card.linkTo} date={card.date} />
+                                    ))}
+                                </div>
+
                             </div>
 
                         </div>
 
                     </div>
-
-                </div>
-                <Footer />
+                    <Footer />
+                </section>
             </>
         );
     }

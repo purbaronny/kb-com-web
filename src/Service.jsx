@@ -94,8 +94,8 @@ class Service extends Component {
   render() {
     return (
       <>
-        <div className="target" style={{ marginTop: 75 }}>
-          <div id="companyMaintenance" className="Header">
+        <div className="target" style={{ marginTop: 50 }}>
+          <section id="companyMaintenance" className="Header">
             <div className="my-5">
               <h1 className="text-center">{this.state.titleCompanyMaintenance}</h1>
             </div>
@@ -107,9 +107,9 @@ class Service extends Component {
                 </div>
               </div>
             </div>
-          </div>
+          </section>
 
-          <div id="companyService" className="Header">
+          <section id="companyService" className="Header">
             <div className="my-5">
               <h1 className="text-center">{this.state.titleCompanyService}</h1>
             </div>
@@ -121,9 +121,9 @@ class Service extends Component {
                 </div>
               </div>
             </div>
-          </div>
+          </section>
 
-          <div id="companyOperation" className="Header">
+          <section id="companyOperation" className="Header">
             <div className="my-5">
               <h1 className="text-center">{this.state.titleCompanyOperation}</h1>
             </div>
@@ -138,8 +138,9 @@ class Service extends Component {
               </div>
               <Footer />
             </div>
-          </div>
+          </section>
         </div>
+
 
       </>
     );

@@ -1,7 +1,10 @@
 import Dropdown from "react-bootstrap/Dropdown";
 import React, { Component } from "react";
 import { NavLink } from "react-router-dom";
+import { HashLink as Link } from "react-router-hash-link";
 import "./Navbar.css";
+
+
 class Navbar extends Component {
   constructor(props) {
     super(props);
@@ -137,7 +140,7 @@ class Navbar extends Component {
       <>
         <nav className="navbar navbar-expand-lg navbar-light fixed-top bg-white-important" >
           <div className="container-fluid">
-            <NavLink to="/"><img className="logo-kbds" src="./Pictures/logokbds-remove.png" ></img></NavLink>
+            <Link to="/#home"><img className="logo-kbds" src="./Pictures/logokbds-remove.png" ></img></Link>
             <button className="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span className="navbar-toggler-icon"></span>
             </button>
@@ -146,13 +149,20 @@ class Navbar extends Component {
               <ul className="navbar-nav ms-auto me-5" style={{ opacity: 0.75, alignItems: "center" }} >
                 <li className="nav-item me-1 ">
                   <Dropdown>
-                    <Dropdown.Toggle variant="outline-secondary" className=' item-nav' style={{ opacity: 0.75 }}>{this.state.titleAbout}</Dropdown.Toggle>
+                    <Dropdown.Toggle variant="outline-secondary" className=' item-nav' >{this.state.titleAbout}</Dropdown.Toggle>
                     <Dropdown.Menu>
-                      <NavLink className="nav-link" style={{ color: "rgb(255, 188, 0)   " }} to={{ pathname: "/visionAndMission", hash: "#companyOverview", state: { fromDashboard: true } }}>{this.state.titleAboutCompanyOverview}</NavLink>
+                      <Link smooth={true} className="nav-link" style={{ color: "rgb(255, 188, 0)   " }} to="visionAndMission#companyOverview">{this.state.titleAboutCompanyOverview}</Link>
+                      <Link smooth={true} className="nav-link" style={{ color: "rgb(255, 188, 0)   " }} to="visionAndMission#visionMission">{this.state.titleAboutVisionMission}</Link>
+                      <Link smooth={true} className="nav-link" style={{ color: "rgb(255, 188, 0)   " }} to="visionAndMission#businessDomain">{this.state.titleAboutBusinessDomain}</Link>
+                      <Link smooth={true} className="nav-link" style={{ color: "rgb(255, 188, 0)   " }} to="visionAndMission#achievements">{this.state.titleAboutAchievements}</Link>
+                      <Link smooth={true} className="nav-link" style={{ color: "rgb(255, 188, 0)   " }} to="visionAndMission#coreValues">{this.state.titleAboutCoreValues}</Link>
+
+                      {/* <NavLink className="nav-link" style={{ color: "rgb(255, 188, 0)   " }} to={{ pathname: "/visionAndMission", hash: "#companyOverview", state: { fromDashboard: true } }}>{this.state.titleAboutCompanyOverview}</NavLink>
                       <NavLink className="nav-link" style={{ color: "rgb(255, 188, 0)   " }} to={{ pathname: "/visionAndMission", hash: "#visionMission", state: { fromDashboard: true } }}>{this.state.titleAboutVisionMission}</NavLink>
                       <NavLink className="nav-link" style={{ color: "rgb(255, 188, 0)   " }} to={{ pathname: "/visionAndMission", hash: "#businessDomain", state: { fromDashboard: true } }}>{this.state.titleAboutBusinessDomain}</NavLink>
                       <NavLink className="nav-link" style={{ color: "rgb(255, 188, 0)   " }} to={{ pathname: "/visionAndMission", hash: "#achievements", state: { fromDashboard: true } }}>{this.state.titleAboutAchievements}</NavLink>
-                      <NavLink className="nav-link" style={{ color: "rgb(255, 188, 0)   " }} to={{ pathname: "/visionAndMission", hash: "#coreValues", state: { fromDashboard: true } }}>{this.state.titleAboutCoreValues}</NavLink>
+                      <NavLink className="nav-link" style={{ color: "rgb(255, 188, 0)   " }} to={{ pathname: "/visionAndMission", hash: "#coreValues", state: { fromDashboard: true } }}>{this.state.titleAboutCoreValues}</NavLink> */}
+
                     </Dropdown.Menu>
                   </Dropdown>
                 </li>
@@ -160,9 +170,12 @@ class Navbar extends Component {
                   <Dropdown>
                     <Dropdown.Toggle variant="outline-secondary" className=' item-nav' >{this.state.titleSolution}</Dropdown.Toggle>
                     <Dropdown.Menu>
-                      <NavLink className="nav-link" to="/service#companyMaintenance" style={{ color: "rgb(255, 188, 0)   " }} >{this.state.titleSolutionGroupJoin}</NavLink>
+                      <Link smooth={true} className="nav-link" style={{ color: "rgb(255, 188, 0)   " }} to="service#companyMaintenance">{this.state.titleSolutionGroupJoin}</Link>
+                      <Link smooth={true} className="nav-link" style={{ color: "rgb(255, 188, 0)   " }} to="service#companyService">{this.state.titleSolutionBankIT}</Link>
+                      <Link smooth={true} className="nav-link" style={{ color: "rgb(255, 188, 0)   " }} to="service#companyOperation">{this.state.titleSolutionGroupCompany}</Link>
+                      {/* <NavLink className="nav-link" to="/service#companyMaintenance" style={{ color: "rgb(255, 188, 0)   " }} >{this.state.titleSolutionGroupJoin}</NavLink>
                       <NavLink className="nav-link" to="/service#companyService" style={{ color: "rgb(255, 188, 0)   " }}>{this.state.titleSolutionBankIT}</NavLink>
-                      <NavLink className="nav-link" to="/service#companyOperation" style={{ color: "rgb(255, 188, 0)   " }}>{this.state.titleSolutionGroupCompany}</NavLink>
+                      <NavLink className="nav-link" to="/service#companyOperation" style={{ color: "rgb(255, 188, 0)   " }}>{this.state.titleSolutionGroupCompany}</NavLink> */}
                     </Dropdown.Menu>
                   </Dropdown>
                 </li>
@@ -171,7 +184,7 @@ class Navbar extends Component {
                     <Dropdown.Toggle variant="outline-secondary" className=' item-nav'>{this.state.latest}</Dropdown.Toggle>
                     <Dropdown.Menu>
                       <NavLink className="nav-link" to="/career" style={{ color: "rgb(255,188,0)" }} >{this.state.titleCareerWithUs}</NavLink>
-                      <NavLink className="nav-link" to="/news" style={{ color: "rgb(255, 188, 0)" }}>{this.state.event}</NavLink>
+                      <Link className="nav-link" to="/news" style={{ color: "rgb(255, 188, 0)" }}>{this.state.event}</Link>
                       {/* <NavLink className="nav-link" to="/PressRelease" style={{ color: "rgb(255, 188, 0)" }}>{this.state.pressRelease}</NavLink> */}
                     </Dropdown.Menu>
                   </Dropdown>

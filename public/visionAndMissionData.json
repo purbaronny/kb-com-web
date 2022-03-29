@@ -1,96 +1,109 @@
-[{
+[
+  {
     "languageCode": "en-US",
     "titleCompanyOverview": "Company Overview",
-    "textCompanyOverview1": "PT KB Data Systems Indonesia, a subsidiary of KB Data Systems, is a South east Asian-based financial IT specialized company established to exp and the business base/advance of Southeast Asian-focused affiliates and to provide global common IT services.",
-    "textCompanyOverview2": "KB Data Systems established PT KB Data Systems Indonesia, an Indonesian IT local corporation, to serve as a bridge in the global expansion of affiliates in connection with KB Financial Group's 'New Southern' strategy. As a result, we aim to secure a foundation for entry in to global financial IT and provide a global IT shared service by upgrading the local system.",
+    "textCompanyOverview1": "PT KB Data Systems Indonesia, a subsidiary of KB Data Systems, is a Southeast Asian-based financial IT specialized company established to expand the business base/advance of Southeast Asian-focused affiliates and to provide global common IT services.",
+    "textCompanyOverview2": "KB Data Systems established PT KB Data Systems Indonesia, an Indonesian IT local corporation, to serve as a bridge in the global expansion of affiliates in connection with KB Financial Group's 'New Southern' strategy. As a result, we aim to secure a foundation for entry into global financial IT and provide a global IT shared service by upgrading the local system.",
     "textCompanyOverview3": "In Indonesia, the pinnacle of the financial group’s “2nd Mother Market strategy,” KB Data System, which has accumulated Korea’s Latest financial IT technology, and overseas subsidiaries that will play a pivotal role in the advancement of Indonesia's financial IT system by contributing to the promotion and dissemination of advanced financial technology capabilities.",
     "visionTitle": "Vision",
-    "visionText1": "Driven by world-class talents and bold innovation, to become your trusted financial partner for a life time.",
+    "visionText1": "Driven by world-class talents and bold innovation, to become your trusted financial partner for a lifetime",
     "missionTitle": "Mission",
-    "missionText1": "Financial services delivering changes for happier life and better world.",
+    "missionText1": "Financial services delivering changes — happier life & better world",
     "titleBusinessDomain": "Business Domain",
-    "textBusinessDomain1": "We are carrying out various projects for financial IT Innovation",
+    "textBusinessDomain1": "Carrying out various projects for financial IT Innovation",
     "titleAchievements": "Achievements",
-    "titleCoreValues": "Core Values",
-    "cards": [{
+    "titleCoreValues": "Core Value",
+    "cards": [
+      {
         "code": "cf",
         "title": "Customer Focus",
-        "text1": "Putting the customer's position and interests first make judgments and make decisions                          ",
+        "text1": "Making judgments and making decisions considering the customer's position and interests as the top priority",
         "imgsrc": "Pictures/img1.png",
         "linkSourceText": "Get Quote"
-    }, {
+      },
+      {
         "code": "pm",
         "title": "Professionalism",
-        "text1": "Financial professionals with the highest level of competency in the industry constantly working towards a goal",
+        "text1": "We are constantly striving to become a financial person with the highest level of competency in the industry.",
         "imgsrc": "Pictures/img2.png",
         "linkSourceText": "Get Quote"
-    }, {
+      },
+      {
         "code": "il",
-        "title": "Innovation-led",
-        "text1": "Leading change and innovation through creative thinking and bold challenges as the 'First Mover' of future finance",
+        "title": "Innovation",
+        "text1": "Leading change and innovation through creative thinking and bold challenges as the ‘First Mover’ of future finance",
         "imgsrc": "Pictures/img3.png",
         "linkSourceText": "Get Quote"
-    },{
+      },
+      {
         "code": "th",
-        "title": "Trust Honesty",
-        "text1": "Honesty and ethics are based on always maintain an attitude of good faith                                        ",
+        "title": "Trust",
+        "text1": "Always maintain an attitude of honesty and good faith based on ethical awareness",
         "imgsrc": "Pictures/img3.png",
         "linkSourceText": "Get Quote"
-    },{
+      },
+      {
         "code": "sg",
         "title": "Shared Growth",
-        "text1": "Beyond the development of individuals and organizations, growing together and contributing to social development",
+        "text1": "Beyond the development of individuals and organizations, we grow together with the people and contribute to the development of society",
         "imgsrc": "Pictures/img3.png",
         "linkSourceText": "Get Quote"
-    }]        
-},
-{
+      }
+    ]
+  },
+  {
     "languageCode": "id-ID",
-    "titleCompanyOverview": "Tinjauan Perusahaan",
-    "textCompanyOverview1": "PT KB Data Systems Indonesia, anak perusahaan dari KB Data Systems, adalah perusahaan khusus TI keuangan berbasis di Asia Tenggara yang didirikan untuk memperluas dan basis bisnis/kemajuan afiliasi yang berfokus di Asia Tenggara dan untuk menyediakan layanan TI umum global.",
-    "textCompanyOverview2": "KB Data Systems mendirikan PT KB Data Systems Indonesia, sebuah perusahaan IT lokal Indonesia, untuk menjadi jembatan dalam ekspansi global afiliasi sehubungan dengan strategi 'New Southern' KB Financial Group. Akibatnya, kami bertujuan untuk mengamankan landasan untuk masuk ke TI keuangan global dan menyediakan layanan bersama TI global dengan meningkatkan sistem lokal.",
-    "textCompanyOverview3": "Di Indonesia, puncak dari “2nd Mother Market strategy” grup keuangan, Sistem Data KB, yang telah mengumpulkan teknologi TI keuangan terbaru Korea, dan anak perusahaan di luar negeri yang akan memainkan peran penting dalam kemajuan sistem TI keuangan Indonesia dengan berkontribusi pada promosi dan diseminasi kemampuan teknologi keuangan yang canggih.",
+    "titleCompanyOverview": "Company Overview",
+    "textCompanyOverview1": "PT KB Data Systems Indonesia merupakan anak perusahaan dari KB Data Systems yang berbasis di Asia Tenggara yang didirikan untuk memperluas jangkauan bisnis dengan kompetensi teknologi digital  dan menjadi mitra teknologi finansial secara global",
+    "textCompanyOverview2": "KB Data Systems mendirikan PT KB Data Systems Indonesia, sebuah perusahaan berbasis teknologi informasi di Indonesia, untuk menjadi jembatan dalam ekspansi global dan berafiliasi sehubungan dengan strategi 'New Southern' KB Financial Group. Sehingga, kami bertujuan untuk memperkokoh fundamental untuk memasuki era teknologi informasi yang terkait dengan finansial secara global dan menyediakan layanan untuk meningkatkan sistem.",
+    "textCompanyOverview3": "KB Data System memutuskan untuk melakukan investasi tambahan dengan menetapkan Indonesia sebagai 'Pasar Induk Kedua' dan telah berinovasi dengan mengumpulkan teknologi terbaru didorong oleh kompetensi teknologi digital untuk memajukan sistem teknologi finansial di Indonesia dengan berkontribusi pada promosi dan menyebarkan informasi tentang kemampuan teknologi finansial yang mutakhir",
     "visionTitle": "Visi",
-    "visionText1": "Menjadi mitra inovasi teknologi finansial paling terpercaya dengan potensi terbaik dan inovasi hebat untuk menjadi perusahaan keuangan yang mengubah dunia. ",
+    "visionText1": "Menjadi mitra inovasi teknologi finansial paling tepercaya dengan potensi terbaik dan inovasi hebat untuk menjadi perusahaan keuangan yang mengubah dunia",
     "missionTitle": "Misi",
-    "missionText1": "Menciptakan kebahagiaan bagi pelanggan keuangan dan menciptakan dunia yang lebih baik dengan mengubah dunia.",
+    "missionText1": "Menciptakan kebahagiaan bagi pelanggan keuangan dan menciptakan kehidupan dan dunia yang lebih baik",
     "titleBusinessDomain": "Domain Bisnis",
-    "textBusinessDomain1": "Kami melaksanakan berbagai proyek untuk Inovasi TI keuangan",
+    "textBusinessDomain1": "Melaksanakan berbagai proyek untuk inovasi finansial dengan teknologi digital",
     "titleAchievements": "Prestasi",
-    "titleCoreValues": "Nilai Inti",
-    "cards": [{
+    "titleCoreValues": "Core Value",
+    "cards": [
+      {
         "code": "cf",
         "title": "Fokus Pelanggan",
-        "text1": "Mendahulukan posisi dan kepentingan pelanggan membuat penilaian dan keputusan",
+        "text1": "Membuat penilaian dan pengambilan keputusan dengan mempertimbangkan posisi dan kepentingan pelanggan sebagai prioritas utama",
         "imgsrc": "Pictures/img1.png",
         "linkSourceText": "Get Quote"
-    }, {
+      },
+      {
         "code": "pm",
         "title": "Profesionalisme",
-        "text1": "Profesional keuangan dengan tingkat kompetensi tertinggi di industri terus bekerja menuju tujuan",
+        "text1": "Kami terus berusaha untuk menjadi mitra finansial dengan tingkat kompetensi tertinggi di bidangnya.",
         "imgsrc": "Pictures/img2.png",
         "linkSourceText": "Get Quote"
-    }, {
+      },
+      {
         "code": "il",
-        "title": "Dipimpin inovasi",
-        "text1": "Memimpin perubahan dan inovasi melalui pemikiran kreatif dan tantangan berani sebagai 'Penggerak Pertama' keuangan masa depan",
+        "title": "Inovasi",
+        "text1": "Memimpin perubahan dan inovasi melalui pemikiran kreatif dan berani mengambil tantangan sebagai 'Penggerak Pertama' keuangan masa depan",
         "imgsrc": "Pictures/img3.png",
         "linkSourceText": "Get Quote"
-    },{
+      },
+      {
         "code": "th",
-        "title": "Percaya Kejujuran",
-        "text1": "Kejujuran dan etika dilandasi dengan selalu menjaga sikap itikad baik",
+        "title": "Kepercayaan",
+        "text1": "Selalu mempertahankan sikap kejujuran dan kesetiaan berdasarkan etika.",
         "imgsrc": "Pictures/img3.png",
         "linkSourceText": "Get Quote"
-    },{
+      },
+      {
         "code": "sg",
-        "title": "Pertumbuhan Bersama",
-        "text1": "Melampaui pengembangan individu dan organisasi, tumbuh bersama dan berkontribusi pada pembangunan sosial",
+        "title": "Tumbuh Bersama",
+        "text1": "Di luar pengembangan individu dan organisasi, kami tumbuh bersama dengan masyarakat dan berkontribusi pada pengembangan masyarakat",
         "imgsrc": "Pictures/img3.png",
         "linkSourceText": "Get Quote"
-    }]        
-},
-{
+      }
+    ]
+  },
+  {
     "languageCode": "ko-KR",
     "titleCompanyOverview": "회사 개요",
     "textCompanyOverview1": "PT KB데이타시스템즈 인도네시아는 KB데이타시스템즈의 자회사로 동남아계 계열사의 사업기반/선진화 및 글로벌 공통 IT 서비스 제공을 위해 설립된 동남아 기반 금융IT 전문기업입니다.",
@@ -104,36 +117,42 @@
     "textBusinessDomain1": "금융IT 혁신을 위한 다양한 프로젝트를 수행하고 있습니다",
     "titleAchievements": "업적",
     "titleCoreValues": "핵심 가치",
-    "cards": [{
+    "cards": [
+      {
         "code": "cf",
         "title": "고객 중심",
         "text1": "고객의 입장과 이익을 최우선으로 판단하고 의사결정",
         "imgsrc": "Pictures/img1.png",
         "linkSourceText": "Get Quote"
-    }, {
+      },
+      {
         "code": "pm",
         "title": "전문 직업 의식",
         "text1": "목표를 향해 끊임없이 노력하는 업계 최고 수준의 금융 전문가",
         "imgsrc": "Pictures/img2.png",
         "linkSourceText": "Get Quote"
-    }, {
+      },
+      {
         "code": "il",
         "title": "혁신 주도",
         "text1": "창의적 사고와 과감한 도전으로 변화와 혁신을 선도하는 미래금융의 'First Mover'",
         "imgsrc": "Pictures/img3.png",
         "linkSourceText": "Get Quote"
-    },{
+      },
+      {
         "code": "th",
         "title": "정직을 믿으십시오",
         "text1": "정직과 윤리는 항상 선의의 태도를 유지",
         "imgsrc": "Pictures/img3.png",
         "linkSourceText": "Get Quote"
-    },{
+      },
+      {
         "code": "sg",
         "title": "동반성장",
         "text1": "개인과 조직의 발전을 넘어 함께 성장하고 사회발전에 기여",
         "imgsrc": "Pictures/img3.png",
         "linkSourceText": "Get Quote"
-    }]        
-}
+      }
+    ]
+  }
 ]

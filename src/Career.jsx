@@ -353,31 +353,33 @@ class Career extends Component {
   render() {
     return (
       <>
-        <div className="container">
-          <div style={{ marginTop: 50 }}>
-            <div className="my-5" style={{ color: "rgb(255, 188, 0)" }}>
-              <h1 className="text-center">{this.state.title}</h1>
-            </div>
-            <div className="my-3" style={{ marginLeft: "5rem", marginRight: "5rem" }}>
-              <p style={{ fontSize: 18, textAlign: "center" }}>{this.state.careerSummary}</p>
-            </div>
-            <div className="col-11 mx-auto">
-              <div className="row gy-4">
-                {this.state.cards.map((card) => (
-                  <Card
-                    code={card.code}
-                    key={card.code}
-                    title={card.title}
-                    imgsrc={card.imgsrc}
-                    text1={card.expiredAt}
-                    linkSourceText={card.linkSourceText}
-                    languageCode={this.state.languageCode}
-                  />
-                ))}
+        <section>
+          <div className="container">
+            <div style={{ marginTop: 50 }}>
+              <div className="my-5" style={{ color: "rgb(255, 188, 0)" }}>
+                <h1 className="text-center">{this.state.title}</h1>
+              </div>
+              <div className="my-3" style={{ marginLeft: "5rem", marginRight: "5rem" }}>
+                <p style={{ fontSize: 18, textAlign: "center" }}>{this.state.careerSummary}</p>
+              </div>
+              <div className="col-11 mx-auto">
+                <div className="row gy-4">
+                  {this.state.cards.map((card) => (
+                    <Card
+                      code={card.code}
+                      key={card.code}
+                      title={card.title}
+                      imgsrc={card.imgsrc}
+                      text1={card.expiredAt}
+                      linkSourceText={card.linkSourceText}
+                      languageCode={this.state.languageCode}
+                    />
+                  ))}
+                </div>
               </div>
             </div>
           </div>
-        </div>
+        </section>
         <Footer />
       </>
     );

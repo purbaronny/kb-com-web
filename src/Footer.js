@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faCoffee, faWarning, faPhone } from "@fortawesome/free-solid-svg-icons"
 import { faInstagram, faYoutube, faTwitter, faLinkedin, faFacebook } from "@fortawesome/free-brands-svg-icons"
 import 'bootstrap-icons/font/bootstrap-icons.css';
+import './Footer.css';
 import AOS from "aos";
 import "aos/dist/aos.css"; // You can also use <link> for styles
 // ..
@@ -46,13 +47,13 @@ const Footer = () => {
 
 
         <div className="container-fluid" style={{ backgroundColor: "#f8f9fa", height: 200, marginTop: 150 }}>
-            <footer className="footer-basic" style={{ fontSize: 25, textAlign: "center", marginTop: 100 }}>
+            <footer className="footer-basic" style={{ textAlign: "center", marginTop: 100 }}>
 
                 <ul className="list-inline pt-3">
                     <p style={{ fontSize: 14, fontFamily: "KGBF Display,sans-serif" }}>Follow us</p>
-                    <li data-aos="zoom-in-right" data-aos-duration="2000" className="list-inline-item"><a href="https://www.instagram.com/kbds_id/" target={"_blank"}><FontAwesomeIcon icon={faInstagram} style={{ color: "#d62976" }}></FontAwesomeIcon></a></li>
-                    <li data-aos="zoom-in" data-aos-duration="2000" className="list-inline-item"><a href="https://www.linkedin.com/in/pt-kb-data-systems-indonesia-6b873b223/" target={"_blank"}><FontAwesomeIcon icon={faLinkedin} style={{ color: "#0e76a8" }}></FontAwesomeIcon></a></li>
-                    <li data-aos="zoom-in-left" data-aos-duration="2000" className="list-inline-item"><a href="https://www.facebook.com/KB-Data-Systems-Indonesia-106688835304194" target={"_blank"}><FontAwesomeIcon icon={faFacebook} style={{ color: "#3b5998" }}></FontAwesomeIcon></a></li>
+                    <li id="icon" data-aos="zoom-in-right" data-aos-duration="2000" className="list-inline-item"><a href="https://www.instagram.com/kbds_id/" target={"_blank"}><FontAwesomeIcon icon={faInstagram} style={{ color: "#d62976" }}></FontAwesomeIcon></a></li>
+                    <li id="icon" data-aos="zoom-in" data-aos-duration="2000" className="list-inline-item"><a href="https://www.linkedin.com/in/pt-kb-data-systems-indonesia-6b873b223/" target={"_blank"}><FontAwesomeIcon icon={faLinkedin} style={{ color: "#0e76a8" }}></FontAwesomeIcon></a></li>
+                    <li id="icon" data-aos="zoom-in-left" data-aos-duration="2000" className="list-inline-item"><a href="https://www.facebook.com/KB-Data-Systems-Indonesia-106688835304194" target={"_blank"}><FontAwesomeIcon icon={faFacebook} style={{ color: "#3b5998" }}></FontAwesomeIcon></a></li>
 
                 </ul>
 
