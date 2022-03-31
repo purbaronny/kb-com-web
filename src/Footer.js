@@ -58,7 +58,7 @@ const Footer = () => {
                 </ul>
 
                 <div className="text-center" style={{ fontSize: 14, color: "black", fontFamily: "KGBF Display,sans-serif" }}>
-                    <p><strong>Phone :</strong>  02180667239</p>
+                    <p><strong>Phone :</strong>  +62-21-80667239</p>
 
                     <p>Copyright(c) 2022, KB Data Systems Indonesia</p>
                     <p  >All Right Reserved.</p>

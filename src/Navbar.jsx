@@ -27,7 +27,7 @@ class Navbar extends Component {
       language: "Languages",
       latest: "Latest Update",
       pressRelease: "Press Release",
-      event: "News",
+      news: "News",
 
       menus: [{
         menu: {
@@ -125,7 +125,8 @@ class Navbar extends Component {
               titleCareerWithUs: obj.titleCareerWithUs,
               titleContactUs: obj.titleContactUs,
               latest: obj.latest,
-              language: obj.language
+              language: obj.language,
+              news: obj.news,
             });
             break;
           }
@@ -184,7 +185,7 @@ class Navbar extends Component {
                     <Dropdown.Toggle variant="outline-secondary" className=' item-nav'>{this.state.latest}</Dropdown.Toggle>
                     <Dropdown.Menu>
                       <NavLink className="nav-link" to="/career" style={{ color: "rgb(255,188,0)" }} >{this.state.titleCareerWithUs}</NavLink>
-                      <Link className="nav-link" to="/news" style={{ color: "rgb(255, 188, 0)" }}>{this.state.event}</Link>
+                      <Link className="nav-link" to="/news" style={{ color: "rgb(255, 188, 0)" }}>{this.state.news}</Link>
                       {/* <NavLink className="nav-link" to="/PressRelease" style={{ color: "rgb(255, 188, 0)" }}>{this.state.pressRelease}</NavLink> */}
                     </Dropdown.Menu>
                   </Dropdown>

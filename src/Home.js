@@ -3,6 +3,8 @@ import Common from "./Common";
 import web from "../src/Pictures/team-work.jpg";
 import Carousel from "./Carousel";
 import Footer from "./Footer";
+import Carousel2 from "./Carousel2";
+import CarouselSlider from "./CarouselSlider";
 
 class Home extends Component {
 
@@ -73,8 +75,10 @@ class Home extends Component {
 
   render() {
     return (
-      <div style={{ marginTop: 50 }}>
-        <Carousel />
+      <div style={{ marginTop: 25 }}>
+        {/* <Carousel /> */}
+        <Carousel2 />
+        {/* <CarouselSlider /> */}
         <Common name={this.state.text1} contentText={this.state.text2} imgsrc={web} visit="/visionAndMission" btname={this.state.text3} />
         <Footer />
       </div>

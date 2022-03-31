@@ -3,7 +3,12 @@
 }
 
 #carousel {
-  height: 500px;
+  height: 550px;
+
+  padding-right: 3%;
+  padding-left: 3%;
+  border-top-right-radius: 10%;
+  border-bottom-left-radius: 10%;
 }
 
 #icon-prev {
@@ -53,4 +58,52 @@
 
 section {
   padding-top: 2rem;
+}
+
+.caption {
+  position: relative;
+  font-family: "KBFG Display";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 67px;
+  color: rgb(255, 255, 255);
+  text-shadow: rgb(0 0 0 / 50%) 0px 16px 32px;
+  margin-bottom: 180px;
+  z-index: 2;
+  text-align: start;
+}
+
+@media (max-width: 770px) {
+  .caption {
+    font-size: 28px;
+    line-height: 36px;
+    color: rgb(243, 243, 243);
+    text-shadow: rgb(0 0 0 / 100%) 0px 16px 32px;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 770px) {
+  .carousel {
+    height: auto;
+    width: 100%;
+    border-top-right-radius: 0px;
+  }
+}
+
+.searched {
+  font-family: "KBFG Text";
+  margin-right: 85%;
+  margin-bottom: 5%;
+  opacity: 90%;
+}
+
+@media (max-width: 770px) {
+  .searched {
+    font-family: "KBFG Text";
+    margin-right: 0%;
+    margin-bottom: 0%;
+  }
 }
