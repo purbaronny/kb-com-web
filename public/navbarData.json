@@ -13,8 +13,9 @@
     "titleSolutionGroupCompany": "Group Company / External Organization IT Systems Operation",
     "titleCareerWithUs": "Career",
     "titleContactUs": "Contact",
-    "language": "Language",
-    "latest": "Latest Update"
+    "language": "Languages",
+    "latest": "Latest Update",
+    "news": "News"
   },
   {
     "languageCode": "id-ID",
@@ -31,7 +32,8 @@
     "titleCareerWithUs": "Karir",
     "titleContactUs": "Hubungi kami",
     "language": "Bahasa",
-    "latest": "Pembaruan Terkini"
+    "latest": "Pembaruan Terkini",
+    "news": "Berita"
   },
   {
     "languageCode": "ko-KR",
@@ -48,6 +50,7 @@
     "titleCareerWithUs": "경력",
     "titleContactUs": "문의하기",
     "language": "언어",
-    "latest": "최근 업데이트"
+    "latest": "최근 업데이트",
+    "news": "소식 "
   }
 ]

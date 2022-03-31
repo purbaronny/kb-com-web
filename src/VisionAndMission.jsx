@@ -152,8 +152,9 @@ class VisionAndMission extends Component {
     return (
       <>
         <div className="target">
-          <div style={{ marginTop: 100 }}>
-            <div className="companyOverview">
+          <div style={{ marginTop: 30 }}>
+            <section className="Header" id="companyOverview">
+
               <div className="my-5">
                 <h1 className="text-center">
                   {this.state.titleCompanyOverview}
@@ -177,12 +178,16 @@ class VisionAndMission extends Component {
                   </div>
                 </div>
               </div>
-            </div>
+              {/* <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffd700" fill-opacity="0.5" d="M0,64L48,90.7C96,117,192,171,288,197.3C384,224,480,224,576,197.3C672,171,768,117,864,117.3C960,117,1056,171,1152,202.7C1248,235,1344,245,1392,250.7L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg> */}
+
+            </section>
             <div className="content-mid">
               <div className="logo-spinY">
                 <img src="./Pictures/kb-logo-crop.png" className="img-logo-left" />
               </div>
-              <div id="visionMision" className="Header">
+
+              <section className="Header" id="visionMission">
+
                 <div className="my-5">
                   <h1 className="text-center">{this.state.visionTitle}</h1>
                 </div>
@@ -210,8 +215,10 @@ class VisionAndMission extends Component {
                     </div>
                   </div>
                 </div>
-              </div>
-              <div id="businessDomain" className="Header">
+
+              </section>
+              <section className="Header" id="businessDomain">
+
                 <div className="my-5">
                   <h1 className="text-center">
                     {this.state.titleBusinessDomain}
@@ -229,8 +236,10 @@ class VisionAndMission extends Component {
                     </div>
                   </div>
                 </div>
-              </div>
-              <div id="achievements" className="Header">
+
+              </section>
+              <section className="Header" id="achievements">
+
                 <div className="my-5">
                   <h1 className="text-center">
                     {this.state.titleAchievements}
@@ -250,9 +259,11 @@ class VisionAndMission extends Component {
                     </div>
                   </div>
                 </div>
-              </div>
+
+              </section>
             </div>
-            <div id="coreValues" className="Header">
+            <section className="Header" id="coreValues">
+
               <div className="my-5">
                 <h1 className="text-center">{this.state.titleCoreValues}</h1>
               </div>
@@ -275,7 +286,8 @@ class VisionAndMission extends Component {
                   </div>
                 </div>
               </div>
-            </div>
+
+            </section>
           </div>
           <Footer />
         </div>

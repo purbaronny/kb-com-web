@@ -1,0 +1,29 @@
+[
+  {
+    "languageCode": "en-US",
+    "caption1": "Experts in each field who lead change",
+    "caption2": "and realize customer satisfaction",
+    "caption3": "Introducing",
+    "caption4": "Digital Information",
+    "caption5": "Build React Native",
+    "caption6": "iOS Distribution"
+  },
+  {
+    "languageCode": "id-ID",
+    "caption1": "Experts in each field who lead change",
+    "caption2": "and realize customer satisfaction",
+    "caption3": "Introducing",
+    "caption4": "Digital Information",
+    "caption5": "Build React Native",
+    "caption6": "iOS Distribution"
+  },
+  {
+    "languageCode": "ko-KR",
+    "caption1": "변화를 선도하며",
+    "caption2": "고객만족을 실현시키는 분야별 전문가",
+    "caption3": "Digital Transformation을",
+    "caption4": "소개합니다.",
+    "caption5": "리액트 네이티브",
+    "caption6": "iOS 배포 빌드하기"
+  }
+]

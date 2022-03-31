@@ -9,18 +9,48 @@ class ContactUs extends Component {
 
     constructor(props) {
         super(props);
-        this.state = {
-            languageCode: "en-US",
-            titleContactUs: "Contact Us",
-            labelEnterYourName: "Enter your Full Name",
-            textEnterYourName: "Enter Full Name",
-            labelContactNumber: "Contact Number",
-            textContactNumber: "+62-",
-            labelEmailAddress: "Email Address",
-            textEmailAddress: "name@example.com",
-            labelTypeYourMessageHere: "Type your Message Here",
-            textTypeYourMessageHere: "Message",
-            labelSubmitform: "Submit Form"
+        if (props.languageCode === "en-US") {
+            this.state = {
+                languageCode: "en-US",
+                titleContactUs: "Contact Us",
+                labelEnterYourName: "Enter Full Name",
+                textEnterYourName: "Enter Full Name",
+                labelContactNumber: "Contact Number",
+                textContactNumber: "+62-",
+                labelEmailAddress: "Email Address",
+                textEmailAddress: "name@example.com",
+                labelTypeYourMessageHere: "Type your Message Here",
+                textTypeYourMessageHere: "Message",
+                labelSubmitform: "Submit Form"
+            }
+        } else if (props.languageCode === "id-ID") {
+            this.state = {
+                languageCode: "id-ID",
+                titleContactUs: "Hubungi Kami",
+                labelEnterYourName: "Masukkan Nama Lengkap",
+                textEnterYourName: "Masukkan Nama Lengkap",
+                labelContactNumber: "Nomor Kontak",
+                textContactNumber: "+62-",
+                labelEmailAddress: "Alamat Email",
+                textEmailAddress: "name@example.com",
+                labelTypeYourMessageHere: "Ketik Pesan Anda Disini",
+                textTypeYourMessageHere: "Pesan",
+                labelSubmitform: "Kirim Formulir"
+            }
+        } else if (props.languageCode === "ko-KR") {
+            this.state = {
+                languageCode: "ko-KR",
+                titleContactUs: "문의하기",
+                labelEnterYourName: "성명 입력",
+                textEnterYourName: "성명 입력",
+                labelContactNumber: "연락처",
+                textContactNumber: "+62-",
+                labelEmailAddress: "이메일 주소",
+                textEmailAddress: "name@example.com",
+                labelTypeYourMessageHere: "여기에 메시지를 입력하세요",
+                textTypeYourMessageHere: "메세지",
+                labelSubmitform: "양식 제출"
+            }
         }
     }
 
