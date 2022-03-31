@@ -1,12 +1,9 @@
 import React, { Component } from "react";
-import { NavLink } from "react-router-dom";
-import { Link } from "react-router-dom";
-import DetailCareer from "./DetailCareer";
 import "./ListItem.css";
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
 // ..
-AOS.init({ once: true });
+AOS.init();
 
 class ListItem extends Component {
   //getting props for every update on news.jsx
