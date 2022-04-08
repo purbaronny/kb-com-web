@@ -125,7 +125,7 @@ class ContactUs extends Component {
 
 
 
-            emailjs.sendForm('service_smbfjbr', 'template_hogphgu', e.target, 'Fa5m0dy7CLzOz9yud')
+            emailjs.sendForm('service_vtbndgh', 'template_hogphgu', e.target, 'Fa5m0dy7CLzOz9yud')
                 .then((result) => {
 
                     console.log(result.text);
