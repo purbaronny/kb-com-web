@@ -138,7 +138,7 @@ class ContactUs extends Component {
         }
         return (
             <>
-                <section id="header" className="d-flex align-items-center" style={{ marginTop: 50 }}>
+                <section id="contact" className="d-flex align-items-center" style={{ marginTop: 50 }}>
                     <div className="container-fluid nav_bg">
                         <div className="row">
                             <div className="col-10 mx-auto">
