@@ -286,7 +286,6 @@ class VisionAndMission extends Component {
                   </div>
                 </div>
               </div>
-
             </section>
           </div>
           <Footer />

@@ -42,10 +42,6 @@ const Footer = () => {
         </footer >
 
         */
-
-
-
-
         <div className="container-fluid" style={{ backgroundColor: "#f8f9fa", height: 200, marginTop: 150 }}>
             <footer className="footer-basic" style={{ textAlign: "center", marginTop: 100 }}>
 
