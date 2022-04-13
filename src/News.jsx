@@ -243,7 +243,7 @@ class News extends Component {
     render() {
         return (
             <>
-                <section>
+                <section id="news">
                     <div className="my-5" style={{ marginTop: 100 }}>
                         <h1 className="text-center" style={{ color: "rgb(255, 188, 0)" }}>{this.state.title}</h1>
                     </div>

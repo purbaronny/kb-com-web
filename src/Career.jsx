@@ -353,7 +353,7 @@ class Career extends Component {
   render() {
     return (
       <>
-        <section>
+        <section id="career">
           <div className="container">
             <div style={{ marginTop: 50 }}>
               <div className="my-5" style={{ color: "rgb(255, 188, 0)" }}>

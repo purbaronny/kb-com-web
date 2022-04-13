@@ -125,7 +125,7 @@ class ContactUs extends Component {
 
 
 
-            emailjs.sendForm('service_smbfjbr', 'template_hogphgu', e.target, 'Fa5m0dy7CLzOz9yud')
+            emailjs.sendForm('service_vtbndgh', 'template_hogphgu', e.target, 'Fa5m0dy7CLzOz9yud')
                 .then((result) => {
 
                     console.log(result.text);
@@ -138,7 +138,7 @@ class ContactUs extends Component {
         }
         return (
             <>
-                <section id="header" className="d-flex align-items-center" style={{ marginTop: 50 }}>
+                <section id="contact" className="d-flex align-items-center" style={{ marginTop: 50 }}>
                     <div className="container-fluid nav_bg">
                         <div className="row">
                             <div className="col-10 mx-auto">
@@ -151,19 +151,19 @@ class ContactUs extends Component {
                                         <form onSubmit={sendEmail}>
                                             <div className="form-group">
                                                 <label for="exampleFormControlInput1">{this.state.labelEnterYourName}</label>
-                                                <input type="text" className="form-control" id="exampleFormControlInput1" placeholder={this.state.textEnterYourName} name="name" />
+                                                <input type="text" className="form-control" id="exampleFormControlInput1" placeholder={this.state.textEnterYourName} name="name" required />
                                             </div>
                                             <div className="form-group pt-3">
                                                 <label for="exampleFormControlInput1">{this.state.labelContactNumber}</label>
-                                                <input type="text" className="form-control" id="exampleFormControlInput1" placeholder={this.state.textContactNumber} name="no_telp" />
+                                                <input type="text" className="form-control" id="exampleFormControlInput1" placeholder={this.state.textContactNumber} name="no_telp" required />
                                             </div>
                                             <div className="form-group pt-3">
                                                 <label for="exampleFormControlInput1">{this.state.labelEmailAddress}</label>
-                                                <input type="email" className="form-control" id="exampleFormControlInput1" placeholder={this.state.textEmailAddress} name="email" />
+                                                <input type="email" className="form-control" id="exampleFormControlInput1" placeholder={this.state.textEmailAddress} name="email" required />
                                             </div>
                                             <div className="form-group pt-3">
                                                 <label for="exampleFormControlTextarea1">{this.state.labelTypeYourMessageHere}</label>
-                                                <textarea className="form-control" id="exampleFormControlTextarea1" rows="3" placeholder={this.state.textTypeYourMessageHere} name="message" />
+                                                <textarea className="form-control" id="exampleFormControlTextarea1" rows="3" placeholder={this.state.textTypeYourMessageHere} name="message" required />
                                             </div>
                                             <div className="col-12 pt-3">
                                                 <button onClick={this.onClickButton} className="btn orange-color btn-kirim" type="submit">{this.state.labelSubmitform}</button>
