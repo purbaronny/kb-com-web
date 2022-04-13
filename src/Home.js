@@ -77,8 +77,8 @@ class Home extends Component {
     return (
       <div style={{ marginTop: 25 }}>
         {/* <Carousel /> */}
-        <Carousel2 />
-        {/* <CarouselSlider /> */}
+        {/* <Carousel2 /> */}
+        <CarouselSlider languageCode={this.state.languageCode} />
         <Common name={this.state.text1} contentText={this.state.text2} imgsrc={web} visit="/visionAndMission" btname={this.state.text3} />
         <Footer />
       </div>

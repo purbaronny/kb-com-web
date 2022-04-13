@@ -86,10 +86,13 @@ section {
 }
 
 @media (max-width: 770px) {
-  .carousel {
-    height: auto;
-    width: 100%;
-    border-top-right-radius: 0px;
+  #carousel {
+    height: 550px;
+
+    padding-right: 3%;
+    padding-left: 3%;
+    border-top-right-radius: 0%;
+    border-bottom-left-radius: 0%;
   }
 }
 

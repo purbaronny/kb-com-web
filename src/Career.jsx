@@ -7,35 +7,40 @@ import Footer from "./Footer";
 class Career extends Component {
   constructor(props) {
     super(props);
+
     if (props.languageCode === "en-US") {
       this.state = {
         languageCode: "en-US",
         title: "Career",
+        header: "Occupancy Job For ",
+        jobDescriptionsHeader: "Job Description",
+        Apply: "Apply for this job",
+
         careerSummary: "Empowering, upgrade, and build yourself with our experienced team to develop Indonesia together. Join our ship and sail ourself together to chase the stars and reach the bright future with us.",
         cards: [
-          {
-            code: "IES",
-            title: "IT Engineer Senior",
-            text1: "Some quick example text to build on the card title and make up the bulk of the card's content.",
-            imgsrc: "Pictures/Pictures19.jpg",
-            linkSourceText: "Detail",
-            createdAt: "2022-02-02T10:23:59.000Z",
-            expiredAt: "2022-04-03T12:59:59.000Z",
-            enabled: true,
-            vacancy: 25,
-            requirements: [
-              "Experience in using at least one of these JAVA, C, Spring Framework, JPA, Oracle, MySQL",
-              "Experience developing Package Solution such as Temenos Transact, Oracle Flexcube, Finastra Fusion, etc)",
-              "Experience in customer requirements analysis and project implementation",
-              "Experience in core banking and finance SI",
-              "Application Architecture and MSA design/develop",
-            ],
-            job_description: [
-              "Package Customizing Corebanking, Payment Gateway, Integrate Digital Sector, Banking Terminal",
-              "Work Specialization Customizing General Management (Purchase Management Only), IT Operation Management (ITSM Service), Credit Card System, Digital Contact Management (AML/FDS)",
-              "In-house (Information System, Credit Synthesis System, General Management, Core Banking (Swamitra))",
-            ],
-          },
+          // {
+          //   code: "IES",
+          //   title: "IT Engineer Senior",
+          //   text1: "Some quick example text to build on the card title and make up the bulk of the card's content.",
+          //   imgsrc: "Pictures/Pictures19.jpg",
+          //   linkSourceText: "Detail",
+          //   createdAt: "2022-02-02T10:23:59.000Z",
+          //   expiredAt: "2022-04-03T12:59:59.000Z",
+          //   enabled: true,
+          //   vacancy: 25,
+          //   requirements: [
+          //     "Experience in using at least one of these JAVA, C, Spring Framework, JPA, Oracle, MySQL",
+          //     "Experience developing Package Solution such as Temenos Transact, Oracle Flexcube, Finastra Fusion, etc)",
+          //     "Experience in customer requirements analysis and project implementation",
+          //     "Experience in core banking and finance SI",
+          //     "Application Architecture and MSA design/develop",
+          //   ],
+          //   job_description: [
+          //     "Package Customizing Corebanking, Payment Gateway, Integrate Digital Sector, Banking Terminal",
+          //     "Work Specialization Customizing General Management (Purchase Management Only), IT Operation Management (ITSM Service), Credit Card System, Digital Contact Management (AML/FDS)",
+          //     "In-house (Information System, Credit Synthesis System, General Management, Core Banking (Swamitra))",
+          //   ],
+          // },
           {
             code: "IIS",
             title: "IT Infrastructure Senior",
@@ -45,6 +50,7 @@ class Career extends Component {
             linkSourceText: "Detail",
             createdAt: "2021-11-08T10:22:43.819Z",
             expiredAt: "2022-05-13T10:22:43.819Z",
+            expired: "Expired date ",
             enabled: true,
             vacancy: 10,
             requirements: [
@@ -65,6 +71,7 @@ class Career extends Component {
             linkSourceText: "Detail",
             createdAt: "2022-03-29T10:22:43.819Z",
             expiredAt: "2022-10-03T10:22:43.819Z",
+            expired: "Expired date ",
             enabled: true,
             vacancy: 20,
             requirements: [
@@ -89,6 +96,7 @@ class Career extends Component {
             linkSourceText: "Detail",
             createdAt: "2020-10-10T10:22:43.819Z",
             expiredAt: "2022-09-15T10:22:43.819Z",
+            expired: "Expired date ",
             enabled: true,
             vacancy: 15,
             requirements: [
@@ -105,33 +113,37 @@ class Career extends Component {
     } else if (props.languageCode === "id-ID") {
       this.state = {
         languageCode: "id-ID",
-        careerSummary: "Empowering, upgrade, and build yourself with our experienced team to develop Indonesia together. Join our ship and sail ourself together to chase the stars and reach the bright future with us.",
+        RequirementHeader: "Persyaratan untuk pekerjaan ini :",
+        Apply: "Lamar sekarang",
+        jobDescriptionsHeader: "Deskripsi Pekerjaan",
+        careerSummary: "Berdayakan, tingkatkan, dan bangun diri Anda dengan tim kami yang berpengalaman untuk membangun Indonesia bersama. Bergabunglah dengan kapal kami dan berlayarlah bersama untuk mengejar bintang dan meraih masa depan yang cerah bersama kami.",
         title: "Karir",
+        header: "Lowongan Pekerjaan Untuk",
         cards: [
-          {
-            code: "IES",
-            title: "IT Engineer Senior",
-            text1:
-              "Some quick example text to build on the card title and make up the bulk of the card's content.",
-            imgsrc: "Pictures/Pictures19.jpg",
-            linkSourceText: "Detail",
-            createdAt: "2022-02-02T10:23:59.000Z",
-            expiredAt: "2022-04-03T12:59:59.000Z",
-            enabled: true,
-            vacancy: 25,
-            requirements: [
-              "Experience in using at least one of these JAVA, C, Spring Framework, JPA, Oracle, MySQL",
-              "Experience developing Package Solution such as Temenos Transact, Oracle Flexcube, Finastra Fusion, etc)",
-              "Experience in customer requirements analysis and project implementation",
-              "Experience in core banking and finance SI",
-              "Application Architecture and MSA design/develop",
-            ],
-            job_description: [
-              "Package Customizing Corebanking, Payment Gateway, Integrate Digital Sector, Banking Terminal",
-              "Work Specialization Customizing General Management (Purchase Management Only), IT Operation Management (ITSM Service), Credit Card System, Digital Contact Management (AML/FDS)",
-              "In-house (Information System, Credit Synthesis System, General Management, Core Banking (Swamitra))",
-            ],
-          },
+          // {
+          // //   code: "IES",
+          // //   title: "IT Engineer Senior",
+          // //   text1:
+          // //     "Some quick example text to build on the card title and make up the bulk of the card's content.",
+          // //   imgsrc: "Pictures/Pictures19.jpg",
+          // //   linkSourceText: "Detail",
+          // //   createdAt: "2022-02-02T10:23:59.000Z",
+          // //   expiredAt: "2022-04-03T12:59:59.000Z",
+          // //   enabled: true,
+          // //   vacancy: 25,
+          // //   requirements: [
+          // //     "Experience in using at least one of these JAVA, C, Spring Framework, JPA, Oracle, MySQL",
+          // //     "Experience developing Package Solution such as Temenos Transact, Oracle Flexcube, Finastra Fusion, etc)",
+          // //     "Experience in customer requirements analysis and project implementation",
+          // //     "Experience in core banking and finance SI",
+          // //     "Application Architecture and MSA design/develop",
+          // //   ],
+          // //   job_description: [
+          // //     "Package Customizing Corebanking, Payment Gateway, Integrate Digital Sector, Banking Terminal",
+          // //     "Work Specialization Customizing General Management (Purchase Management Only), IT Operation Management (ITSM Service), Credit Card System, Digital Contact Management (AML/FDS)",
+          // //     "In-house (Information System, Credit Synthesis System, General Management, Core Banking (Swamitra))",
+          // //   ],
+          // // },
           {
             code: "IIS",
             title: "IT Infrastructure Senior",
@@ -141,16 +153,15 @@ class Career extends Component {
             linkSourceText: "Detail",
             createdAt: "2021-11-08T10:22:43.819Z",
             expiredAt: "2022-05-13T10:22:43.819Z",
+            expired: "Berakhir pada ",
             enabled: true,
             vacancy: 10,
-            requirements: [
-              "New Server Configuration (I/O and file system design, environment configuration)",
-              "Storage allocation, network configuration, DB link, Security vulnerability",
-              "System AS-IS analaysis, construction plan, implementation plan, establishing test plan",
+            "requirements": [
+              "Konfigurasi Server Baru (I/O dan desain sistem file, konfigurasi sarana prasarana TI))",
+              "Alokasi penyimpanan, konfigurasi jaringan, DB Link, Kerentanan keamanan",
+              "Analisis AS-IS sistem, rencana konstruksi, rencana implementasi, penetapan rencana pengujian"
             ],
-            job_description: [
-              "Infrastructure (Transportation, IT Operation Management (Security Control S/W), Banking Terminal, Infrastructure S/W, Integrated Authentification/Authority Management",
-            ],
+            "job_description": ["Infrastruktur (Transportasi, Manajemen Operasi TI (Kontrol Keamanan S/W), Terminal Perbankan, Infrastruktur S/W, Otentikasi Terintegrasi/Manajemen Otoritas"],
           },
           {
             code: "IEJ",
@@ -161,19 +172,20 @@ class Career extends Component {
             linkSourceText: "Detail",
             createdAt: "2022-03-29T10:22:43.819Z",
             expiredAt: "2022-10-03T10:22:43.819Z",
+            expired: "Berakhir pada ",
             enabled: true,
             vacancy: 20,
             requirements: [
-              "Experience in using at least one of these JAVA, C, Spring Framework, JPA, Oracle, MySQL",
-              "Experience developing Package Solution such as (Temenos Transact, Oracle Flexcube, Finastra Fusion, etc)",
-              "Experience in customer requirements analysis and project implementation",
-              "Experience in core banking and finance SI",
-              "Application Architecture and MSA design/develop",
+              "Pengalaman dalam menggunakan setidaknya salah satu dari JAVA, C, Spring Framework, JPA, Oracle, MySQLIntegrated Autentification/Authority Management",
+              "Pengalaman mengembangkan Package Solution seperti (Temenos Transact, Oracle Flexcube, Finastra Fusion, dll)",
+              "Pengalaman dalam analisis kebutuhan pelanggan dan implementasi proyek",
+              "Pengalaman di perbankan inti dan keuangan Analisis persyaratan dan implementasi proyek",
+              "Arsitektur Aplikasi dan desain/pengembangan MSA"
             ],
             job_description: [
-              "Package Customizing Corebanking, Payment Gateway, Integrate Digital Sector, Banking Terminal",
+              "Paket Menyesuaikan Corebanking, Gateway Pembayaran, Integrasi Sektor Digital, Terminal Perbankan",
               "Work Specialization Customizing General Management (Purchase Management Only), IT Operation Management (ITSM Service), Credit Card System, Digital Contact Management (AML/FDS)",
-              "In-house (Information System, Credit Synthesis System, General Management, Core Banking (Swamitra))",
+              "In-house (Sistem Informasi, Sistem Sintesis Kredit, Manajemen Umum, Core Banking (Swamitra))"
             ],
           },
           {
@@ -185,16 +197,15 @@ class Career extends Component {
             linkSourceText: "Detail",
             createdAt: "2020-10-10T10:22:43.819Z",
             expiredAt: "2022-09-15T10:22:43.819Z",
+            expired: "Berakhir pada ",
             enabled: true,
             vacancy: 15,
             requirements: [
-              "New Server Configuration (I/O and file system design, environment configuration)",
-              "Storage allocation, network configuration, DB link, Security vulnerability",
-              "System AS-IS analaysis, construction plan, implementation plan, establishing test plan",
+              "Konfigurasi Server Baru (I/O dan desain sistem file, konfigurasi lingkungan)",
+              "Alokasi penyimpanan, konfigurasi jaringan, tautan DB, Kerentanan keamanan",
+              "Analisis AS-IS sistem, rencana konstruksi, rencana implementasi, penetapan rencana pengujian"
             ],
-            job_description: [
-              "Infrastructure (Transportation, IT Operation Management (Security Control S/W), Banking Terminal, Infrastructure S/W, Integrated Authentification/Authority Management ",
-            ],
+            job_description: ["Infrastruktur (Transportasi, Manajemen Operasi TI (Security Control S/W), Terminal Perbankan, Infrastruktur S/W, Manajemen Otentikasi/Otoritas Terintegrasi "],
           },
         ],
       };
@@ -202,51 +213,50 @@ class Career extends Component {
       this.state = {
         languageCode: "ko-KR",
         title: "직업",
-        careerSummary: "Empowering, upgrade, and build yourself with our experienced team to develop Indonesia together. Join our ship and sail ourself together to chase the stars and reach the bright future with us.",
+        header: "에 대한 점유 작업",
+        jobDescriptionsHeader: "업무 설명서",
+        Apply: "이 직업에 지원",
+        RequirementHeader: "이 직업에 대한 요구 사항 :",
+        careerSummary: "경험이 풍부한 팀과 함께 자신을 강화하고 업그레이드하고 구축하여 인도네시아를 함께 발전시키십시오. 우리 배에 합류하여 함께 항해하여 별을 쫓고 우리와 함께 밝은 미래에 도달하십시오.",
         cards: [
-          {
-            code: "IES",
-            title: "IT Engineer Senior",
-            text1:
-              "Some quick example text to build on the card title and make up the bulk of the card's content.",
-            imgsrc: "Pictures/Pictures19.jpg",
-            linkSourceText: "Detail",
-            createdAt: "2022-02-02T10:23:59.000Z",
-            expiredAt: "2022-04-03T12:59:59.000Z",
-            enabled: true,
-            vacancy: 25,
-            requirements: [
-              "Experience in using at least one of these JAVA, C, Spring Framework, JPA, Oracle, MySQL",
-              "Experience developing Package Solution such as Temenos Transact, Oracle Flexcube, Finastra Fusion, etc)",
-              "Experience in customer requirements analysis and project implementation",
-              "Experience in core banking and finance SI",
-              "Application Architecture and MSA design/develop",
-            ],
-            job_description: [
-              "Package Customizing Corebanking, Payment Gateway, Integrate Digital Sector, Banking Terminal",
-              "Work Specialization Customizing General Management (Purchase Management Only), IT Operation Management (ITSM Service), Credit Card System, Digital Contact Management (AML/FDS)",
-              "In-house (Information System, Credit Synthesis System, General Management, Core Banking (Swamitra))",
-            ],
-          },
+          // {
+          //   code: "IES",
+          //   title: "IT Engineer Senior",
+          //   text1:
+          //     "Some quick example text to build on the card title and make up the bulk of the card's content.",
+          //   imgsrc: "Pictures/Pictures19.jpg",
+          //   linkSourceText: "세부 사항",
+          //   createdAt: "2022-02-02T10:23:59.000Z",
+          //   expiredAt: "2022-04-03T12:59:59.000Z",
+          //   enabled: true,
+          //   vacancy: 25,
+          //   requirements: [
+          //     "Experience in using at least one of these JAVA, C, Spring Framework, JPA, Oracle, MySQL",
+          //     "Experience developing Package Solution such as Temenos Transact, Oracle Flexcube, Finastra Fusion, etc)",
+          //     "Experience in customer requirements analysis and project implementation",
+          //     "Experience in core banking and finance SI",
+          //     "Application Architecture and MSA design/develop",
+          //   ],
+          //   job_description: [
+          //     "Package Customizing Corebanking, Payment Gateway, Integrate Digital Sector, Banking Terminal",
+          //     "Work Specialization Customizing General Management (Purchase Management Only), IT Operation Management (ITSM Service), Credit Card System, Digital Contact Management (AML/FDS)",
+          //     "In-house (Information System, Credit Synthesis System, General Management, Core Banking (Swamitra))",
+          //   ],
+          // },
           {
             code: "IIS",
             title: "IT Infrastructure Senior",
             text1:
               "Some quick example text to build on the card title and make up the bulk of the card's content.",
             imgsrc: "Pictures/presentation_woman.jpg",
-            linkSourceText: "Detail",
+            linkSourceText: "세부 사항",
             createdAt: "2021-11-08T10:22:43.819Z",
             expiredAt: "2022-05-13T10:22:43.819Z",
+            expired: "유통 기한",
             enabled: true,
             vacancy: 10,
-            requirements: [
-              "New Server Configuration (I/O and file system design, environment configuration)",
-              "Storage allocation, network configuration, DB link, Security vulnerability",
-              "System AS-IS analaysis, construction plan, implementation plan, establishing test plan",
-            ],
-            job_description: [
-              "Infrastructure (Transportation, IT Operation Management (Security Control S/W), Banking Terminal, Infrastructure S/W, Integrated Authentification/Authority Management",
-            ],
+            requirements: ["새 서버 구성(I/O 및 파일 시스템 설계, 환경 구성)", "저장소 할당, 네트워크 구성, DB 링크, 보안 취약점", "시스템 AS-IS 분석, 구축 계획, 구현 계획, 테스트 계획 수립"],
+            job_description: ["인프라(교통, IT 운영관리(보안관제 S/W), 금융단말기, 인프라 S/W, 통합인증/권한관리"],
           },
           {
             code: "IEJ",
@@ -254,22 +264,23 @@ class Career extends Component {
             text1:
               "Some quick example text to build on the card title and make up the bulk of the card's content.",
             imgsrc: "Pictures/Pictures11.jpg",
-            linkSourceText: "Detail",
+            linkSourceText: "세부 사항",
             createdAt: "2022-03-29T10:22:43.819Z",
             expiredAt: "2022-10-03T10:22:43.819Z",
+            expired: "유통 기한",
             enabled: true,
             vacancy: 20,
             requirements: [
-              "Experience in using at least one of these JAVA, C, Spring Framework, JPA, Oracle, MySQL",
-              "Experience developing Package Solution such as (Temenos Transact, Oracle Flexcube, Finastra Fusion, etc)",
-              "Experience in customer requirements analysis and project implementation",
-              "Experience in core banking and finance SI",
-              "Application Architecture and MSA design/develop",
+              "JAVA, C, Spring Framework, JPA, Oracle, MySQL 중 하나 이상 사용 경험",
+              "(Temenos Transact, Oracle Flexcube, Finastra Fusion 등) Package Solution 개발 경험",
+              "고객 요구 사항 분석 및 프로젝트 구현 경험",
+              "코어뱅킹 및 금융 SI 경험",
+              "애플리케이션 아키텍처 및 MSA 설계/개발"
             ],
             job_description: [
-              "Package Customizing Corebanking, Payment Gateway, Integrate Digital Sector, Banking Terminal",
-              "Work Specialization Customizing General Management (Purchase Management Only), IT Operation Management (ITSM Service), Credit Card System, Digital Contact Management (AML/FDS)",
-              "In-house (Information System, Credit Synthesis System, General Management, Core Banking (Swamitra))",
+              "Corebanking, 지불 게이트웨이, 통합 디지털 부문, 은행 터미널을 사용자 정의하는 패키지",
+              "일반관리(구매관리만), IT운영관리(ITSM 서비스), 신용카드시스템, 디지털연락처관리(AML/FDS) 커스터마이징 업무특성화",
+              "사내(정보시스템, 신용통합시스템, 총괄관리, 코어뱅킹(Swamitra))"
             ],
           },
           {
@@ -278,19 +289,20 @@ class Career extends Component {
             text1:
               "Some quick example text to build on the card title and make up the bulk of the card's content.",
             imgsrc: "Pictures/Picture8.jpg",
-            linkSourceText: "Detail",
+            linkSourceText: "세부 사항",
             createdAt: "2020-10-10T10:22:43.819Z",
             expiredAt: "2022-09-15T10:22:43.819Z",
+            expired: "유통 기한 ",
             enabled: true,
             vacancy: 15,
             requirements: [
-              "New Server Configuration (I/O and file system design, environment configuration)",
-              "Storage allocation, network configuration, DB link, Security vulnerability",
-              "System AS-IS analaysis, construction plan, implementation plan, establishing test plan",
+              "새 서버 구성(I/O 및 파일 시스템 설계, 환경 구성)",
+              "저장소 할당, 네트워크 구성, DB 링크, 보안 취약점",
+              "시스템 AS-IS 분석, 구축 계획, 구현 계획, 테스트 계획 수립"
             ],
             job_description: [
-              "Infrastructure (Transportation, IT Operation Management (Security Control S/W), Banking Terminal, Infrastructure S/W, Integrated Authentification/Authority Management ",
-            ],
+              "인프라(교통, IT 운영관리(보안관제 S/W), 은행단말기, 인프라 S/W, 통합인증/권한관리 "
+            ]
           },
         ],
       };
@@ -338,6 +350,7 @@ class Career extends Component {
             this.setState({
               languageCode: obj.languageCode,
               title: obj.title,
+              linkSourceText: obj.linkSourceText,
               careerSummary: obj.careerSummary,
               cards: cardsFinal,
             });
@@ -366,11 +379,13 @@ class Career extends Component {
                 <div className="row gy-4">
                   {this.state.cards.map((card) => (
                     <Card
+
                       code={card.code}
                       key={card.code}
                       title={card.title}
                       imgsrc={card.imgsrc}
                       text1={card.expiredAt}
+                      expired={card.expired}
                       linkSourceText={card.linkSourceText}
                       languageCode={this.state.languageCode}
                     />

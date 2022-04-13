@@ -36,7 +36,7 @@ class App extends Component {
       languageCode: value
     });
 
-    fetch("./homeData.json")
+    fetch("/homeData.json")
       .then(response => response.json())
       .then(result => {
         for (var i = 0; i < result.length; i++) {
@@ -111,7 +111,7 @@ class App extends Component {
             <Route exact path="/about" element={<About languageCode={this.state.name} />} />
             <Route exact path="/service" element={<Service languageCode={this.state.name} />} />
             <Route exact path="/contact" element={<Contact languageCode={this.state.name} />} />
-            <Route path="/career/:id/:languageCode" element={<DetailCareerExperimen />} />
+            <Route path="/career/:id" element={<DetailCareerExperimen languageCode={this.state.name} />} />
           </Routes>
         </BrowserRouter>
       </div>
