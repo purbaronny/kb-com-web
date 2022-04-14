@@ -14,7 +14,7 @@ class Common extends Component {
   render() {
     return (
       <>
-        <section id="header" className="d-flex align-items-center" data-aos="zoom-in-right" data-aos-duration="2000" data-aos-offset="200" style={{ marginTop: 50 }}>
+        <section id="header" className="d-flex align-items-center" data-aos="zoom-in-right" data-aos-duration="2000" data-aos-offset="200" >
           <div className="container-fluid nav_bg">
             <div className="row">
               <div className="col-10 mx-auto">

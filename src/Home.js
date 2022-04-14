@@ -75,7 +75,7 @@ class Home extends Component {
 
   render() {
     return (
-      <div style={{ marginTop: 25 }}>
+      <div style={{ marginTop: 0 }}>
         {/* <Carousel /> */}
         {/* <Carousel2 /> */}
         <CarouselSlider languageCode={this.state.languageCode} />

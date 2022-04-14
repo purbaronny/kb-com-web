@@ -88,11 +88,12 @@ section {
 @media (max-width: 770px) {
   #carousel {
     height: 550px;
-
-    padding-right: 3%;
-    padding-left: 3%;
+    padding-top: 0%;
+    padding-right: 0%;
+    padding-left: 0%;
     border-top-right-radius: 0%;
     border-bottom-left-radius: 0%;
+    margin-top: 0%;
   }
 }
 
