@@ -227,7 +227,7 @@ class Navbar extends Component {
   }
 
   componentDidUpdate(prevProps) {
-    fetch("./navbarData.json")
+    fetch("/navbarData.json")
       .then(response => response.json())
       .then(result => {
         for (var i = 0; i < result.length; i++) {
@@ -267,7 +267,7 @@ class Navbar extends Component {
       <>
         <nav className="navbar navbar-expand-lg navbar-light fixed-top bg-white-important" >
           <div className="container-fluid">
-            <Link to="/#home"><img className="logo-kbds" src="./Pictures/logokbds-remove.png" ></img></Link>
+            <Link to="/#home"><img className="logo-kbds" src="/Pictures/logokbds-remove.png" ></img></Link>
             <button className="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span className="navbar-toggler-icon"></span>
             </button>
@@ -310,7 +310,7 @@ class Navbar extends Component {
                 </li>
                 <li className="nav-item me-1">
                   <Dropdown>
-                    <Dropdown.Toggle variant="outline-secondary" className=' item-nav' closedButton>{this.state.latest}</Dropdown.Toggle>
+                    <Dropdown.Toggle variant="outline-secondary" className=' item-nav'>{this.state.latest}</Dropdown.Toggle>
                     <Dropdown.Menu>
                       <Dropdown.Item><Link className="nav-link" to="/career#career" style={{ color: "rgb(255,188,0)" }} >{this.state.titleCareerWithUs}</Link></Dropdown.Item>
                       <Dropdown.Item><Link className="nav-link" to="/news#news" style={{ color: "rgb(255, 188, 0)" }}>{this.state.news}</Link></Dropdown.Item>

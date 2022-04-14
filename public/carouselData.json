@@ -6,16 +6,18 @@
     "caption3": "Introducing",
     "caption4": "Digital Information",
     "caption5": "Build React Native",
-    "caption6": "iOS Distribution"
+    "caption6": "iOS Distribution",
+    "button": "Read More"
   },
   {
     "languageCode": "id-ID",
-    "caption1": "Experts in each field who lead change",
-    "caption2": "and realize customer satisfaction",
-    "caption3": "Introducing",
-    "caption4": "Digital Information",
-    "caption5": "Build React Native",
-    "caption6": "iOS Distribution"
+    "caption1": "Pakar di setiap bidang yang memimpin perubahan",
+    "caption2": "dan mewujudkan kepuasan pelanggan",
+    "caption3": "Memperkenalkan",
+    "caption4": "Informasi Digital",
+    "caption5": "Membangun Aplikasi iOS",
+    "caption6": "Berbasis React Native",
+    "button": "selengkapnya"
   },
   {
     "languageCode": "ko-KR",
@@ -24,6 +26,7 @@
     "caption3": "Digital Transformation을",
     "caption4": "소개합니다.",
     "caption5": "리액트 네이티브",
-    "caption6": "iOS 배포 빌드하기"
+    "caption6": "iOS 배포 빌드하기",
+    "button": "더 읽어보기"
   }
 ]
