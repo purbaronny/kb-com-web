@@ -8,7 +8,7 @@ import { HashLink as Link } from "react-router-hash-link"
 
 function DetailCareerExperimen(props) {
   const [languageCode, setLanguageCode] = useState("");
-  console.log(props.languageCode);
+  //console.log(props.languageCode);
   //const [name,setName] = useState('default name');\
 
   const { id } = useParams();
@@ -46,7 +46,7 @@ function DetailCareerExperimen(props) {
                 //console.log(cardElement.imgsrc);
                 //result=cardElement;
                 //console
-                console.log(cardElement.languageCode);
+                //console.log(cardElement.languageCode);
                 setData(cardElement.title);
                 setJobDescriptions(cardElement.job_description);
                 setRequirements(cardElement.requirements);
@@ -83,8 +83,8 @@ function DetailCareerExperimen(props) {
 
 
           </div>
-          <div className="row mt-5">
-            <Link className="btn btn-warning" to="/contactUs#contact">{Apply}</Link>
+          < div className="row mt-5">
+            <Link className="btn btn-warning" to="/contactUs#contact"><img className="me-2" style={{ heigth: "24px", width: "24px" }} src="https://icon-library.com/images/apply-icon-png/apply-icon-png-15.jpg"></img><span className="mr-2">{Apply}</span></Link>
           </div>
         </div>
       </div>

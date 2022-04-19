@@ -6,6 +6,8 @@ import { faInstagram, faYoutube, faTwitter, faLinkedin, faFacebook } from "@fort
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import './Footer.css';
 import AOS from "aos";
+import { SiGmail } from "react-icons/si";
+import { BsFillTelephoneFill } from "react-icons/bs";
 import "aos/dist/aos.css"; // You can also use <link> for styles
 // ..
 AOS.init();
@@ -58,8 +60,12 @@ const Footer = () => {
                 </ul>
 
                 <div className="text-center" style={{ fontSize: 14, color: "black", fontFamily: "KGBF Display,sans-serif" }}>
-                    <p className="text"><strong>Phone :</strong>  +62-21-80667239</p>
-
+                    <p className="text"><i>
+                        <BsFillTelephoneFill></BsFillTelephoneFill>
+                      </i>  +62-21-80667239</p>
+                      <p className="text"><i className="me-1">
+                        <SiGmail></SiGmail>
+                      </i>  contact@kbdsi.com</p>
                     <p className="text">Copyright(c) 2022, KB Data Systems Indonesia</p>
                     <p className="text" >All Right Reserved.</p>
                 </div>
