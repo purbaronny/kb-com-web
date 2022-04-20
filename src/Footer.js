@@ -4,6 +4,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faCoffee, faWarning, faPhone } from "@fortawesome/free-solid-svg-icons"
 import { faInstagram, faYoutube, faTwitter, faLinkedin, faFacebook } from "@fortawesome/free-brands-svg-icons"
 import 'bootstrap-icons/font/bootstrap-icons.css';
+import { BsTelephoneFill as Phone } from "react-icons/bs"
+import { SiGmail } from "react-icons/si"
 import './Footer.css';
 import AOS from "aos";
 import "aos/dist/aos.css"; // You can also use <link> for styles
@@ -46,7 +48,7 @@ const Footer = () => {
 
 
 
-        <div className="container-fluid" style={{ backgroundColor: "#f8f9fa", height: 200, marginTop: 150 }}>
+        <div className="container-fluid" style={{ backgroundColor: "#f8f9fa", height: 250, marginTop: 150 }}>
             <footer className="footer-basic" style={{ textAlign: "center", marginTop: 100 }}>
 
                 <ul className="list-inline pt-3">
@@ -58,7 +60,8 @@ const Footer = () => {
                 </ul>
 
                 <div className="text-center" style={{ fontSize: 14, color: "black", fontFamily: "KGBF Display,sans-serif" }}>
-                    <p className="text"><strong>Phone :</strong>  +62-21-80667239</p>
+                    <p className="text"><span className="phone me-2"><Phone /></span> +62-21-80667239</p>
+                    <p className="text"><span className="phone me-2"><SiGmail /></span>  contact@kbdsi.com</p>
 
                     <p className="text">Copyright(c) 2022, KB Data Systems Indonesia</p>
                     <p className="text" >All Right Reserved.</p>
