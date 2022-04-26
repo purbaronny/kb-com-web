@@ -25,7 +25,7 @@ class CarouselSlider extends Component {
                 caption1: "Pakar di setiap bidang yang memimpin perubahan",
                 caption2: "dan mewujudkan kepuasan pelanggan",
                 caption3: "Memperkenalkan",
-                caption4: "Informasi Digital",
+                caption4: "Transformasi Digital",
                 caption5: "Membangun Aplikasi iOS",
                 caption6: "Berbasis React Native",
                 button: "Selengkapnya"

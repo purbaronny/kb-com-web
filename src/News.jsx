@@ -167,7 +167,7 @@ class News extends Component {
                         title: "이미 잠이 깼는데 왜 KB 부코핀은 여전히 ​​디지털 은행을 시작하려고 합니까?",
                         text1: "PT은행 KB부코핀 Tbk. 머지않은 장래에 디지털 뱅크의 출범을 통해 실현될 디지털 금융 산업의 진출이 본격화되고 있습니다. 이 계획은 회사가 2022년 2월 초에 NGBS(New Generation Banking System) 생태계의 추가라는 전략적 도약이 있을 것이라고 밝힌 후 공개되었습니다. 실제로 KB부코핀은 2017년부터 론칭한 디지털뱅킹 애플리케이션 '워키(Wokee)'를 더 자세히 들여다보면 이미 보유하고 있다. 하지만 2021년 말 공개된 공시에서 KB부코핀은 해당 제품의 시장 점유율을 극대화하지 못했다고 밝혔다.",
                         imgsrc: "Pictures/news5.jfif",
-                        linkSourceText: "Read More",
+                        linkSourceText: "더 읽어보기",
                         linkTo: "https://finansial.bisnis.com/read/20220131/90/1495374/sudah-punya-wokee-kok-kb-bukopin-masih-mau-luncurkan-bank-digital ",
                         date: "Thursday, 31 January  |  08:36 PM"
                     },
