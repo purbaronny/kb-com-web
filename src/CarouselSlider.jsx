@@ -131,7 +131,7 @@ class CarouselSlider extends Component {
                                 alt="First slide"
                             />
                             <Carousel.Caption>
-                                <h3 className="caption">{this.state.caption1}<br></br>{this.state.caption2}</h3>
+                                <h4 className="caption">{this.state.caption1}<br></br>{this.state.caption2}</h4>
                                 <Link to="service#companyMaintenance" className="btn btn-warning searched">{this.state.button}<Arrow /></Link>
                             </Carousel.Caption>
 
@@ -143,7 +143,7 @@ class CarouselSlider extends Component {
                                 alt="Second slide"
                             />
                             <Carousel.Caption>
-                                <h3 className="caption">{this.state.caption3}<br></br>{this.state.caption4}</h3>
+                                <h4 className="caption">{this.state.caption3}<br></br>{this.state.caption4}</h4>
                                 <Link to="visionAndMission#businessDomain" className="btn btn-warning searched">{this.state.button}<Arrow /></Link>
 
                             </Carousel.Caption>
@@ -157,7 +157,7 @@ class CarouselSlider extends Component {
                                 alt="Third slide"
                             />
                             <Carousel.Caption>
-                                <h3 className="caption">{this.state.caption5}<br></br>{this.state.caption6}</h3>
+                                <h4 className="caption">{this.state.caption5}<br></br>{this.state.caption6}</h4>
                                 <Link to="service#companyOperation" className="btn btn-warning searched">{this.state.button}<Arrow /></Link>
 
                             </Carousel.Caption>
