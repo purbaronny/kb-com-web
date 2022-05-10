@@ -14,7 +14,7 @@ class CarouselSlider extends Component {
                 caption1: "Experts in each field who lead change",
                 caption2: "and realize customer satisfaction",
                 caption3: "Introducing",
-                caption4: "Digital Information",
+                caption4: "Digital Transformation",
                 caption5: "Build React Native",
                 caption6: "iOS Distribution",
                 button: "Read More"
@@ -25,7 +25,7 @@ class CarouselSlider extends Component {
                 caption1: "Pakar di setiap bidang yang memimpin perubahan",
                 caption2: "dan mewujudkan kepuasan pelanggan",
                 caption3: "Memperkenalkan",
-                caption4: "Informasi Digital",
+                caption4: "Transformasi Digital",
                 caption5: "Membangun Aplikasi iOS",
                 caption6: "Berbasis React Native",
                 button: "Selengkapnya"
@@ -131,7 +131,7 @@ class CarouselSlider extends Component {
                                 alt="First slide"
                             />
                             <Carousel.Caption>
-                                <h3 className="caption">{this.state.caption1}<br></br>{this.state.caption2}</h3>
+                                <h4 className="caption">{this.state.caption1}<br></br>{this.state.caption2}</h4>
                                 <Link to="service#companyMaintenance" className="btn btn-warning searched">{this.state.button}<Arrow /></Link>
                             </Carousel.Caption>
 
@@ -143,7 +143,7 @@ class CarouselSlider extends Component {
                                 alt="Second slide"
                             />
                             <Carousel.Caption>
-                                <h3 className="caption">{this.state.caption3}<br></br>{this.state.caption4}</h3>
+                                <h4 className="caption">{this.state.caption3}<br></br>{this.state.caption4}</h4>
                                 <Link to="visionAndMission#businessDomain" className="btn btn-warning searched">{this.state.button}<Arrow /></Link>
 
                             </Carousel.Caption>
@@ -157,7 +157,7 @@ class CarouselSlider extends Component {
                                 alt="Third slide"
                             />
                             <Carousel.Caption>
-                                <h3 className="caption">{this.state.caption5}<br></br>{this.state.caption6}</h3>
+                                <h4 className="caption">{this.state.caption5}<br></br>{this.state.caption6}</h4>
                                 <Link to="service#companyOperation" className="btn btn-warning searched">{this.state.button}<Arrow /></Link>
 
                             </Carousel.Caption>
