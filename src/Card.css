@@ -4,7 +4,32 @@
   max-height: 100%;
   border-bottom-left-radius: calc(0.25rem - 1px);
   border-bottom-right-radius: calc(0.25rem - 1px);
+  overflow-y: hidden;
+  overflow-x: hidden;
+  display: flex;
+  justify-content: center;
 }
+@keyframes imgScaleUp {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+.img-inside:hover {
+  animation-name: imgScaleUp;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+.img-inside {
+  width: auto;
+  height: 250px;
+  max-height: 100%;
+  border-bottom-left-radius: calc(0.25rem - 1px);
+  border-bottom-right-radius: calc(0.25rem - 1px);
+}
+
 .orange-color {
   background-color: rgb(255, 188, 0);
 }
@@ -36,7 +61,7 @@
   .img-card {
     width: auto;
     height: 175px;
-    max-height: 100%
+    max-height: 100%;
   }
 }
 @media (min-width: 992px) {
