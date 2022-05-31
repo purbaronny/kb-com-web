@@ -7,30 +7,32 @@ import Carousel2 from "./Carousel2";
 import CarouselSlider from "./CarouselSlider";
 
 class Home extends Component {
-
   state = {
     languageCode: "en-US",
     text1: "Grow your business with",
     text2: "We're a team of talented developers that can help your business grow!",
-    text3: "Get started"
-  }
+    text3: "Get started",
+  };
 
   changeLanguage = (val) => {
     this.props.changeLanguage(val);
-  }
+  };
 
   onLanguageClick = (value) => {
-    this.setState({
-      languageCode: value
-    }, () => {
-      this.changeLanguage(this.state.languageCode);
-    });
-  }
+    this.setState(
+      {
+        languageCode: value,
+      },
+      () => {
+        this.changeLanguage(this.state.languageCode);
+      }
+    );
+  };
 
   componentDidMount() {
     fetch("./homeData.json")
-      .then(response => response.json())
-      .then(result => {
+      .then((response) => response.json())
+      .then((result) => {
         for (var i = 0; i < result.length; i++) {
           var obj = result[i];
           if (obj.languageCode === this.props.languageCode) {
@@ -38,7 +40,7 @@ class Home extends Component {
               languageCode: obj.languageCode,
               text1: obj.text1,
               text2: obj.text2,
-              text3: obj.text3
+              text3: obj.text3,
             });
             break;
           }
@@ -48,29 +50,31 @@ class Home extends Component {
       });
   }
 
-  static getDerivedStateFromProps(props, state) {
-    return { languageCode: props.languageCode };
-  }
+  // static getDerivedStateFromProps(props, state) {
+  //   return { languageCode: props.languageCode };
+  // }
 
-  componentDidUpdate(prevProps) {
-    fetch("./homeData.json")
-      .then(response => response.json())
-      .then(result => {
-        for (var i = 0; i < result.length; i++) {
-          var obj = result[i];
-          if (obj.languageCode === this.props.languageCode) {
-            this.setState({
-              languageCode: obj.languageCode,
-              text1: obj.text1,
-              text2: obj.text2,
-              text3: obj.text3
-            });
-            break;
+  componentDidUpdate(prevState) {
+    if (this.state.languageCode !== prevState.languageCode) {
+      fetch("./homeData.json")
+        .then((response) => response.json())
+        .then((result) => {
+          for (var i = 0; i < result.length; i++) {
+            var obj = result[i];
+            if (obj.languageCode === this.props.languageCode) {
+              this.setState({
+                languageCode: obj.languageCode,
+                text1: obj.text1,
+                text2: obj.text2,
+                text3: obj.text3,
+              });
+              break;
+            }
           }
-        }
-        // console.log(result);
-        // console.log(this.state.text1);
-      });
+          // console.log(result);
+          // console.log(this.state.text1);
+        });
+    }
   }
 
   render() {
